@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>28JoursBox · Le cloud privé et le studio de poche de votre groupe</title>
+  <meta name="description" content="Vos morceaux, répètes et projets Cubase / Studio One synchronisés entre tous les PC et téléphones du groupe, sur votre propre machine. Instruments séparés, accords, structure, tempo, boucles. Gratuit, sans abonnement.">
+  <meta property="og:title" content="28JoursBox · Votre groupe. Vos morceaux. Votre serveur.">
+  <meta property="og:description" content="Le cloud privé et le studio de répétition de poche d'un groupe de musique. Gratuit et sans abonnement.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1768264261042-8022207d0b80?w=1200&h=630&fit=crop&q=70&auto=format">
+  <meta name="theme-color" content="#0a0a12">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/logo.png" alt="">28JoursBox</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="nav-links">
+      <a href="index.html" aria-current="page">Découvrir</a>
+      <a href="forum.html">Forum</a>
+      <a href="don.html">Soutenir</a>
+      <a class="btn small" href="telecharger.html">Télécharger</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1768264261042-8022207d0b80?w=2000&q=70&auto=format&fit=crop')"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Pour les groupes de musique</span>
+      <h1>Votre groupe.<br>Vos morceaux.<br><span class="grad-text">Votre serveur.</span></h1>
+      <p class="lead">Le cloud privé <b>et</b> le studio de répétition de poche de votre groupe. Les répètes et les projets Cubase / Studio One partagés entre tous les PC et téléphones, et pour chaque morceau&nbsp;: instruments séparés, accords, structure en couleurs, tempo réglable. <b>Sur votre propre PC, sans abonnement.</b></p>
+      <div class="btns">
+        <a class="btn" href="telecharger.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg>Télécharger gratuitement</a>
+        <a class="btn ghost" href="#studio">Voir ce que ça fait</a>
+      </div>
+      <div class="badges">
+        <span class="badge">100 % gratuit</span>
+        <span class="badge">Aucun abonnement</span>
+        <span class="badge">Sans publicité</span>
+        <span class="badge">Rien à installer sur le téléphone</span>
+      </div>
+    </div>
+
+    <!-- Maquette : le lecteur avancé sur un téléphone -->
+    <div class="phone" aria-label="Aperçu du lecteur avancé sur un téléphone">
+      <div class="screen">
+        <div class="notch"></div>
+        <div class="ph-top"><span>Répète du jeudi</span><span class="pill">● Analyse fine</span></div>
+        <div class="ph-title">Notre morceau — prise 3</div>
+        <div class="chord-now"><b>Am</b><span>→ F</span><em>La mineur<br>124 BPM</em></div>
+        <div class="chords-row"><span>C</span><span>G</span><span class="on">Am</span><span>F</span><span>C</span><span>G</span><span>F</span><span>F</span></div>
+        <div class="parts">
+          <div class="part" style="flex:1.2;background:var(--intro)"><small>A</small>Intro</div>
+          <div class="part" style="flex:2.4;background:var(--couplet)"><small>A B</small>Couplet</div>
+          <div class="part" style="flex:2;background:var(--refrain)"><small>C C</small>Refrain</div>
+          <div class="part" style="flex:1.2;background:var(--pont)"><small>D</small>Pont</div>
+          <div class="part" style="flex:1.4;background:var(--solo)"><small>C</small>Solo</div>
+          <div class="playhead"></div>
+        </div>
+        <div class="part-legend"><span><i style="background:var(--intro)"></i>Intro</span><span><i style="background:var(--couplet)"></i>Couplet</span><span><i style="background:var(--refrain)"></i>Refrain</span><span><i style="background:var(--pont)"></i>Pont</span><span><i style="background:var(--solo)"></i>Solo</span></div>
+        <div class="wave"></div>
+        <div class="ph-ctrl">
+          <span class="tempo">Tempo <b>85 %</b></span>
+          <span class="ph-play"><svg viewBox="0 0 24 24"><path d="M7 5l12 7-12 7z"/></svg></span>
+          <span class="loop">⟲ ×4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PROBLÈME / SOLUTION ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Le constat</span>
+      <h2>Un groupe, cinq applis,<br>et toujours pas le bon fichier.</h2>
+      <p class="lead">Le WAV de la répète est sur WhatsApp, compressé. Le projet Cubase a été écrasé. Le guitariste ne sait plus l'accord du pont. Et chacun paie son abonnement.</p>
+    </div>
+    <div class="versus">
+      <div class="vs-card bad reveal">
+        <h3>😩 Aujourd'hui</h3>
+        <ul>
+          <li>Partager les répètes <b>Cloud + quota plein</b></li>
+          <li>Travailler un morceau <b>Appli payante</b></li>
+          <li>Trouver les accords <b>Encore une appli</b></li>
+          <li>Envoyer un gros WAV <b>Lien qui expire</b></li>
+          <li>Écouter dans la voiture <b>WhatsApp compressé</b></li>
+          <li>Ouvrir le même projet à deux <b>Session écrasée</b></li>
+        </ul>
+        <div class="vs-total"><span>Résultat</span><span style="color:#ff8fa3">Éparpillé et payant</span></div>
+      </div>
+      <div class="vs-arrow">→</div>
+      <div class="vs-card good reveal">
+        <h3>🤘 Avec 28JoursBox</h3>
+        <ul>
+          <li>Un dossier partagé sur chaque PC <b>Illimité</b></li>
+          <li>Instruments séparés, tempo, boucles <b>Inclus</b></li>
+          <li>Accords et gamme temps par temps <b>Inclus</b></li>
+          <li>Lien public ou envoi par mail <b>En un geste</b></li>
+          <li>Écran verrouillé et CarPlay <b>Qualité d'origine</b></li>
+          <li>Verrous automatiques Cubase / Studio One <b>Zéro écrasement</b></li>
+        </ul>
+        <div class="vs-total"><span>Prix</span><span class="grad-text">0 €, pour toujours</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 PILIERS ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Tout-en-un</span>
+      <h2>Trois outils en un seul logiciel</h2>
+      <p class="lead">Ce que les musiciens paient aujourd'hui séparément, réuni et installé chez vous.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="ico" style="background:rgba(79,140,255,.16);color:var(--couplet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M12 11v5m0 0l-2-2m2 2l2-2"/></svg></div>
+        <h3>Le dossier du groupe</h3>
+        <p>Un dossier sur le Bureau de chaque PC, qui se synchronise tout seul. Comme Dropbox, mais chez vous et pensé pour la musique.</p>
+        <ul><li>Versions, corbeille, transferts reprenables</li><li>Verrous des projets ouverts</li><li>Accès en 4G, invitation par QR code</li></ul>
+      </div>
+      <div class="pillar reveal">
+        <div class="ico" style="background:rgba(255,93,143,.16);color:var(--refrain)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 10v5m4-7v7"/></svg></div>
+        <h3>Le studio de poche</h3>
+        <p>Dans le navigateur du téléphone, sans rien installer : chaque morceau découpé, analysé, prêt à travailler.</p>
+        <ul><li>Chant, guitares, basse, batterie séparés</li><li>Accords, gamme et structure en couleurs</li><li>Tempo 50–150 %, boucles, prises par-dessus</li></ul>
+      </div>
+      <div class="pillar reveal">
+        <div class="ico" style="background:rgba(250,204,21,.14);color:var(--pont)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M17 15l3 3-3 3"/></svg></div>
+        <h3>Le pont vers le studio</h3>
+        <p>Un geste, et le morceau devient un projet Studio One prêt à ouvrir : pistes séparées, colorées, calées sur la grille.</p>
+        <ul><li>WAV 24 bits / 48 kHz</li><li>Prises en pistes supplémentaires</li><li>Tempo stabilisé en option</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VITRINES ============ -->
+<section id="studio">
+  <div class="wrap">
+
+    <div class="feature">
+      <div class="media reveal">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1776464487858-9bd497910008?w=1200&q=72&auto=format&fit=crop" alt="Un groupe répète dans une chambre, batterie, guitare et ordinateur" loading="lazy"></div>
+        <div class="overlay-card">
+          <h4>Structure détectée</h4>
+          <div class="parts" style="height:40px">
+            <div class="part" style="flex:1;background:var(--intro)">Intro</div>
+            <div class="part" style="flex:2;background:var(--couplet)">Couplet</div>
+            <div class="part" style="flex:.8;background:var(--prerefrain)"></div>
+            <div class="part" style="flex:1.8;background:var(--refrain)">Refrain</div>
+            <div class="part" style="flex:1;background:var(--outro)">Outro</div>
+          </div>
+          <div class="chords-row" style="margin-top:8px"><span>Em</span><span class="on">C</span><span>G</span><span>D</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Le morceau compris tout seul</span>
+        <h2>Arrivez à la répète en connaissant le morceau</h2>
+        <p>Déposez un enregistrement, une maquette ou un lien YouTube : quelques secondes plus tard, le morceau est découpé et analysé, <b>sur votre serveur</b>.</p>
+        <ul class="checks">
+          <li><span><b>Structure en parties nommées</b> — Intro, Couplet, Refrain, Pont, Solo… toujours de la même couleur, avec les tournes A, B, C.</span></li>
+          <li><span><b>Accords temps par temps</b> — l'accord joué et le suivant en grand, Do Ré Mi ou C D E, transposition.</span></li>
+          <li><span><b>Gamme et pentatonique conseillée</b> pour improviser sur le solo.</span></li>
+          <li><span><b>Corrections partagées</b> — un membre corrige le découpage, tout le groupe en profite.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature flip">
+      <div class="media reveal">
+        <div class="photo tall"><img src="https://images.unsplash.com/photo-1779026226306-421239f3d489?w=1000&q=72&auto=format&fit=crop" alt="Un guitariste joue sur une guitare électrique blanche" loading="lazy"></div>
+        <div class="overlay-card left">
+          <h4>Table de mixage</h4>
+          <div class="mixer">
+            <div class="strip">Chant<div class="fader"><i style="height:70%;background:var(--refrain)"></i><b style="bottom:64%"></b></div><div class="ms"><span>M</span><span>S</span></div></div>
+            <div class="strip">Guitares<div class="fader"><i style="height:0;background:var(--solo)"></i><b style="bottom:-2%"></b></div><div class="ms"><span class="m">M</span><span>S</span></div></div>
+            <div class="strip">Basse<div class="fader"><i style="height:55%;background:var(--couplet)"></i><b style="bottom:49%"></b></div><div class="ms"><span>M</span><span>S</span></div></div>
+            <div class="strip">Batterie<div class="fader"><i style="height:80%;background:var(--outro)"></i><b style="bottom:74%"></b></div><div class="ms"><span>M</span><span>S</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Instruments séparés</span>
+        <h2>Coupez la guitare.<br>Jouez-la vous-même.</h2>
+        <p>Chaque morceau est séparé en <b>quatre pistes</b> par une IA de référence : chant, guitares, basse, batterie. Une vraie table de mixage, réglée et mémorisée pour chaque morceau.</p>
+        <ul class="checks">
+          <li><span><b>Muet et Solo</b> sur chaque piste, curseur en dB.</span></li>
+          <li><span><b>Tempo de 50 % à 150 %</b> sans changer la hauteur des notes.</span></li>
+          <li><span><b>Boucles au sample près</b>, répétitions ×2, ×3… et entraîneur qui accélère par paliers.</span></li>
+          <li><span><b>Décompte et métronome</b> calés sur les temps détectés.</span></li>
+          <li><span><b>Dans la voiture</b> : écran verrouillé et CarPlay.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="media reveal">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1761145249446-92c8feb8edf0?w=1200&q=72&auto=format&fit=crop&crop=faces" alt="Un batteur joue dans une salle éclairée au néon" loading="lazy"></div>
+        <div class="overlay-card">
+          <h4>⏺ Prise calée sur la grille</h4>
+          <div class="grid-bars"><span data-n="1"></span><span data-n="2" class="rec"></span><span data-n="3" class="rec"></span><span data-n="4" class="rec"></span><span data-n="5" class="rec"></span><span data-n="6" class="rec"></span><span data-n="7" class="rec"></span><span data-n="8"></span></div>
+          <div class="rec-line"><span>124 BPM · clic silencieux</span><b>Calé ✓</b></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Enregistrer par-dessus</span>
+        <h2>La prise tombe pile sur le morceau</h2>
+        <p>Appuyez sur ⏺ : décompte, lecture de ce que vous voulez entendre, enregistrement du micro. La prise est <b>recalée exactement</b> grâce à la mesure du délai du téléphone, et devient une piste de la table de mixage, partagée avec tout le groupe.</p>
+        <ul class="checks">
+          <li><span><b>Une prise par passage</b> quand on boucle un passage.</span></li>
+          <li><span><b>« Caler »</b> coupe début et fin sur des barres de mesure, le « 1 » repéré à la grosse caisse et à la caisse claire.</span></li>
+          <li><span><b>Vers Studio One</b> : dossier projet prêt à ouvrir, pistes colorées, grille juste du début à la fin.</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CHIFFRES ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><b class="grad-text">0 €</b><span>d'abonnement, pour toujours</span></div>
+      <div class="stat reveal"><b class="grad-text">4</b><span>pistes séparées par morceau</span></div>
+      <div class="stat reveal"><b class="grad-text">50–150 %</b><span>de tempo sans changer la hauteur</span></div>
+      <div class="stat reveal"><b class="grad-text">100 %</b><span>de vos fichiers restent chez vous</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIE PRIVÉE / ROBUSTESSE ============ -->
+<section>
+  <div class="wrap">
+    <div class="feature flip">
+      <div class="media reveal">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1768264261042-8022207d0b80?w=1200&q=72&auto=format&fit=crop" alt="Un groupe joue sur scène, guitare, basse et batterie" loading="lazy"></div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Vos données chez vous</span>
+        <h2>Le serveur, c'est un PC du groupe</h2>
+        <p>Aucun fichier ne part chez un hébergeur. Même l'intelligence artificielle tourne sur votre machine : <b>rien n'est envoyé à un service en ligne</b>. La seule limite de stockage, c'est votre disque.</p>
+        <ul class="checks">
+          <li><span><b>Aucune perte silencieuse</b> : copies en conflit plutôt qu'écrasement, corbeille et versions 30 jours.</span></li>
+          <li><span><b>Verrous automatiques</b> quand Cubase ou Studio One ouvre un projet : personne n'écrase la session d'un autre.</span></li>
+          <li><span><b>Transferts reprenables</b> : une coupure en plein envoi d'une session de plusieurs Go ne fait rien perdre.</span></li>
+          <li><span><b>Sauvegarde quotidienne</b> et vérification d'intégrité chaque semaine.</span></li>
+          <li><span><b>Calculs lourds la nuit</b> : le lendemain matin, tout est prêt.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARATIF ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Comparatif</span>
+      <h2>Ce qu'aucun autre outil ne réunit</h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="compare">
+        <thead><tr><th></th><th>Stockage en ligne</th><th>Appli d'entraînement IA</th><th class="us">28JoursBox</th></tr></thead>
+        <tbody>
+          <tr><td>Dossier synchronisé sur tous les PC</td><td class="yes">✔</td><td class="no">—</td><td class="us yes">✔</td></tr>
+          <tr><td>Fichiers sur votre propre machine</td><td class="no">—</td><td class="no">—</td><td class="us yes">✔</td></tr>
+          <tr><td>Pensé pour Cubase / Studio One</td><td class="no">—</td><td class="no">—</td><td class="us yes">✔</td></tr>
+          <tr><td>Instruments séparés</td><td class="no">—</td><td class="yes">✔</td><td class="us yes">✔</td></tr>
+          <tr><td>Tempo réglable et boucles</td><td class="no">—</td><td class="yes">✔</td><td class="us yes">✔</td></tr>
+          <tr><td>Accords et gamme</td><td class="no">—</td><td class="yes">✔</td><td class="us yes">✔</td></tr>
+          <tr><td>Structure partagée avec le groupe</td><td class="no">—</td><td class="no">—</td><td class="us yes">✔</td></tr>
+          <tr><td>Prises recalées, partagées</td><td class="no">—</td><td class="no">—</td><td class="us yes">✔</td></tr>
+          <tr><td>Export Studio One prêt à ouvrir</td><td class="no">—</td><td class="no">—</td><td class="us yes">✔</td></tr>
+          <tr><td>Abonnement mensuel</td><td>souvent</td><td>souvent</td><td class="us yes">aucun</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POUR QUI ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Pour qui ?</span>
+      <h2>Fait pour ceux qui jouent ensemble</h2>
+    </div>
+    <div class="audience">
+      <div class="aud reveal"><div class="emoji">🎸</div><h3>Groupes de reprises et de compos</h3><p>Chacun arrive à la répète en connaissant sa partie, au bon tempo.</p></div>
+      <div class="aud reveal"><div class="emoji">🎚️</div><h3>Groupes qui enregistrent</h3><p>De la répète au studio sans recaler à la main ni écraser les sessions.</p></div>
+      <div class="aud reveal"><div class="emoji">🎓</div><h3>Profs de musique</h3><p>Un morceau, toutes les pistes, au tempo de chaque élève.</p></div>
+      <div class="aud reveal"><div class="emoji">🔒</div><h3>Les attachés à leurs données</h3><p>Vos maquettes inédites ne quittent jamais votre maison.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMENT ÇA MARCHE ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Installation</span>
+      <h2>Prêt en dix minutes</h2>
+      <p class="lead">Une seule personne s'occupe du serveur. Les autres cliquent sur un lien.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Installez le serveur</h3><p>Sur un PC Windows du groupe (même un vieux PC qui dort dans un placard). Nom du groupe, votre pseudo, c'est parti.</p></div>
+      <div class="step reveal"><h3>Envoyez le lien d'invitation</h3><p>Par WhatsApp, par mail ou avec un QR code. Chaque membre choisit juste un pseudo.</p></div>
+      <div class="step reveal"><h3>Jouez</h3><p>Le dossier apparaît sur le Bureau de chaque PC, et l'appli sur l'écran d'accueil des téléphones.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>Vous vous demandez sans doute…</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>C'est vraiment gratuit ?</summary><p>Oui. Pas d'abonnement, pas de version payante, pas de publicité. Si le projet vous rend service, vous pouvez <a href="don.html">soutenir son développement</a> par un don, sans obligation.</p></details>
+      <details class="reveal"><summary>De quoi ai-je besoin ?</summary><p>Un PC Windows 10 ou 11 (64 bits) qui sert de serveur et reste allumé, avec de la place sur le disque pour vos morceaux. Les autres membres utilisent leur PC Windows et/ou leur téléphone (iPhone ou Android), sans rien installer sur le téléphone.</p></details>
+      <details class="reveal"><summary>Ça marche sur Mac ?</summary><p>Pas encore pour le serveur ni pour le dossier synchronisé. En revanche, l'application web marche dans n'importe quel navigateur, y compris sur Mac, iPhone et iPad.</p></details>
+      <details class="reveal"><summary>Et en dehors de la maison, en 4G ?</summary><p>Oui, grâce à Tailscale (gratuit), intégré à l'assistant : rien à régler sur la box, rien à installer sur les téléphones. À la maison, les PC continuent de passer par le réseau local, plus rapide pour les gros WAV.</p></details>
+      <details class="reveal"><summary>Mes morceaux sont-ils envoyés à une IA en ligne ?</summary><p>Non. La séparation des instruments, la détection des accords, du tempo et de la structure tournent sur votre serveur. Rien n'est envoyé à un service en ligne.</p></details>
+      <details class="reveal"><summary>Faut-il une carte graphique ?</summary><p>Non. Les calculs lourds (séparation, analyse fine) se font la nuit, en priorité basse, pour que le serveur reste réactif. Le lendemain, tout est prêt.</p></details>
+      <details class="reveal"><summary>Et si je désinstalle ?</summary><p>Vos fichiers et les données du serveur sont conservés. Une réinstallation ou une mise à jour retrouve tout : comptes, historique, corbeille.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPEL FINAL ============ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1776464487858-9bd497910008?w=1600&q=60&auto=format&fit=crop')"></div>
+      <h2>Prochaine répète, tout le monde est prêt.</h2>
+      <p class="lead">Installez 28JoursBox ce soir, envoyez le lien au groupe, et jouez.</p>
+      <div class="btns">
+        <a class="btn" href="telecharger.html">Télécharger gratuitement</a>
+        <a class="btn ghost" href="don.html">♥ Soutenir le projet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" style="color:var(--text);margin-bottom:12px"><img src="img/logo.png" alt="">28JoursBox</a>
+        <p>Le cloud privé et le studio de répétition de poche d'un groupe de musique. Gratuit, fait par un musicien pour son groupe.</p>
+      </div>
+      <div>
+        <h4>Le projet</h4>
+        <a href="telecharger.html">Télécharger</a>
+        <a href="forum.html">Forum</a>
+        <a href="don.html">Soutenir</a>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <a href="forum.html">Forum</a>
+        <a data-gh="/issues/new" href="forum.html">Signaler un bug</a>
+        <a data-gh="/releases" href="telecharger.html">Toutes les versions</a>
+      </div>
+    </div>
+    <div class="credits">© <span id="year">2026</span> 28JoursBox · Photos <a href="https://unsplash.com/photos/band-performing-live-on-stage-with-instruments-tKEV3aixY8c">Spencer Plouzek</a>, <a href="https://unsplash.com/photos/musicians-practicing-in-a-room-with-a-drum-set-GgeDXcUblwU">Jorge Antonio Palmero Guerrero</a>, <a href="https://unsplash.com/photos/musician-playing-drums-in-a-neon-lit-room-T9FFWcs8y9A">Les Taylor</a>, <a href="https://unsplash.com/photos/man-with-glasses-playing-a-white-electric-guitar-NCB_osrbsR8">Khue Le Quang</a> sur Unsplash.</div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

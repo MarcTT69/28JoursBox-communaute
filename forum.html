@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forum 28JoursBox</title>
+  <meta name="description" content="Le forum de la communauté 28JoursBox : questions, idées, entraide et retours des groupes.">
+  <meta name="theme-color" content="#0a0a12">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/logo.png" alt="">28JoursBox</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="nav-links">
+      <a href="index.html">Découvrir</a>
+      <a href="forum.html" aria-current="page">Forum</a>
+      <a href="don.html">Soutenir</a>
+      <a class="btn small" href="telecharger.html">Télécharger</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Communauté</span>
+    <h1>Le <span class="grad-text">forum</span> des groupes</h1>
+    <p class="lead">Une question d'installation, une idée de fonction, un bug, ou envie de montrer comment votre groupe s'en sert ? C'est ici.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="cats">
+      <a class="cat reveal" data-gh="/discussions/categories/q-a" href="https://github.com/MarcTT69/28JoursBox-communaute/discussions"><div class="emoji">🙋</div><h3>Questions et entraide</h3><p>Installation, accès en 4G, réglages : demandez, on vous répond.</p></a>
+      <a class="cat reveal" data-gh="/discussions/categories/ideas" href="https://github.com/MarcTT69/28JoursBox-communaute/discussions"><div class="emoji">💡</div><h3>Idées et envies</h3><p>Proposez une fonction, votez pour celles des autres.</p></a>
+      <a class="cat reveal" data-gh="/discussions/categories/show-and-tell" href="https://github.com/MarcTT69/28JoursBox-communaute/discussions"><div class="emoji">🤘</div><h3>Montrez votre groupe</h3><p>Racontez comment vous l'utilisez, partagez vos astuces.</p></a>
+      <a class="cat reveal" data-gh="/issues/new" href="https://github.com/MarcTT69/28JoursBox-communaute/issues"><div class="emoji">🐞</div><h3>Signaler un bug</h3><p>Quelque chose ne marche pas ? Décrivez-le, il sera corrigé.</p></a>
+    </div>
+
+    <div class="giscus-box reveal" style="margin-top:36px">
+      <h2 style="font-size:1.5rem">Discussion générale</h2>
+      <p class="muted">Écrivez directement ici. La connexion se fait avec un compte GitHub (gratuit, une minute à créer).</p>
+      <div id="giscus">
+        <div class="note info">
+          <span class="i">💬</span>
+          <div>Le fil de discussion intégré arrive bientôt. En attendant, toutes les discussions sont ouvertes sur <a data-gh="/discussions" href="https://github.com/MarcTT69/28JoursBox-communaute/discussions">la page Discussions du projet</a>.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note reveal" style="margin-top:28px">
+      <span class="i">🤝</span>
+      <div><b>Quelques règles simples :</b> on reste bienveillant, on cherche avant de poser une question déjà posée, et on ne partage pas de liens vers des morceaux protégés par le droit d'auteur.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" style="color:var(--text);margin-bottom:12px"><img src="img/logo.png" alt="">28JoursBox</a>
+        <p>Le cloud privé et le studio de répétition de poche d'un groupe de musique. Gratuit, fait par un musicien pour son groupe.</p>
+      </div>
+      <div>
+        <h4>Le projet</h4>
+        <a href="telecharger.html">Télécharger</a>
+        <a href="forum.html">Forum</a>
+        <a href="don.html">Soutenir</a>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <a href="forum.html">Forum</a>
+        <a data-gh="/issues/new" href="forum.html">Signaler un bug</a>
+        <a data-gh="/releases" href="telecharger.html">Toutes les versions</a>
+      </div>
+    </div>
+    <div class="credits">© <span id="year">2026</span> 28JoursBox</div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
