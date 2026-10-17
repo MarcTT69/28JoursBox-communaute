@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title data-i18n="guide_title">28JoursBox user guide</title>
+<meta content="Complete user guide: install, the band folder, the phone app, the advanced player, recording, Studio One, administration and troubleshooting." data-i18n-content="guide_desc" name="description"/>
+<meta content="#0a0a12" name="theme-color"/>
+<link href="img/favicon.png" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="style.css?v=8" rel="stylesheet"/>
+</head>
+<body>
+<nav class="nav">
+<div class="wrap">
+<a class="brand" href="index.html"><img alt="" src="img/logo.png"/>28JoursBox</a>
+<div class="lang" id="lang"></div>
+<button aria-expanded="false" aria-label="Menu" class="nav-toggle" data-i18n-aria-label="menu"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+<div class="nav-links">
+<a data-i18n="decouvrir" href="index.html">Discover</a>
+<a aria-current="page" data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="forum" href="forum.html">Forum</a>
+<a data-i18n="soutenir" href="don.html">Support</a>
+<a class="btn small" data-i18n="telecharger" href="telecharger.html">Download</a>
+</div>
+</div>
+</nav>
+<header class="page-hero"><div class="wrap">
+<span class="eyebrow" data-i18n="guide_eyebrow">User guide</span>
+<h1 data-i18n="guide_h1">Everything about <span class="grad-text">28JoursBox</span></h1>
+<p class="lead" data-i18n="guide_lead">From installation to the advanced player: every screen, every button, and step-by-step guides for everyday use.</p></div></header>
+<section style="padding-top:20px"><div class="wrap">
+<div class="callout guide-lang-note"><span>🇫🇷</span><p data-i18n="guide_lang_note">This user guide is written in French, like the app's interface for now (button names are quoted exactly as they appear). An English version will follow with the English app.</p></div>
+<div class="guide-layout">
+<nav aria-label="Sommaire" class="toc"><details open=""><summary data-i18n="guide_toc">Contents</summary>
+<input data-i18n-placeholder="guide_search" id="toc-search" placeholder="Search the guide…" type="search"/>
+<p class="muted" data-i18n="guide_nores" hidden="" id="toc-nores">No result.</p>
+<ol><li><a href="#decouvrir">Comprendre 28JoursBox en 2 minutes</a><ol><li><a href="#acces">Pseudo et mot de passe du groupe</a></li><li><a href="#conventions">Comment lire ce mode d'emploi</a></li></ol></li><li><a href="#installer">Installer</a><ol><li><a href="#install-serveur">Le PC serveur (une seule fois)</a></li><li><a href="#install-4g">Accès depuis l'extérieur (4G)</a></li><li><a href="#install-membre">Les PC des membres</a></li><li><a href="#install-telephone">Les téléphones</a></li><li><a href="#install-libreoffice">LibreOffice (aperçu des documents Office)</a></li><li><a href="#install-maj">Mises à jour et désinstallation</a></li></ol></li><li><a href="#pc">L'application sur le PC</a><ol><li><a href="#pc-icone">L'icône et ses couleurs</a></li><li><a href="#pc-menu">Le menu (clic droit)</a></li><li><a href="#pc-panneau">Le panneau</a></li><li><a href="#pc-preferences">Les Préférences</a></li></ol></li><li><a href="#dossier">Le dossier synchronisé</a><ol><li><a href="#dossier-explorateur">Dans l'Explorateur Windows</a></li><li><a href="#dossier-exclus">Ce qui n'est pas synchronisé</a></li><li><a href="#dossier-conflits">Copies en conflit : rien n'est jamais écrasé</a></li><li><a href="#dossier-securite">Corbeille, versions et suppressions massives</a></li><li><a href="#dossier-verrous">Projets Cubase et Studio One : les verrous</a></li><li><a href="#dossier-deplacer">Déplacer le dossier 28JoursBox</a></li></ol></li><li><a href="#fichiers">Sur le téléphone : les fichiers</a><ol><li><a href="#fichiers-navigation">Se déplacer</a></li><li><a href="#fichiers-tri">Trier</a></li><li><a href="#fichiers-gestes">Gestes sur une ligne</a></li><li><a href="#fichiers-menu">Le menu ⋯ d'un fichier</a></li><li><a href="#ajouter">Ajouter des fichiers : le bouton +</a></li><li><a href="#ajouter-youtube">Importer le son d'une vidéo YouTube</a></li><li><a href="#ecouter">Écouter : le mini-lecteur</a></li><li><a href="#apercus">Voir les photos, vidéos, PDF et documents</a></li><li><a href="#recherche">Rechercher</a></li></ol></li><li><a href="#partager">Partager et inviter</a><ol><li><a href="#partager-lien">Lien public (pour quelqu'un hors du groupe)</a></li><li><a href="#partager-mail">Envoyer par mail</a></li><li><a href="#partager-whatsapp">Envoyer par WhatsApp (ou autre appli)</a></li><li><a href="#inviter">Inviter un membre</a></li></ol></li><li><a href="#lecteur">Le lecteur avancé</a><ol><li><a href="#lecteur-ouvrir">Ouvrir et fermer</a></li><li><a href="#lecteur-ecran">Ce qu'on voit</a></li><li><a href="#lecteur-gestes">Les gestes</a></li><li><a href="#lecteur-edition">La barre d'édition</a></li><li><a href="#lecteur-tempo">Tempo et tonalité</a></li><li><a href="#lecteur-boucle">Boucle, métronome et entraîneur</a></li><li><a href="#lecteur-pistes">Pistes : séparer les instruments et mixer</a></li><li><a href="#lecteur-accords">Accords et diagrammes de guitare</a></li><li><a href="#lecteur-prise">Enregistrer une prise par-dessus</a></li><li><a href="#lecteur-analyse">Analyse de base et analyse fine</a></li><li><a href="#lecteur-montage">Enregistrer un montage, extraire un passage</a></li><li><a href="#lecteur-voiture">Dans la voiture et écran éteint</a></li></ol></li><li><a href="#studio">Enregistrer et éditer l'audio</a><ol><li><a href="#studio-enregistrer">Faire un nouvel enregistrement</a></li><li><a href="#studio-metronome">Enregistrer au clic (métronome)</a></li><li><a href="#studio-outils">Les outils d'édition</a></li><li><a href="#studio-caler">Caler sur la grille</a></li><li><a href="#studio-editer">Éditer un fichier existant</a></li><li><a href="#studio-wav">Convertir en WAV</a></li></ol></li><li><a href="#studioone">Vers Studio One</a></li><li><a href="#tutos">Pas à pas : les usages courants</a><ol><li><a href="#tuto-apprendre">Apprendre un morceau avant la répète</a></li><li><a href="#tuto-lent">Travailler un passage difficile, lentement</a></li><li><a href="#tuto-jouer">Couper son instrument et jouer par-dessus</a></li><li><a href="#tuto-prise">Enregistrer sa partie sur le morceau</a></li><li><a href="#tuto-batteur">Le batteur enregistre au clic, puis dans le logiciel de musique</a></li><li><a href="#tuto-nettoyer">Nettoyer l'enregistrement d'une répétition</a></li><li><a href="#tuto-arranger">Essayer un nouvel arrangement</a></li><li><a href="#tuto-corriger">Corriger le découpage pour tout le groupe</a></li><li><a href="#tuto-studio">Passer d'une répète au studio</a></li></ol></li><li><a href="#corbeille">Corbeille et historique des versions</a><ol><li><a href="#corbeille-utiliser">La corbeille</a></li><li><a href="#versions">L'historique des versions</a></li></ol></li><li><a href="#reglages">Les Réglages (téléphone et web)</a></li><li><a href="#admin">Administrer le serveur</a><ol><li><a href="#admin-motdepasse">Changer le mot de passe du groupe</a></li><li><a href="#admin-nuit">Ce que le serveur fait tout seul</a></li><li><a href="#admin-sauvegarde">Sauvegarder</a></li><li><a href="#admin-config">Le fichier server.json</a></li><li><a href="#admin-commandes">Commandes utiles</a></li></ol></li><li><a href="#depannage">Dépannage</a></li></ol></details></nav>
+<article class="guide" lang="fr"><section id="decouvrir">
+<h2>Comprendre 28JoursBox en 2 minutes</h2>
+<p>28JoursBox relie trois sortes d'appareils autour d'un même dossier de groupe :</p>
+<ul>
+<li><b>Le PC serveur</b> : un PC Windows du groupe qui garde tous les fichiers, fait les analyses musicales (la nuit) et reste allumé. Une seule personne l'installe : elle devient <b>administrateur</b>.</li>
+<li><b>Les PC des membres</b> : chacun a un dossier <span class="ui">28JoursBox</span> sur son Bureau, qui se synchronise tout seul avec le serveur.</li>
+<li><b>Les téléphones (et tout navigateur)</b> : rien à installer. On ouvre le lien d'invitation et on retrouve tous les fichiers, le lecteur avancé, l'enregistreur…</li>
+</ul>
+<h3 id="acces">Pseudo et mot de passe du groupe</h3>
+<p>Il n'y a pas de compte personnel avec mot de passe. Chaque membre choisit un <b>pseudo</b>, et <b>un seul mot de passe</b> vaut pour tout le groupe. Il est déjà inclus dans le <b>lien d'invitation</b> : en pratique, on n'a jamais à le taper.</p>
+<div class="callout warn"><span>⚠️</span><p><b>Gardez toujours le même pseudo</b>, sur tous vos appareils, et ne prenez jamais celui d'un autre membre : un pseudo qui existe déjà ouvre la session de ce membre (les majuscules ne comptent pas, « Marc » = « marc »). Un pseudo nouveau crée un nouveau membre.</p></div>
+<h3 id="conventions">Comment lire ce mode d'emploi</h3>
+<ul>
+<li>Les noms de boutons et de menus sont écrits comme dans l'appli : <span class="ui">Lecteur avancé</span>.</li>
+<li><span class="badge-admin">admin</span> signale ce que seul l'administrateur du groupe peut faire.</li>
+<li>« Toucher » vaut pour le téléphone ; sur un PC, c'est un clic. « Appui long » : laisser le doigt environ une demi-seconde.</li>
+<li>Le menu <span class="ui">⋯</span> d'un fichier s'ouvre avec le bouton ⋯ de sa ligne, par un appui long sur la ligne, ou par un clic droit sur PC.</li>
+</ul>
+</section>
+<section id="installer">
+<h2>Installer</h2>
+<h3 id="install-serveur">Le PC serveur (une seule fois)</h3>
+<p>À faire par la personne qui gère le groupe, sur le PC qui gardera les fichiers. Vérifiez d'abord la <a href="telecharger.html#configuration">configuration requise</a>.</p>
+<ol class="how">
+<li>Téléchargez et lancez <b>28JoursBox-Serveur-Setup.msi</b> (page <a href="telecharger.html">Télécharger</a>). Il n'y a pas d'écran d'installation : Windows demande une autorisation, une barre de progression défile, puis l'appli s'ouvre sur <span class="ui">Bienvenue dans 28JoursBox</span>.</li>
+<li>Cliquez sur le lien du bas <span class="ui">Installer ce PC comme serveur du groupe ›</span>.</li>
+<li>Remplissez <span class="ui">Nom du groupe</span>, <span class="ui">Votre pseudo</span> (2 à 30 caractères ; vous serez administrateur) et vérifiez <span class="ui">Emplacement du dossier 28JoursBox</span>. Les <span class="ui">Options avancées</span> permettent de changer les ports (8080 et 8443) si besoin.</li>
+<li>Cliquez sur <span class="ui">Installer le serveur</span> et acceptez l'autorisation administrateur de Windows. L'appli affiche « Démarrage du serveur… » puis « Création du groupe… ».</li>
+<li>L'écran <span class="ui">Le serveur est prêt</span> montre le <b>lien d'invitation</b> et le <b>mot de passe du groupe</b> (16 caractères, ex. <code>K7QM-2XPA-9TRF-B4WE</code>), chacun avec un bouton <span class="ui">Copier</span>. Envoyez le lien aux membres.</li>
+<li>Facultatif mais conseillé : activez tout de suite l'<a href="#install-4g">accès depuis l'extérieur (4G)</a>, puis <span class="ui">Continuer</span> et <span class="ui">Terminer</span>.</li>
+</ol>
+<p>Ce qui est mis en place : un service Windows « 28JoursBox Server » qui démarre avec le PC (même sans session ouverte) et redémarre tout seul en cas de problème, une règle de pare-feu (réseau <b>Privé</b> seulement), les données dans <code>C:\ProgramData\28JoursBox</code>. Le PC serveur a aussi son propre dossier 28JoursBox, comme un membre.</p>
+<div class="callout tip"><span>💡</span><p>Pour que le serveur reste joignable : désactivez la mise en veille sur secteur (Paramètres Windows › Système › Alimentation), branchez-le en câble, et vérifiez que le réseau Windows est en profil <b>Privé</b>. Si l'écran affiche « Le serveur ne démarre pas. Le port 8080 est peut-être déjà utilisé », changez le port dans <span class="ui">Options avancées</span>.</p></div>
+<h3 id="install-4g">Accès depuis l'extérieur (4G)</h3>
+<p>Sans réglage, le serveur n'est joignable que depuis le Wi-Fi de la maison. Pour écouter et travailler en 4G, 28JoursBox intègre <b>Tailscale Funnel</b> (gratuit, sans nom de domaine, sans toucher à la box). Seul le PC serveur installe Tailscale ; les téléphones et les autres PC n'installent rien.</p>
+<ol class="how">
+<li>Dans l'écran <span class="ui">Le serveur est prêt</span>, ou plus tard dans <span class="ui">Préférences</span> › <span class="ui">Serveur</span>, carte <span class="ui">Accès depuis l'extérieur (4G)</span> : cliquez sur <span class="ui">Installer Tailscale</span>. La page de téléchargement de Tailscale s'ouvre : installez-le et connectez-vous à Tailscale.</li>
+<li>Revenez et cliquez sur <span class="ui">J'ai installé Tailscale, vérifier</span> (ou <span class="ui">Vérifier à nouveau</span> si Tailscale n'était pas encore connecté).</li>
+<li>Cliquez sur <span class="ui">Activer l'accès extérieur</span>. La première fois, une page Tailscale s'ouvre : autorisez <b>Funnel</b>, puis revenez. Acceptez l'autorisation administrateur.</li>
+<li>Résultat : « Accès extérieur activé : https://&lt;pc&gt;.&lt;nom&gt;.ts.net ». Le lien d'invitation utilise désormais cette adresse. À la maison, les PC continuent de passer par le réseau local (plus rapide pour les gros WAV).</li>
+</ol>
+<p>Le PC serveur vérifie la publication toutes les 5 minutes et la rétablit si besoin. Si vous renommez la machine dans Tailscale, une notification <span class="ui">Nouvelle adresse du serveur</span> apparaît : cliquez dessus pour l'appliquer. Alternatives pour les initiés : Cloudflare Tunnel, ou redirection de ports de la box avec un proxy (Caddy), en renseignant <code>PublicUrl</code> dans <code>server.json</code>.</p>
+<h3 id="install-membre">Les PC des membres</h3>
+<ol class="how">
+<li>Le plus simple : ouvrez le <b>lien d'invitation</b> dans le navigateur du PC et cliquez sur <span class="ui">Installer 28JoursBox sur ce PC</span>. Le lien est copié tout seul dans le presse-papiers. Sinon, téléchargez <b>28JoursBox-Client-Setup.msi</b>.</li>
+<li>Lancez le fichier téléchargé. L'assistant s'ouvre et retrouve le groupe tout seul grâce au lien copié (cadre « ✓ Groupe … »). Sinon, collez le lien dans <span class="ui">Lien d'invitation</span>. Pas de lien ? <span class="ui">Pas de lien ? Saisir l'adresse et le mot de passe</span>.</li>
+<li>Choisissez <span class="ui">Votre pseudo</span>, vérifiez l'emplacement du dossier, puis <span class="ui">C'est parti</span>.</li>
+<li>Écran <span class="ui">Dossiers à synchroniser</span> : décochez ce que vous ne voulez pas sur ce PC. La <b>jauge</b> compare la sélection à la place du disque (en gardant 10 % libres) : verte, orange, ou rouge si ça ne tient pas. Si un autre disque a la place, l'appli propose <span class="ui">Mettre le dossier dans D:\28JoursBox</span>. Cliquez sur <span class="ui">Synchroniser ces dossiers</span>.</li>
+<li><span class="ui">C'est prêt !</span> : le dossier 28JoursBox est sur le Bureau, avec un raccourci <span class="ui">28JoursBox (web)</span> vers l'interface web, et l'appli démarre avec Windows.</li>
+</ol>
+<p><b>Emplacements refusés</b> pour le dossier : un dossier réseau, la racine d'un disque, un disque qui n'est pas en NTFS, un dossier OneDrive ou déjà synchronisé par un autre logiciel. Si votre Bureau est dans OneDrive, le dossier est mis dans votre dossier personnel avec un raccourci sur le Bureau.</p>
+<div class="callout"><span>ℹ️</span><p>Messages possibles : « Ce lien n'est plus valable : le mot de passe du groupe a changé. Demandez le nouveau lien. », « Ce pseudo a été désactivé par l'administrateur du groupe. », « Trop de tentatives : patientez une minute avant de réessayer. ». Avec un certificat HTTPS auto-signé, cochez <span class="ui">Faire confiance à ce serveur</span>.</p></div>
+<h3 id="install-telephone">Les téléphones</h3>
+<ol class="how">
+<li>Ouvrez le lien d'invitation (reçu par message, ou en visant le QR code affiché par le PC : menu de l'icône › <span class="ui">Ouvrir sur le téléphone (QR code)…</span>).</li>
+<li>Écran <span class="ui">Bienvenue !</span> : tapez <span class="ui">Votre pseudo</span> puis <span class="ui">Rejoindre</span>.</li>
+<li>Ajoutez l'appli à l'écran d'accueil pour l'avoir en plein écran et garder l'autorisation du micro :
+<ul>
+<li><b>iPhone (Safari)</b> : bouton <span class="ui">Partager</span> (carré avec une flèche) › <span class="ui">Sur l'écran d'accueil</span> › <span class="ui">Ajouter</span>.</li>
+<li><b>Android (Chrome)</b> : menu ⋮ › <span class="ui">Ajouter à l'écran d'accueil</span> ou <span class="ui">Installer l'application</span>. Une carte d'astuce le propose aussi en haut de la liste des fichiers, et <span class="ui">Réglages</span> › <span class="ui">Installer l'application</span>.</li>
+</ul></li>
+</ol>
+<p>Autre méthode : écran <span class="ui">Connexion</span> avec <span class="ui">Pseudo</span> et <span class="ui">Mot de passe du groupe</span> (majuscules, espaces et tirets ignorés). La session dure 30 jours et se prolonge à chaque usage. L'appli s'utilise en portrait (sauf photos et vidéos).</p>
+<div class="callout tip"><span>💡</span><p>Sur Android, l'appli installée propose des raccourcis par appui long sur son icône : <span class="ui">Enregistrer de l'audio</span>, <span class="ui">Téléverser des fichiers</span>, <span class="ui">Récents</span>. Elle apparaît aussi dans le menu <b>Partager</b> des autres applis (photos, audio, PDF, liens YouTube).</p></div>
+<h3 id="install-libreoffice">LibreOffice (aperçu des documents Office)</h3>
+<p>Pour voir les fichiers <b>Word, Excel et PowerPoint</b> (et OpenDocument) sur les téléphones et dans le navigateur, installez <a href="https://www.libreoffice.org/download/download-libreoffice/" rel="noopener" target="_blank">LibreOffice</a> (gratuit) <b>sur le PC serveur uniquement</b>, dans le dossier proposé par défaut (<code>C:\Program Files\LibreOffice</code>). Il est détecté tout seul, sans redémarrage. Les PC des membres et les téléphones n'en ont pas besoin.</p>
+<ul>
+<li>À la première ouverture d'un document, le serveur le convertit en PDF (« Préparation de l'aperçu… », 3 minutes au plus), puis le garde : les ouvertures suivantes sont immédiates. Les nouveaux documents sont aussi préparés la nuit.</li>
+<li>Sans LibreOffice, l'appli affiche « Aperçu indisponible : LibreOffice n'est pas installé sur le serveur. » avec un bouton <span class="ui">Télécharger</span>. Tout le reste fonctionne.</li>
+<li>Installé ailleurs ? Indiquez le chemin de <code>soffice.exe</code> dans <code>LibreOfficePath</code> (<a href="#admin-config">server.json</a>).</li>
+</ul>
+<h3 id="install-maj">Mises à jour et désinstallation</h3>
+<ul>
+<li><b>PC des membres</b> : l'appli vérifie auprès du serveur 1 minute après le démarrage puis toutes les 6 heures. Une notification <span class="ui">Mise à jour disponible</span> apparaît ; installez-la depuis le menu de l'icône (<span class="ui">Mettre à jour vers la version X…</span>), le panneau, ou <span class="ui">Préférences</span> › <span class="ui">Général</span>. La synchro s'arrête pendant l'installation, puis 28JoursBox redémarre seul.</li>
+<li><b>PC serveur</b> : installez le nouveau <b>MSI serveur</b> par-dessus, à la main. Le service est remplacé et redémarré ; la nouvelle version est ensuite proposée automatiquement aux PC des membres.</li>
+<li><b>Téléphones</b> : rien à faire. La nouvelle version s'applique toute seule à l'ouverture, ou un bandeau propose <span class="ui">Actualiser</span>.</li>
+<li><b>Désinstaller</b> (Paramètres Windows › Applications) retire le programme, le service, le démarrage automatique et les réglages, mais <b>garde vos fichiers</b> du dossier 28JoursBox et toutes les données du serveur : une réinstallation retrouve tout. Attention : la corbeille locale cachée du PC (<code>.sync</code>) est supprimée.</li>
+</ul>
+</section>
+<section id="pc">
+<h2>L'application sur le PC</h2>
+<p>Elle vit dans la <b>zone de notification</b>, près de l'horloge. Si elle a été quittée, relancez-la depuis le menu Démarrer (« 28JoursBox »).</p>
+<h3 id="pc-icone">L'icône et ses couleurs</h3>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Pastille</th><th>État</th></tr></thead>
+<tbody>
+<tr><th>Verte, coche</th><td>« À jour »</td></tr>
+<tr><th>Bleue, flèches</th><td>« Synchronisation en cours » ou « Démarrage… »</td></tr>
+<tr><th>Grise, deux barres</th><td>« En pause », ou « En pause (enregistrement) » pendant qu'un logiciel de musique est ouvert</td></tr>
+<tr><th>Gris foncé, croix</th><td>« Hors ligne » : le serveur ne répond pas (nouvel essai automatique)</td></tr>
+<tr><th>Rouge</th><td>« Erreur » : voir l'onglet Activité</td></tr>
+<tr><th>Orange, « ! »</th><td>Une action est attendue : connexion, confirmation d'une suppression massive, nouveau mot de passe du groupe</td></tr>
+</tbody></table></div>
+<p><b>Clic gauche</b> : ouvre le panneau. <b>Clic droit</b> : le menu.</p>
+<h3 id="pc-menu">Le menu (clic droit)</h3>
+<ul>
+<li><span class="ui">Ouvrir le dossier 28JoursBox</span> et <span class="ui">Ouvrir l'interface web</span>.</li>
+<li><span class="ui">Ouvrir sur le téléphone (QR code)…</span> : un QR code à viser avec l'appareil photo du téléphone. Il indique si ça marche partout (accès 4G actif) ou seulement sur le même Wi-Fi.</li>
+<li><span class="ui">Inviter quelqu'un…</span> : le lien, <span class="ui">Copier le lien</span>, <span class="ui">Copier le message</span>, le QR code, et <span class="ui">Envoyer l'application PC par e-mail</span> (si l'envoi des mails est réglé). Le mot de passe n'est affiché que sur le PC serveur.</li>
+<li><span class="ui">Importer l'audio d'un lien du presse-papiers…</span> : voir <a href="#ajouter-youtube">Importer depuis YouTube</a>.</li>
+<li><span class="ui">Mettre à jour vers la version X…</span> (s'il y en a une), <span class="ui">Mettre en pause</span> / <span class="ui">Reprendre la synchronisation</span>, <span class="ui">Préférences…</span>, <span class="ui">Quitter 28JoursBox</span> (libère proprement les verrous).</li>
+</ul>
+<h3 id="pc-panneau">Le panneau</h3>
+<p>En haut : l'état, « Dernière synchro : il y a N min », votre pseudo et le serveur. Des bandeaux apparaissent quand il faut agir (suppression massive, mise à jour, nouveau mot de passe). Trois onglets :</p>
+<ul>
+<li><span class="ui">Activité</span> : les 60 derniers événements (Envoyé, Reçu, Supprimé, Déplacé, Conflit, Erreur). Un clic montre le fichier dans l'Explorateur.</li>
+<li><span class="ui">Projets</span> : les verrous en cours et la liste des projets .cpr et .song, avec <span class="ui">Prendre la main</span> / <span class="ui">Libérer</span> (voir <a href="#dossier-verrous">verrous</a>).</li>
+<li><span class="ui">Conflits (N)</span> : les copies en conflit, avec <span class="ui">Ouvrir</span>, <span class="ui">Afficher</span>, <span class="ui">Ignorer</span>.</li>
+</ul>
+<p>Les notifications (6 secondes, en bas à droite) ouvrent le panneau d'un clic.</p>
+<h3 id="pc-preferences">Les Préférences</h3>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Onglet</th><th>Ce qu'on y règle</th></tr></thead>
+<tbody>
+<tr><th>Compte</th><td>Pseudo et serveur ; <span class="ui">Inviter quelqu'un…</span> ; <span class="ui">Se déconnecter</span> (la synchro s'arrête, vos fichiers restent sur le PC, l'assistant s'ouvre). Pour changer de serveur ou de groupe : se déconnecter puis refaire l'assistant avec le nouveau lien.</td></tr>
+<tr><th>Dossier</th><td>Emplacement, place libre, <span class="ui">Ouvrir</span> et <span class="ui">Déplacer…</span> (voir <a href="#dossier-deplacer">déplacer le dossier</a>).</td></tr>
+<tr><th>Synchro sélective</th><td>Cochez les dossiers à garder sur ce PC, puis <span class="ui">Appliquer</span>. Un dossier décoché est retiré de ce PC mais reste sur le serveur et dans l'interface web. Option <span class="ui">Synchroniser automatiquement les nouveaux dossiers</span>.</td></tr>
+<tr><th>Bande passante</th><td><b>Pendant qu'un logiciel de musique est ouvert</b> (Cubase, Nuendo, Studio One) : <span class="ui">Mettre la synchronisation en pause</span>, <span class="ui">Brider la synchronisation</span> (choix par défaut, 2048 Ko/s, priorité basse) ou <span class="ui">Synchroniser normalement</span>. Et une <b>limite permanente</b> (0 = illimité).</td></tr>
+<tr><th>Serveur <span class="badge-admin">PC serveur</span></th><td>Lien et mot de passe, <span class="ui">Changer le mot de passe du groupe…</span>, accès 4G, état du service, espace, ports, <span class="ui">Redémarrer le service</span>, <span class="ui">Ouvrir le dossier des données</span>.</td></tr>
+<tr><th>Général</th><td><span class="ui">Lancer 28JoursBox au démarrage de Windows</span>, dossier des journaux, version et mise à jour.</td></tr>
+</tbody></table></div>
+<p>Le <b>nom du serveur</b> et l'<b>envoi des mails</b> se règlent dans l'interface web (<a href="#reglages">Réglages</a>), par l'administrateur.</p>
+</section>
+<section id="dossier">
+<h2>Le dossier synchronisé</h2>
+<p>Travaillez dans le dossier <span class="ui">28JoursBox</span> comme dans n'importe quel dossier : tout ce que vous y déposez arrive chez les autres membres, et inversement. Tous les fichiers sont réellement sur votre disque, donc disponibles hors ligne.</p>
+<h3 id="dossier-explorateur">Dans l'Explorateur Windows</h3>
+<ul>
+<li>Colonne <b>Statut</b> avec les icônes habituelles de Windows : coche verte = synchronisé, flèches bleues = en cours.</li>
+<li>Colonne <b>Verrou 28JoursBox</b> : « Verrouillé par X » ou « Erreur : … ».</li>
+<li>À la première ouverture d'un dossier, l'affichage est réglé en liste avec la <b>date de création</b>, les plus récents en haut. La date de création d'origine est conservée d'un PC à l'autre : on retrouve quand une prise a vraiment été faite.</li>
+</ul>
+<h3 id="dossier-exclus">Ce qui n'est pas synchronisé</h3>
+<ul>
+<li>Les fichiers techniques : <code>Thumbs.db</code>, <code>desktop.ini</code>, <code>.DS_Store</code>, <code>~$*</code>, <code>*.tmp</code>, <code>*.peak</code>…</li>
+<li>Les caches des logiciels de musique : à côté d'un projet Cubase (.cpr) : <code>Images/</code>, <code>Auto Saves/</code>, <code>*.bak</code>, <code>*.csh</code> ; à côté d'un projet Studio One (.song) : <code>Cache/</code>, <code>History/</code>, <code>*.autosave</code>, <code>*.song.bak</code>.</li>
+<li>Vos propres exclusions : créez un fichier <code>.syncignore</code> à la racine du dossier 28JoursBox, un motif par ligne (<code>*</code> et <code>?</code> ; un <code>/</code> final pour un dossier ; <code>#</code> pour un commentaire). Il est pris en compte dès qu'il change.</li>
+<li>Les noms interdits sous Windows (<code>: * ? " &lt; &gt; |</code>, point ou espace final, CON, NUL…) sont refusés.</li>
+</ul>
+<h3 id="dossier-conflits">Copies en conflit : rien n'est jamais écrasé</h3>
+<p>Si deux personnes modifient le même fichier en même temps, la version du serveur garde le nom et la vôtre devient <code>nom (copie en conflit de NOM-DU-PC 2026-10-09).ext</code>, envoyée au groupe. Même chose si vous modifiez un fichier verrouillé par un autre membre. Une modification l'emporte toujours sur une suppression. Retrouvez les conflits dans l'onglet <span class="ui">Conflits</span> du panneau.</p>
+<h3 id="dossier-securite">Corbeille, versions et suppressions massives</h3>
+<ul>
+<li>Un fichier supprimé part dans la <b>corbeille du serveur</b> pour 30 jours, et chaque fichier a un <b>historique des versions</b> de 30 jours : voir <a href="#corbeille">Corbeille et versions</a>.</li>
+<li>Tout ce que la synchro retire ou remplace sur votre PC est aussi gardé 30 jours dans le dossier caché <code>28JoursBox\.sync\trash</code>.</li>
+<li><b>Pause de sécurité</b> : si plus de 500 fichiers, ou plus de 20 % du dossier, sont supprimés en 10 minutes, les suppressions sont mises en attente (icône orange, notification <span class="ui">Suppression massive</span>). Dans le panneau, choisissez <span class="ui">Supprimer aussi sur le serveur</span> (récupérable 30 jours dans la corbeille) ou <span class="ui">Restaurer les fichiers</span>.</li>
+<li>Les transferts sont <b>reprenables</b> : une coupure en plein envoi d'une session de plusieurs Go ne fait rien perdre. Un fichier en cours d'écriture n'est envoyé qu'une fois stable.</li>
+</ul>
+<h3 id="dossier-verrous">Projets Cubase et Studio One : les verrous</h3>
+<p>Quand vous ouvrez un projet <b>.cpr</b> (Cubase, Nuendo) ou <b>.song</b> (Studio One) du dossier 28JoursBox, l'appli le reconnaît au titre de la fenêtre et pose un <b>verrou à votre nom</b>. Les autres membres voient le fichier en lecture seule, « Verrouillé par … » dans l'Explorateur et le panneau, et reçoivent une notification <span class="ui">Projet verrouillé</span> s'ils essaient de l'ouvrir (leurs modifications deviendraient une copie en conflit).</p>
+<ul>
+<li>Le verrou est renouvelé toutes les 2 minutes et expire tout seul après 10 minutes si votre PC disparaît. À la fermeture du projet, l'envoi final se fait, puis le verrou est libéré.</li>
+<li>Les médias (WAV) passent avant le fichier projet : à l'ouverture chez les autres, il ne manque rien.</li>
+<li>Verrou manuel : panneau › <span class="ui">Projets</span> › <span class="ui">Prendre la main</span> / <span class="ui">Libérer</span>, ou menu ⋯ du projet dans l'interface web. Un verrou pris à la main n'est pas relâché automatiquement.</li>
+<li>Pendant qu'un logiciel de musique est ouvert, la synchro est bridée pour ne pas gêner l'enregistrement (réglable dans <span class="ui">Préférences</span> › <span class="ui">Bande passante</span>).</li>
+</ul>
+<h3 id="dossier-deplacer">Déplacer le dossier 28JoursBox</h3>
+<ol class="how">
+<li>Fermez vos projets et fichiers audio ouverts.</li>
+<li><span class="ui">Préférences</span> › <span class="ui">Dossier</span> › <span class="ui">Déplacer…</span>, choisissez le nouvel emplacement (vide, sur un disque NTFS, avec la place nécessaire), puis confirmez.</li>
+<li>Sur le même disque, c'est immédiat ; sur un autre disque, tout est copié et vérifié avant de supprimer l'ancien dossier (barre de progression, bouton <span class="ui">Annuler</span>). Rien n'est renvoyé au serveur.</li>
+</ol>
+</section>
+<section id="fichiers">
+<h2>Sur le téléphone : les fichiers</h2>
+<figure><div class="phone shot"><img alt="Liste des fichiers avec le mini-lecteur" height="808" loading="lazy" src="img/captures/liste.png" width="373"/></div><figcaption>La liste d'un dossier, avec le mini-lecteur en bas et la barre de navigation. Sur un écran large (PC), la barre du bas devient un menu à gauche.</figcaption></figure>
+<h3 id="fichiers-navigation">Se déplacer</h3>
+<ul>
+<li><b>Barre du bas</b> : <span class="ui">Racine</span> (dossier principal), <span class="ui">Recherche</span>, <span class="ui">Récents</span> (les 100 derniers fichiers modifiés par le groupe), <span class="ui">Partages</span> (liens publics), <span class="ui">Inviter</span>, <span class="ui">Réglages</span>. Sur PC, le menu de gauche ajoute <span class="ui">Corbeille</span> et le bouton <span class="ui">Ajouter</span>.</li>
+<li><b>Ouvrir un dossier</b> : le toucher. <b>Revenir</b> : flèche ‹ en haut, bouton retour du téléphone, ou glisser le doigt vers la droite depuis la moitié gauche de l'écran.</li>
+<li><b>Toucher le nom du dossier</b> en haut ouvre <span class="ui">Aller à</span> : tous les dossiers au-dessus, pour remonter d'un coup.</li>
+<li><b>Actualiser</b> : bouton en haut à droite, ou tirer la liste vers le bas. La liste se met aussi à jour toute seule.</li>
+<li>L'appli rouvre le dernier dossier consulté, à la même position.</li>
+</ul>
+<h3 id="fichiers-tri">Trier</h3>
+<p>Le bouton de tri (ex. <span class="ui">Nom ↑</span>) ouvre <span class="ui">Trier par</span> : <span class="ui">Nom</span>, <span class="ui">Date</span>, <span class="ui">Type</span>, <span class="ui">Taille</span> ; retoucher le choix actif inverse l'ordre. Les dossiers restent en tête. <b>Chaque dossier garde son propre tri</b> : celui de l'administrateur vaut pour tout le groupe, celui d'un membre ne vaut que pour lui (sur tous ses appareils).</p>
+<h3 id="fichiers-gestes">Gestes sur une ligne</h3>
+<ul>
+<li><b>Toucher un morceau</b> : il se charge dans le mini-lecteur, en pause. Les autres morceaux du dossier forment la file de lecture.</li>
+<li><b>Toucher un autre fichier</b> : visionneuse plein écran (photos, vidéos, PDF, Office, texte).</li>
+<li><b>Glisser la ligne vers la gauche</b> : boutons rapides. Pour un fichier audio : <span class="ui">Éditer</span>, <span class="ui">Lecteur</span>, <span class="ui">WAV</span>, <span class="ui">Renommer</span>, <span class="ui">Supprimer</span> (corbeille).</li>
+<li><b>Appui long</b> : petite vibration. Lâcher sans bouger ouvre le menu ⋯ ; tirer permet de <b>déplacer</b> l'élément en le déposant sur un dossier, sur la flèche ‹ (dossier parent) ou sur <span class="ui">Racine</span>. Le message propose <span class="ui">Annuler</span>.</li>
+</ul>
+<h3 id="fichiers-menu">Le menu ⋯ d'un fichier</h3>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Entrée</th><th>Ce qu'elle fait</th></tr></thead>
+<tbody>
+<tr><th>Éditer l'audio</th><td>Couper, fondus, normaliser ; crée une nouvelle version (<a href="#studio-editer">détails</a>).</td></tr>
+<tr><th>Lecteur avancé</th><td>Parties, boucles, tempo, pistes séparées, accords (<a href="#lecteur">détails</a>).</td></tr>
+<tr><th>Convertir en WAV…</th><td>Nouveau fichier WAV, 24 bits / 48 kHz par défaut (<a href="#studio-wav">détails</a>).</td></tr>
+<tr><th>Vers Studio One…</th><td>Projet .song prêt à ouvrir (<a href="#studioone">détails</a>).</td></tr>
+<tr><th>Télécharger</th><td>Télécharge l'original sur l'appareil.</td></tr>
+<tr><th>Envoyer par mail…</th><td>Le serveur envoie le morceau en pièce jointe (<a href="#partager-mail">détails</a>).</td></tr>
+<tr><th>Envoyer (WhatsApp…)</th><td>Le fichier m4a par l'application de votre choix (<a href="#partager-whatsapp">détails</a>).</td></tr>
+<tr><th>Partager un lien</th><td>Lien public en lecture seule (<a href="#partager-lien">détails</a>).</td></tr>
+<tr><th>Prendre la main / Libérer</th><td>Projets .cpr et .song : verrouille ou libère le projet pour les autres.</td></tr>
+<tr><th>Sélectionner</th><td>Mode sélection : cochez plusieurs éléments, puis <span class="ui">Tout</span>, <span class="ui">Déplacer</span> ou <span class="ui">Corbeille</span>.</td></tr>
+<tr><th>Renommer, Déplacer, Dupliquer</th><td>Avec <span class="ui">Annuler</span> dans le message qui suit. Dupliquer crée « nom (copie).ext » sans prendre de place sur le serveur.</td></tr>
+<tr><th>Historique des versions</th><td>Écouter, voir, télécharger ou restaurer une ancienne version (<a href="#corbeille">détails</a>).</td></tr>
+<tr><th>Mettre à la corbeille</th><td>Récupérable 30 jours. Pour un dossier, une confirmation annonce son contenu.</td></tr>
+<tr><th>Supprimer définitivement… <span class="badge-admin">admin</span></th><td>Dossiers seulement, sans passer par la corbeille, irréversible (double confirmation).</td></tr>
+</tbody></table></div>
+<p>Depuis <span class="ui">Récents</span> ou <span class="ui">Recherche</span>, le menu propose aussi <span class="ui">Afficher dans le dossier</span>. Un élément verrouillé par un autre membre ne peut être ni renommé, ni déplacé, ni supprimé.</p>
+<h3 id="ajouter">Ajouter des fichiers : le bouton +</h3>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Entrée</th><th>Usage</th></tr></thead>
+<tbody>
+<tr><th>Enregistrer de l'audio</th><td>Ouvre l'enregistreur (<a href="#studio">détails</a>).</td></tr>
+<tr><th>Fichiers du téléphone</th><td>App Fichiers (iPhone) ou gestionnaire de fichiers (Android) : audio, PDF, Office, partitions, projets… plusieurs à la fois.</td></tr>
+<tr><th>Importer depuis un lien YouTube</th><td>La bande son d'une vidéo, rangée en .m4a (<a href="#ajouter-youtube">détails</a>).</td></tr>
+<tr><th>Prendre une photo ou une vidéo</th><td>Ouvre l'appareil photo.</td></tr>
+<tr><th>Envoyer les nouvelles photos</th><td>Choisissez des photos et vidéos dans la photothèque (indique la date du dernier envoi).</td></tr>
+<tr><th>Nouveau dossier</th><td>Crée un dossier ici.</td></tr>
+</tbody></table></div>
+<ul>
+<li>Un panneau suit l'envoi (3 fichiers à la fois). Il reprend tout seul après une coupure réseau ou si l'appli a été fermée.</li>
+<li><b>Les MP3 et WAV envoyés depuis le téléphone ou le navigateur sont convertis en .m4a</b> (AAC 256 kbit/s, étiquettes gardées) ; l'original part à la corbeille (récupérable 30 jours). Les AIFF et FLAC ne sont pas convertis. Les fichiers déposés dans le dossier 28JoursBox d'un PC ne sont jamais convertis.</li>
+<li>Même nom et même contenu : rien n'est ajouté. Même nom, contenu différent : « nom (1).ext ».</li>
+<li>Sur PC, on peut aussi glisser des fichiers de l'ordinateur sur la liste.</li>
+</ul>
+<h3 id="ajouter-youtube">Importer le son d'une vidéo YouTube</h3>
+<ol class="how">
+<li>Copiez le lien de la vidéo (ou, sur Android, partagez la vidéo depuis l'appli YouTube vers 28JoursBox).</li>
+<li><span class="ui">+</span> › <span class="ui">Importer depuis un lien YouTube</span>, puis <span class="ui">Coller</span>. <span class="ui">Nom du fichier</span> est facultatif (titre de la vidéo sinon). Touchez <span class="ui">Importer</span>.</li>
+<li>Suivez « Téléchargement N % » puis « Conversion en m4a… ». Vous pouvez fermer la fenêtre : l'import continue. À la fin : « Importé : nom.m4a ». Le morceau est ensuite analysé comme les autres.</li>
+</ol>
+<p>Sur PC : copier le lien, puis menu de l'icône › <span class="ui">Importer l'audio d'un lien du presse-papiers…</span>, choisir le dossier, <span class="ui">Importer ici</span>.</p>
+<div class="callout warn"><span>⚠️</span><p>Limites : un import à la fois, vidéo de 20 minutes au plus, ni listes de lecture ni directs, sites publics seulement. Un morceau importé reste réservé au groupe : il ne peut pas être partagé par lien public. Respectez les droits des œuvres et les conditions des sites.</p></div>
+<h3 id="ecouter">Écouter : le mini-lecteur</h3>
+<ul>
+<li>En bas de l'écran : titre, précédent, lecture/pause, suivant, ↑ pour agrandir en <a href="#lecteur">lecteur avancé</a>, ✕ pour fermer, barre de position.</li>
+<li>Il continue sur <b>l'écran verrouillé</b>, au casque et dans <b>CarPlay</b> (lecture, pistes précédente/suivante, ±10 s).</li>
+<li>Il s'efface quand le morceau en cours sort de l'écran au défilement, et revient dès qu'il réapparaît. Glissez-le vers le haut pour ouvrir le lecteur avancé.</li>
+<li>Les WAV et AIFF sont lus dans une <b>version d'écoute</b> compressée préparée par le serveur : une répétition en WAV s'écoute en 4G sans attendre.</li>
+</ul>
+<h3 id="apercus">Voir les photos, vidéos, PDF et documents</h3>
+<ul>
+<li><b>Photos et vidéos</b> : plein écran, paysage possible. Glisser ou flèches pour passer aux autres fichiers du dossier.</li>
+<li><b>PDF</b> : boutons de zoom et compteur de pages. <b>Toucher le document</b> le passe en plein écran page par page ; on glisse pour tourner les pages.</li>
+<li><b>Word, Excel, PowerPoint</b> : affichés comme un PDF si <a href="#install-libreoffice">LibreOffice</a> est installé sur le PC serveur.</li>
+<li><b>Textes</b> (paroles, grilles ChordPro, .txt, .csv…) : affichés en texte brut.</li>
+<li>Autres fichiers (projets, archives) : fiche avec <span class="ui">Télécharger</span>.</li>
+</ul>
+<h3 id="recherche">Rechercher</h3>
+<p><span class="ui">Recherche</span> trouve une partie du <b>nom</b> (pas le contenu), sans tenir compte des accents ni des majuscules : « mix », « .cpr », « basse ». Les résultats arrivent pendant la frappe, avec le dossier de chacun. Sur PC, la barre du haut propose des suggestions.</p>
+</section>
+<section id="partager">
+<h2>Partager et inviter</h2>
+<h3 id="partager-lien">Lien public (pour quelqu'un hors du groupe)</h3>
+<ol class="how">
+<li>Menu ⋯ d'un fichier ou d'un dossier › <span class="ui">Partager un lien</span>.</li>
+<li>Facultatif : un <span class="ui">Mot de passe</span> et une date d'<span class="ui">Expiration</span>.</li>
+<li><span class="ui">Créer le lien</span>, puis <span class="ui">Copier</span> ou partager.</li>
+</ol>
+<p>La personne voit le fichier (lecteur audio, photo, vidéo, PDF) ou parcourt le dossier, en <b>lecture seule</b>, et peut télécharger. Gérez tous les liens du groupe dans <span class="ui">Partages</span> : <span class="ui">Copier le lien</span>, <span class="ui">Révoquer</span> (le lien cesse aussitôt de marcher). Un lien ne se modifie pas : créez-en un nouveau et révoquez l'ancien. La racine et les morceaux importés de YouTube ne se partagent pas.</p>
+<h3 id="partager-mail">Envoyer par mail</h3>
+<p>Le mail part <b>du serveur</b> : pas besoin d'appli de messagerie. Menu ⋯ › <span class="ui">Envoyer par mail…</span>, tapez les adresses (les adresses déjà utilisées sont proposées), un message facultatif, puis <span class="ui">Envoyer</span>. L'objet est écrit pour vous (« 🎵 titre — de la part de pseudo »). Le morceau est joint en m4a ; au-delà de 18 Mo, un lien d'écoute valable 30 jours est envoyé à la place. Limites : 10 destinataires par envoi, 40 envois par heure. Il faut que l'administrateur ait réglé l'<a href="#reglages">envoi des mails</a>.</p>
+<h3 id="partager-whatsapp">Envoyer par WhatsApp (ou autre appli)</h3>
+<p>Menu ⋯ › <span class="ui">Envoyer (WhatsApp…)</span> : le fichier m4a est préparé sur le téléphone (« Prêt : nom (X Mo) »), puis <span class="ui">Partager</span> ouvre la feuille de partage du téléphone. Choisissez WhatsApp, Messages… Le morceau part en m4a, pas compressé par WhatsApp comme une note vocale.</p>
+<h3 id="inviter">Inviter un membre</h3>
+<p><span class="ui">Inviter</span> (barre du bas), <span class="ui">Inviter quelqu'un</span> sur PC, ou <span class="ui">Réglages</span> › <span class="ui">Afficher le lien et le mot de passe</span> : le lien avec <span class="ui">Copier</span> et <span class="ui">Partager le lien</span>, le mot de passe du groupe, et <span class="ui">Envoyer l'application PC par e-mail</span>. Le lien utilise l'adresse 4G si elle est configurée. Le QR code est dans l'appli PC (<span class="ui">Ouvrir sur le téléphone (QR code)…</span>).</p>
+</section>
+<section id="lecteur">
+<h2>Le lecteur avancé</h2>
+<p>Le studio de répétition de poche : chaque morceau découpé en parties de couleur, avec ses accords, ses instruments séparés, un tempo réglable et des boucles au sample près.</p>
+<h3 id="lecteur-ouvrir">Ouvrir et fermer</h3>
+<ul>
+<li><b>Ouvrir</b> : menu ⋯ d'un morceau › <span class="ui">Lecteur avancé</span> ; glisser la ligne vers la gauche › <span class="ui">Lecteur</span> ; ou dans le mini-lecteur, bouton ↑, toucher le titre, ou glisser le mini-lecteur vers le haut.</li>
+<li>Le lecteur ne démarre jamais tout seul. Ouvert depuis le mini-lecteur, il reprend la même position, en pause.</li>
+<li><b>Fermer</b> : chevron ↓ en haut à gauche, glisser l'en-tête vers le bas, ou bouton retour. La lecture s'arrête ; le mini-lecteur garde la position.</li>
+<li>Si l'analyse n'est pas encore prête, « Analyse du morceau… » s'affiche quelques secondes. Sans analyse possible, le lecteur passe en lecture simple (pas de blocs, ⏪ et ⏩ sautent de 10 s).</li>
+</ul>
+<h3 id="lecteur-ecran">Ce qu'on voit</h3>
+<figure><div class="phone shot"><img alt="Le lecteur avancé en lecture" height="808" loading="lazy" src="img/captures/lecteur.png" width="373"/></div>
+<figcaption>
+<b>En haut</b> : la pastille de l'analyse (<b>verte</b> = analyse fine, <b>rouge</b> = analyse de base) et, quand vous avez réarrangé le morceau, le bouton <span class="ui">Enregistrer</span>.<br/><br/>
+<b>Sur la forme d'onde</b>, de haut en bas : la <b>bande des parties</b> (Intro, Couplet, Refrain…), la <b>rangée des accords</b> (toucher un accord y amène la lecture), les <b>blocs</b> (une tourne chacun, avec sa lettre A, B, C), la <b>règle</b> avec les numéros de mesure et la tête de lecture orange.<br/><br/>
+<b>Dessous</b> : la frise du morceau entier, la barre d'édition, le transport (BPM, ⏮, ⏪, ▶, ⏩, ⏺, TON) et la barre <span class="ui">Boucle</span>, <span class="ui">Suivre</span>, <span class="ui">Pistes</span>, <span class="ui">Accords</span>, <span class="ui">Outils</span>.
+</figcaption></figure>
+<p><b>Couleurs fixes des parties</b>, les mêmes d'un morceau à l'autre : Intro violet, Couplet bleu, Pré-refrain cyan, Refrain rose, Pont jaune, Solo orange, Break gris, Outro vert. Une <b>partie</b> est faite de <b>tournes</b> lettrées A, B, C… : deux tournes identiques ont la même lettre.</p>
+<h3 id="lecteur-gestes">Les gestes</h3>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Geste</th><th>Effet</th></tr></thead>
+<tbody>
+<tr><th>Toucher un bloc</th><td>Le sélectionne (cadre violet). Retoucher le désélectionne. Ne lance pas la lecture.</td></tr>
+<tr><th>Double toucher un bloc</th><td>Sélectionne toute sa partie.</td></tr>
+<tr><th>Toucher la bande des parties</th><td>Sélectionne la partie.</td></tr>
+<tr><th>Appui long sur la bande des parties</th><td>Menu des tournes : changer la lettre (« Tourne A », « Nouvelle tourne »), <span class="ui">Renommer « Refrain »…</span> (partout dans le morceau).</td></tr>
+<tr><th>Tirer les poignées du cadre</th><td>Étend ou réduit la sélection, bloc par bloc.</td></tr>
+<tr><th>Appui long sur un bloc puis glisser</th><td>Déplace le bloc (ou la sélection) : un fantôme suit le doigt, un repère montre où il sera posé.</td></tr>
+<tr><th>Glisser un bloc vers le haut</th><td>Le supprime de l'arrangement (« Supprimer » apparaît). <span class="ui">Annuler</span> le rétablit.</td></tr>
+<tr><th>Doigt posé sur la sélection + toucher d'autres blocs</th><td>Sélection de <b>blocs épars</b> (non voisins).</td></tr>
+<tr><th>Glisser horizontalement</th><td>Fait défiler, avec élan.</td></tr>
+<tr><th>Pincer à deux doigts</th><td>Zoome (sur PC : Ctrl + molette).</td></tr>
+<tr><th>Taquet du haut d'une limite</th><td>Déplace la limite entre deux blocs, <b>aimantée</b> sur les débuts de tourne et les temps. Une bulle indique la longueur des deux blocs.</td></tr>
+<tr><th>Rond du bas d'une limite</th><td><b>Réglage fin</b>, sans aimant, deux fois plus lent que le doigt (bulle « Précis · +12 ms »). Zoomez pour plus de précision.</td></tr>
+<tr><th>Toucher ou glisser la règle du bas</th><td>Déplace la tête de lecture. Appui long sur sa poignée : <span class="ui">Coller</span> ici ou <span class="ui">Couper ici</span>.</td></tr>
+<tr><th>Toucher la frise</th><td>Remet tout le morceau à l'écran.</td></tr>
+</tbody></table></div>
+<p>Au clavier (PC) : Espace = lecture/pause, ← → = bloc précédent/suivant, Ctrl+Z / Ctrl+Maj+Z = annuler/rétablir, Échap = fermer.</p>
+<h3 id="lecteur-edition">La barre d'édition</h3>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Bouton</th><th>Effet</th></tr></thead>
+<tbody>
+<tr><th>Copier / Coller</th><td>Copie la sélection ; Coller l'insère à la tête de lecture, sur le bord de bloc le plus proche.</td></tr>
+<tr><th>Dupliquer</th><td>Copie juste après la sélection.</td></tr>
+<tr><th>Découper</th><td><span class="ui">En 2</span>, <span class="ui">En 3</span>, <span class="ui">En 4</span>, <span class="ui">Chaque mesure</span>, <span class="ui">Toutes les 2 mesures</span>, <span class="ui">Toutes les 4 mesures</span>, <span class="ui">Ici</span> (à la tête de lecture).</td></tr>
+<tr><th>Fusionner</th><td>Plusieurs parties → une seule partie ; une partie → un seul bloc ; un bloc seul → avec le suivant.</td></tr>
+<tr><th>Répéter</th><td>Chaque toucher ajoute un passage (×2, ×3…). Appui long : choisir ×1 à ×8 ou <span class="ui">Autre nombre…</span>.</td></tr>
+<tr><th>Garder</th><td>Ne garde que la sélection ; le reste quitte l'arrangement.</td></tr>
+<tr><th>Extraire</th><td>Enregistre la sélection comme un <b>nouveau fichier</b>, sans toucher au morceau.</td></tr>
+<tr><th>Nommer</th><td>Intro, Couplet, Pré-refrain, Refrain, Pont, Solo, Break, Outro, ou <span class="ui">Autre nom…</span> : la sélection devient une partie, ses tournes sont relettrées.</td></tr>
+<tr><th>Effacer</th><td>Retire la sélection de l'arrangement (le fichier n'est pas touché).</td></tr>
+<tr><th>Annuler / Rétablir</th><td>Jusqu'à 100 étapes.</td></tr>
+</tbody></table></div>
+<div class="callout"><span>👥</span><p><b>Partagé ou personnel ?</b> Les <b>corrections du découpage</b> (limites, découpes, fusions de blocs qui se suivent, noms, lettres) sont envoyées au serveur et deviennent le découpage de <b>tout le groupe</b>. Dès que vous <b>réarrangez</b> (effacer, garder, déplacer, copier, coller, dupliquer), le découpage reste <b>sur votre téléphone</b> et plus rien n'est partagé tant que l'ordre d'origine n'est pas rétabli. Les répétitions ×N ne sont jamais partagées.</p></div>
+<h3 id="lecteur-tempo">Tempo et tonalité</h3>
+<ul>
+<li><b>BPM</b> : toucher ouvre la fenêtre <span class="ui">Tempo</span> (−1, curseur, +1, raccourcis 75 %, 90 %, origine). Ou <b>maintenir puis glisser</b> verticalement : la valeur s'applique au lâcher. De 50 % à 150 %, <b>sans changer la hauteur des notes</b>. Le serveur prépare la version étirée (« Tempo en service ») pendant que la lecture continue. Votre tempo est mémorisé par morceau, sur tous vos appareils.</li>
+<li><b>TON</b> : maintenir puis glisser transpose de −6 à +6 demi-tons. Toucher ouvre <span class="ui">Gamme et accords</span> : la tonalité, les notes de la gamme, la <b>pentatonique conseillée pour improviser</b>, les accords du morceau, <span class="ui">Transposer</span>, <span class="ui">Tonalité originale</span> (la corriger vaut pour tout le groupe) et <span class="ui">Notation</span> <span class="ui">C D E</span> ou <span class="ui">Do Ré Mi</span>.</li>
+</ul>
+<h3 id="lecteur-boucle">Boucle, métronome et entraîneur</h3>
+<ul>
+<li><span class="ui">Boucle</span> : active à l'ouverture. Avec une sélection, seule la sélection boucle, au sample près ; sans sélection, tout le morceau.</li>
+<li><span class="ui">Suivre</span> : la vue suit la tête de lecture, page par page.</li>
+<li><span class="ui">Outils</span> :
+<ul>
+<li><span class="ui">Décompte d'une mesure</span> avant chaque départ ;</li>
+<li><span class="ui">Métronome</span> calé sur les temps détectés ;</li>
+<li><span class="ui">Entraîneur de tempo</span> : sélectionnez d'abord le passage, puis réglez <span class="ui">Départ</span>, <span class="ui">Arrivée</span>, <span class="ui">Palier</span> (+1, +2, +5) et <span class="ui">Passages</span> (×1, ×2, ×4), puis <span class="ui">Démarrer</span>. La boucle accélère à chaque palier jusqu'à « Objectif atteint ». Une pastille en haut permet d'arrêter ;</li>
+<li><span class="ui">Utiliser l'analyse fine</span> ou <span class="ui">Revenir à l'analyse de base</span> ;</li>
+<li><span class="ui">Réinitialiser…</span> : <span class="ui">Remettre dans l'ordre d'origine</span>, ou <span class="ui">Revenir à l'analyse</span> (efface aussi la correction partagée du groupe).</li>
+</ul></li>
+</ul>
+<h3 id="lecteur-pistes">Pistes : séparer les instruments et mixer</h3>
+<figure><div class="phone shot"><img alt="La table de mixage des pistes séparées" height="808" loading="lazy" src="img/captures/mixage.png" width="373"/></div>
+<figcaption>
+Touchez <span class="ui">Pistes</span>. Si le morceau n'est pas encore séparé, touchez <span class="ui">Séparer</span> : quelques minutes, une seule fois par morceau (les m4a sont séparés automatiquement la nuit).<br/><br/>
+Une tranche par instrument : <b>Chant</b>, <b>Guitares</b>, <b>Basse</b>, <b>Batterie</b>, puis vos prises. Curseur en dB (double toucher = 0 dB), <b>M</b> (muet) et <b>S</b> (solo). Touchez <span class="ui">OK</span> : le serveur prépare le mélange (« Mélange en service »). Les réglages sont mémorisés par morceau.<br/><br/>
+Appui long sur le nom d'une prise : <span class="ui">N'écouter que cette prise</span>, <span class="ui">Renommer…</span>, <span class="ui">Supprimer</span>.
+</figcaption></figure>
+<p>Une fois les instruments séparés, les accords sont recalculés et plus fiables.</p>
+<h3 id="lecteur-accords">Accords et diagrammes de guitare</h3>
+<figure><div class="phone shot"><img alt="Les accords de la gamme en diagrammes de guitare" height="808" loading="lazy" src="img/captures/accords.png" width="373"/></div>
+<figcaption>
+Les accords du morceau sont affichés <b>temps par temps</b> dans la rangée au-dessus des blocs ; l'accord en cours est souligné.<br/><br/>
+Le bouton <span class="ui">Accords</span> ouvre les <b>diagrammes de guitare</b> de la gamme (I, ii, iii, IV, V, vi, vii°), avec plusieurs positions sur le manche (« ouvert », « case 3 »…), et les onglets <span class="ui">Triades aiguës</span>, <span class="ui">7</span>, <span class="ui">9</span>, <span class="ui">sus2</span>, <span class="ui">sus4</span>. Les points sont colorés : fondamentale, tierce, quinte, 7e, 9e, 4te. Pincer pour agrandir.
+</figcaption></figure>
+<h3 id="lecteur-prise">Enregistrer une prise par-dessus</h3>
+<ol class="how">
+<li>Revenez au tempo et à la tonalité d'origine (obligatoire pour une prise).</li>
+<li>La première fois sur ce téléphone, mesurez le <b>délai du micro</b> : sans casque, volume monté, au calme, touchez <span class="ui">Mesurer</span> (8 clics). Réglage aussi accessible dans <span class="ui">Pistes</span> › <span class="ui">Réglage de la latence micro</span>.</li>
+<li><b>Branchez un casque</b> (filaire de préférence) : le micro ne doit pas entendre le morceau.</li>
+<li>Dans <span class="ui">Pistes</span>, choisissez ce que vous voulez entendre (par exemple tout sauf votre instrument). Option : sélectionnez un passage avec <span class="ui">Boucle</span> pour faire <b>une prise par passage</b>.</li>
+<li>Touchez <b>⏺</b> : une mesure de décompte, puis lecture et enregistrement en même temps (cadre rouge, durée, vumètre). Retouchez ⏺ ou pause pour arrêter.</li>
+<li>La prise est <b>recalée exactement</b> sur le morceau et devient un fichier « Titre - Prise N.m4a » à côté du morceau, <b>partagé avec tout le groupe</b>, et une piste de la console.</li>
+</ol>
+<h3 id="lecteur-analyse">Analyse de base et analyse fine</h3>
+<ul>
+<li><b>Analyse de base</b> (pastille rouge) : quelques secondes après l'envoi. Tempo, mesures, tournes et parties nommées « Partie A », « Partie B »…</li>
+<li><b>Analyse fine</b> (pastille verte) : des parties reconnues et nommées (riffs, couplets, solos…), plus fidèles. Faite <b>chaque nuit</b> pour les morceaux m4a, ou à la demande : toucher la pastille rouge › <span class="ui">Utiliser l'analyse fine</span> (quelques minutes, « Analyse fine N % » ; vous pouvez fermer le lecteur), puis <span class="ui">Appliquer</span>.</li>
+<li>Elle remplace d'office l'analyse de base. <span class="ui">Revenir à l'analyse de base</span> est un choix partagé avec le groupe, que l'analyse fine ne remplacera plus.</li>
+</ul>
+<h3 id="lecteur-montage">Enregistrer un montage, extraire un passage</h3>
+<ul>
+<li>Après avoir réarrangé (déplacé, effacé, copié, répété), touchez <span class="ui">Enregistrer</span> en haut : <span class="ui">Enregistrer le montage</span> crée « Titre (montage) » dans le même dossier, même format et même qualité que l'original, fabriqué par le serveur sans perte. Ou <span class="ui">Remplacer l'original</span> : l'original reste dans l'historique des versions.</li>
+<li><span class="ui">Extraire</span> enregistre seulement la sélection (répétitions comprises) dans un nouveau fichier.</li>
+</ul>
+<h3 id="lecteur-voiture">Dans la voiture et écran éteint</h3>
+<p>Le lecteur passe par le lecteur natif du téléphone : écran verrouillé, centre de contrôle et <b>CarPlay</b> fonctionnent, et « piste précédente / suivante » saute de bloc en bloc. Les boucles et le tempo changé continuent écran éteint. Après une interruption (GPS, appel), la lecture reprend toute seule. Le décompte, le métronome, les prises et l'entraîneur sont moins fiables en CarPlay. Les derniers mélanges et tempos restent réécoutables hors ligne.</p>
+</section>
+<section id="studio">
+<h2>Enregistrer et éditer l'audio</h2>
+<h3 id="studio-enregistrer">Faire un nouvel enregistrement</h3>
+<ol class="how">
+<li>Dans le dossier de destination : <span class="ui">+</span> › <span class="ui">Enregistrer de l'audio</span> (ou, appli installée sur Android, appui long sur l'icône › <span class="ui">Enregistrer de l'audio</span>).</li>
+<li>Autorisez le micro si le téléphone le demande. Le son est capté brut : ni réduction de bruit ni gain automatique.</li>
+<li>Touchez le <b>gros bouton rouge</b>. La forme d'onde se dessine en direct ; « SAT » s'allume en cas de saturation (éloignez le micro).</li>
+<li>Retouchez le bouton rouge pour arrêter. L'appli <b>présélectionne la partie jouée</b> (sans les paroles du début et de la fin) et normalise le niveau : touchez <span class="ui">Garder</span> pour ne garder que la musique.</li>
+<li>Écoutez, retouchez au besoin (outils ci-dessous), puis touchez <b>Enregistrer</b> (disquette).</li>
+<li>Donnez un <span class="ui">Titre</span> (le fichier s'appellera « AAAAMMJJ Titre.m4a »), puis :
+<ul>
+<li><span class="ui">Envoyer maintenant</span> : envoi au serveur, conversion en m4a ;</li>
+<li><span class="ui">Garder sur le téléphone</span> : idéal en répétition sans réseau. Un bandeau « N prise(s) à envoyer » apparaît dans la liste des fichiers ; touchez <span class="ui">Tout envoyer</span> plus tard.</li>
+</ul></li>
+</ol>
+<div class="callout tip"><span>💡</span><p>Une prise part du téléphone sans perte (FLAC) et l'envoi reprend tout seul après une coupure, à la réouverture de l'appli ou au retour du réseau. Une prise n'est effacée du téléphone qu'une fois arrivée sur le serveur. Un nouveau toucher du bouton rouge <b>remplace</b> la prise précédente.</p></div>
+<div class="callout warn"><span>⚠️</span><p>Ne changez pas d'application pendant une prise : l'enregistrement s'arrête (ce qui a été enregistré est conservé). Un appel entrant l'arrête aussi. Une prise est limitée à 90 minutes. Il faut l'adresse <b>https</b> (lien d'invitation) et Safari (iPhone) ou Chrome (Android). Micro refusé sur iPhone : « aA » dans la barre d'adresse › Réglages du site web › Microphone › Autoriser.</p></div>
+<h3 id="studio-metronome">Enregistrer au clic (métronome)</h3>
+<figure><div class="phone shot"><img alt="Le réglage du métronome de l'enregistreur" height="808" loading="lazy" src="img/captures/metronome.png" width="373"/></div>
+<figcaption>
+Le bouton <span class="ui">Clic</span>, à gauche du bouton rouge, ouvre le <span class="ui">Métronome</span> :<br/>
+<span class="ui">Activé</span> ; le tempo avec <span class="ui">−</span> / <span class="ui">+</span>, le curseur (40 à 220) ou <span class="ui">Taper</span> en rythme ; <span class="ui">Mesure</span> 2/4, 3/4, 4/4, 6/8 ; <span class="ui">Décompte</span> aucun, 1 ou 2 mesures ; <span class="ui">Clic pendant la prise</span> (avec un casque, le clic n'est pas enregistré).<br/><br/>
+<span class="ui">Clic silencieux</span> : pour le batteur qui a son propre clic. Rien ne sonne, mais la prise est ensuite calée sur une grille à ce tempo.<br/><br/>
+La prise commence <b>exactement sur le premier temps</b> après le décompte. À l'arrêt, l'appli propose de la <a href="#studio-caler">caler sur la grille</a>.
+</figcaption></figure>
+<h3 id="studio-outils">Les outils d'édition</h3>
+<p><b>Sélectionner</b> : appui un peu long sur la forme d'onde, puis glisser (à la souris : glisser) ; tirer les poignées pour ajuster. <b>Zoomer</b> : pincer ; double toucher pour tout afficher.</p>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Outil</th><th>Effet</th></tr></thead>
+<tbody>
+<tr><th>Effacer</th><td>Retire la sélection, la suite se recolle.</td></tr>
+<tr><th>Garder</th><td>Ne garde que la sélection.</td></tr>
+<tr><th>Silence</th><td>Remplace la sélection par du silence, sans changer la durée.</td></tr>
+<tr><th>Fondu entrée / Fondu sortie</th><td>Monte ou descend le volume sur la sélection.</td></tr>
+<tr><th>Normaliser</th><td>Monte la sélection, ou toute la prise sans sélection, au niveau maximal (−0,5 dB).</td></tr>
+<tr><th>Caler</th><td>Cale la prise sur une grille de mesures (ci-dessous).</td></tr>
+</tbody></table></div>
+<p>Les coupes sont franches : ajoutez un petit fondu pour éviter un clic. Les flèches en haut annulent et rétablissent (jusqu'à 200 étapes ; Ctrl+Z sur PC).</p>
+<h3 id="studio-caler">Caler sur la grille</h3>
+<p>Pour qu'un enregistrement collé au début d'un logiciel de musique, au même tempo, <b>tombe pile sur la grille</b>.</p>
+<ol class="how">
+<li>Après une prise au clic, la fenêtre <span class="ui">Caler la prise sur la grille ?</span> s'ouvre toute seule. Sinon, touchez <span class="ui">Caler</span>.</li>
+<li>Vérifiez le <span class="ui">Tempo (BPM)</span> (laissé vide, il est mesuré) et la <span class="ui">Mesure</span>. L'appli repère les coups de grosse caisse et de caisse claire, trouve le « 1 », et place le début et la fin sur des barres de mesure (en ajoutant du silence si besoin).</li>
+<li>Ajustez au besoin avec <span class="ui">−1 mes.</span>, <span class="ui">−1 temps</span>, <span class="ui">+1 temps</span>, <span class="ui">+1 mes.</span>, et écoutez avec <span class="ui">Écouter le départ</span>.</li>
+<li>Touchez <span class="ui">Caler</span>. La règle passe en mesures numérotées. La grille part avec le fichier et sert à son analyse.</li>
+</ol>
+<p>Une prise sans rythme, trop courte (moins de 4 s de musique) ou jouée sans clic avec un tempo qui varie est refusée, avec une explication.</p>
+<h3 id="studio-editer">Éditer un fichier existant</h3>
+<ol class="how">
+<li>Menu ⋯ d'un fichier audio › <span class="ui">Éditer l'audio</span> (ou glisser la ligne › <span class="ui">Éditer</span>). Formats : wav, m4a, mp3, aif, aiff, flac.</li>
+<li>Coupez, faites vos fondus, normalisez (mêmes outils que ci-dessus ; plus <span class="ui">Écouter la sélection</span> et <span class="ui">Boucle sur la sélection</span>).</li>
+<li>Enregistrez. Pour un m4a ou un WAV, <span class="ui">Enregistrer</span> crée une <b>nouvelle version</b> du même fichier (l'ancienne reste dans l'historique) ; <span class="ui">Enregistrer comme nouveau fichier</span> crée « Nom (édité) ». Un mp3, aif ou flac donne une copie en .m4a.</li>
+</ol>
+<p>Seule la liste des modifications part au serveur, qui refabrique le fichier <b>à partir de l'original</b>, sans perte de qualité. Si quelqu'un a modifié ou verrouillé le fichier entre-temps, l'appli propose de l'enregistrer comme nouveau fichier.</p>
+<h3 id="studio-wav">Convertir en WAV</h3>
+<p>Menu ⋯ › <span class="ui">Convertir en WAV…</span> : <span class="ui">Résolution</span> 16, 24 (par défaut) ou 32 bits flottant, <span class="ui">Fréquence</span> 44,1, 48 (par défaut), 88,2 ou 96 kHz, puis <span class="ui">Convertir</span>. Un nouveau fichier .wav est créé dans le même dossier, à partir de l'original ; l'original ne change pas.</p>
+</section>
+<section id="studioone">
+<h2>Vers Studio One</h2>
+<p>Transforme un morceau en <b>projet Studio One prêt à ouvrir</b>, avec les instruments séparés sur des pistes colorées et, en option, un tempo stabilisé pour que la grille tombe juste du début à la fin, même sur une répétition jouée sans clic.</p>
+<figure><div class="phone shot"><img alt="Le menu d'actions d'un morceau" height="808" loading="lazy" src="img/captures/actions.png" width="373"/></div>
+<figcaption>
+Menu ⋯ du morceau › <span class="ui">Vers Studio One…</span><br/><br/>
+<span class="ui">Tempo du projet (BPM)</span> : proposé par l'analyse, arrondi, modifiable.<br/>
+<span class="ui">Recaler sur ce tempo…</span> : chaque mesure ramenée exactement au tempo, sans changer la hauteur (une à deux minutes pour un long morceau).<br/>
+<span class="ui">Créer le projet Studio One</span> : coché par défaut ; décoché, on obtient un simple WAV.<br/>
+<span class="ui">Dossier du projet</span> : <span class="ui">À côté du morceau</span> ou <span class="ui">Changer…</span> (mémorisé).<br/>
+<span class="ui">Une piste par instrument</span> : lance la séparation si besoin (une seule fois).<br/>
+<span class="ui">Ajouter les prises comme pistes</span> : si le morceau a des prises.
+</figcaption></figure>
+<p>Touchez <span class="ui">Créer</span>. Résultat : un dossier « Morceau » (jamais écrasé : « Morceau 2 »… si le nom existe) contenant <b>Morceau.song</b> et un dossier <b>Media</b> : « Chant », « Guitares », « Basse », « Batterie » (couleurs fixes), les prises, et « Mix » en bas, coupé. Tous en <b>WAV 24 bits / 48 kHz</b> qui portent leur tempo. Le projet s'ouvre avec la boucle sur tout le morceau et les fenêtres rangées.</p>
+<p>Sur un PC du groupe, le dossier arrive dans 28JoursBox : il suffit d'ouvrir <b>Morceau.song</b>. Le projet se verrouille alors automatiquement pour les autres membres. Le projet est toujours en 4/4.</p>
+</section>
+<section id="tutos">
+<h2>Pas à pas : les usages courants</h2>
+<h3 id="tuto-apprendre">Apprendre un morceau avant la répète</h3>
+<ol class="how">
+<li>Ouvrez le morceau dans le <span class="ui">Lecteur avancé</span>.</li>
+<li>Repérez la structure sur la bande des parties et les accords sur la rangée du dessus.</li>
+<li>Touchez <span class="ui">TON</span> pour la gamme et la pentatonique, <span class="ui">Accords</span> pour les diagrammes.</li>
+<li>Double-touchez un bloc pour sélectionner sa partie, puis ▶ : elle tourne en boucle.</li>
+</ol>
+<h3 id="tuto-lent">Travailler un passage difficile, lentement</h3>
+<ol class="how">
+<li>Sélectionnez le passage (toucher un bloc, tirer les poignées).</li>
+<li>Maintenez <span class="ui">BPM</span> et glissez vers le bas, ou touchez <span class="ui">BPM</span> › 75 % › <span class="ui">OK</span>.</li>
+<li>Option : <span class="ui">Outils</span> › <span class="ui">Décompte d'une mesure</span> et <span class="ui">Métronome</span>.</li>
+<li>Quand ça passe : <span class="ui">Outils</span> › <span class="ui">Entraîneur de tempo</span>, de 80 % jusqu'au tempo d'origine, par paliers de +2.</li>
+</ol>
+<h3 id="tuto-jouer">Couper son instrument et jouer par-dessus</h3>
+<ol class="how">
+<li><span class="ui">Pistes</span> ; si besoin <span class="ui">Séparer</span> et patienter.</li>
+<li><b>M</b> sur votre instrument (par exemple Basse), ou baissez son curseur.</li>
+<li><span class="ui">OK</span>, attendez « Mélange en service », et jouez avec le groupe.</li>
+</ol>
+<h3 id="tuto-prise">Enregistrer sa partie sur le morceau</h3>
+<ol class="how">
+<li>Tempo et tonalité d'origine, délai du micro mesuré une fois, casque branché.</li>
+<li>Option : sélectionnez un passage avec <span class="ui">Boucle</span> pour une prise par passage.</li>
+<li>⏺, jouez, ⏺ pour arrêter. La prise est dans <span class="ui">Pistes</span> et dans le dossier du morceau, pour tout le groupe.</li>
+</ol>
+<h3 id="tuto-batteur">Le batteur enregistre au clic, puis dans le logiciel de musique</h3>
+<ol class="how">
+<li><span class="ui">+</span> › <span class="ui">Enregistrer de l'audio</span> › <span class="ui">Clic</span> : <span class="ui">Activé</span>, tempo, mesure, décompte 1 mes. Avec son propre clic au casque : <span class="ui">Clic silencieux</span>. <span class="ui">OK</span>.</li>
+<li>Bouton rouge : décompte 1, 2, 3, 4, puis la prise démarre sur le 1. Bouton rouge pour arrêter.</li>
+<li><span class="ui">Caler la prise sur la grille ?</span> : vérifiez, ajustez, <span class="ui">Caler</span>.</li>
+<li>Enregistrez et envoyez. Sur le PC, glissez le fichier au tout début d'un projet au même tempo : les coups tombent sur la grille. Ou utilisez <span class="ui">Vers Studio One…</span>.</li>
+</ol>
+<h3 id="tuto-nettoyer">Nettoyer l'enregistrement d'une répétition</h3>
+<ol class="how">
+<li>Menu ⋯ › <span class="ui">Éditer l'audio</span>.</li>
+<li>Sélectionnez les bavardages et <span class="ui">Effacer</span>, ou sélectionnez le morceau joué et <span class="ui">Garder</span>.</li>
+<li>Petits <span class="ui">Fondu entrée</span> et <span class="ui">Fondu sortie</span> aux extrémités, puis <span class="ui">Normaliser</span> sans sélection.</li>
+<li>Enregistrez : nouvelle version, l'original reste dans l'historique.</li>
+</ol>
+<h3 id="tuto-arranger">Essayer un nouvel arrangement</h3>
+<ol class="how">
+<li>Dans le lecteur avancé : appui long sur un bloc et glisser pour le déplacer, glisser vers le haut pour l'effacer, <span class="ui">Copier</span> / <span class="ui">Coller</span>, <span class="ui">Dupliquer</span>, <span class="ui">Répéter</span> ×2.</li>
+<li>Écoutez en boucle, <span class="ui">Annuler</span> au besoin.</li>
+<li><span class="ui">Enregistrer</span> en haut : un nouveau fichier « Titre (montage) » pour le groupe.</li>
+</ol>
+<h3 id="tuto-corriger">Corriger le découpage pour tout le groupe</h3>
+<ol class="how">
+<li>Si la pastille est rouge : pastille › <span class="ui">Utiliser l'analyse fine</span> › <span class="ui">Appliquer</span>.</li>
+<li>Ajustez les limites (taquet du haut aimanté, rond du bas pour le réglage fin), <span class="ui">Découper</span> / <span class="ui">Fusionner</span>, <span class="ui">Nommer</span> les parties, appui long sur la bande des parties pour les lettres.</li>
+<li>Corrigez la tonalité si besoin : <span class="ui">TON</span> › <span class="ui">Tonalité originale</span>.</li>
+<li><b>Ne réarrangez pas en même temps</b> (déplacer, copier, effacer) : le découpage deviendrait personnel. Pour tout annuler : <span class="ui">Outils</span> › <span class="ui">Réinitialiser…</span> › <span class="ui">Revenir à l'analyse</span>.</li>
+</ol>
+<h3 id="tuto-studio">Passer d'une répète au studio</h3>
+<ol class="how">
+<li>Menu ⋯ du morceau › <span class="ui">Vers Studio One…</span>.</li>
+<li>Cochez <span class="ui">Recaler sur ce tempo…</span> si la répète a été jouée sans clic, et <span class="ui">Une piste par instrument</span>.</li>
+<li><span class="ui">Créer</span>, puis sur le PC ouvrez <b>Morceau.song</b> dans le dossier 28JoursBox.</li>
+</ol>
+</section>
+<section id="corbeille">
+<h2>Corbeille et historique des versions</h2>
+<h3 id="corbeille-utiliser">La corbeille</h3>
+<ul>
+<li>Tout ce qui est supprimé (depuis un PC, un téléphone ou le web) reste <b>30 jours</b> dans la corbeille du serveur. Un fichier mis à la corbeille depuis l'appli affiche un message avec <span class="ui">Annuler</span>.</li>
+<li>Ouvrir la corbeille : <span class="ui">Réglages</span> › <span class="ui">Ouvrir la corbeille</span> (sur PC : menu de gauche). Chaque élément indique qui l'a supprimé, quand, et d'où.</li>
+<li><span class="ui">Restaurer</span> : l'élément revient à sa place (ou à la racine si son dossier n'existe plus ; « (restauré) » si le nom est pris). Tout le monde peut restaurer.</li>
+<li><span class="badge-admin">admin</span> <span class="ui">Supprimer définitivement</span> un élément, ou <span class="ui">Vider la corbeille</span> (deux confirmations).</li>
+</ul>
+<h3 id="versions">L'historique des versions</h3>
+<p>Menu ⋯ d'un fichier › <span class="ui">Historique des versions</span> : chaque version avec sa date, sa taille, le membre et le PC. Boutons <span class="ui">Écouter</span>, <span class="ui">Aperçu</span>, <span class="ui">Télécharger</span>, <span class="ui">Restaurer</span> (la version choisie redevient l'actuelle ; l'actuelle reste dans l'historique). Les anciennes versions sont gardées 30 jours ; la version actuelle, toujours.</p>
+</section>
+<section id="reglages">
+<h2>Les Réglages (téléphone et web)</h2>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Carte</th><th>Contenu</th></tr></thead>
+<tbody>
+<tr><th>Mon compte</th><td>Votre pseudo, le badge administrateur, <span class="ui">Se déconnecter</span>.</td></tr>
+<tr><th>Langue · Language</th><td>Français ou English, propre à cet appareil.</td></tr>
+<tr><th>Inviter quelqu'un</th><td><span class="ui">Afficher le lien et le mot de passe</span>. Le mot de passe se change uniquement depuis l'appli du PC serveur.</td></tr>
+<tr><th>Corbeille</th><td><span class="ui">Ouvrir la corbeille</span>.</td></tr>
+<tr><th>Installer l'application</th><td>Ajout à l'écran d'accueil (si ce n'est pas déjà fait).</td></tr>
+<tr><th>Mes appareils</th><td>Les PC connectés avec votre pseudo ; <span class="ui">Révoquer</span> un PC perdu ou réinstallé.</td></tr>
+<tr><th>Serveur</th><td>Nom, version, place utilisée et libre, présence de FFmpeg. <span class="badge-admin">admin</span> <span class="ui">Nom du serveur</span> + <span class="ui">Renommer</span>.</td></tr>
+<tr><th>Membres du groupe <span class="badge-admin">admin</span></th><td>Cases <span class="ui">Admin</span> et <span class="ui">Désactivé</span> (un membre désactivé ne peut plus se connecter, ses PC sont déconnectés, ses fichiers restent), icône <span class="ui">Supprimer ce compte</span> (il faudra le réinviter).</td></tr>
+<tr><th>État du serveur <span class="badge-admin">admin</span></th><td>Place disque détaillée, sauvegardes, avancement de la préparation de nuit, outils installés, dernières alertes.</td></tr>
+<tr><th>Journal <span class="badge-admin">admin</span></th><td>Ce qui s'est mal passé sur le serveur et les téléphones ; <span class="ui">Copier</span> pour le transmettre.</td></tr>
+<tr><th>Envoi des mails <span class="badge-admin">admin</span></th><td>Compte d'envoi (Gmail, Outlook / Hotmail, Orange, Free, Autre), <span class="ui">Envoyer un essai</span>, <span class="ui">Enregistrer</span>. Pour Gmail : activez la validation en deux étapes et créez un « mot de passe d'application ».</td></tr>
+</tbody></table></div>
+<p>Le thème clair ou sombre suit celui du téléphone.</p>
+</section>
+<section id="admin">
+<h2>Administrer le serveur</h2>
+<div class="callout admin"><span>🛠️</span><p>Ce chapitre concerne la personne qui gère le PC serveur.</p></div>
+<h3 id="admin-motdepasse">Changer le mot de passe du groupe</h3>
+<p>À faire si le lien d'invitation a circulé hors du groupe. Uniquement sur le <b>PC serveur</b> : <span class="ui">Préférences</span> › <span class="ui">Serveur</span> › <span class="ui">Changer le mot de passe du groupe…</span>. Tous les appareils sont déconnectés et tous les verrous levés. Envoyez ensuite le nouveau lien à chaque membre : sur un PC, il suffit de cliquer sur <span class="ui">Entrer le nouveau mot de passe</span> dans le panneau et de coller le lien ; sur un téléphone, d'ouvrir le nouveau lien.</p>
+<h3 id="admin-nuit">Ce que le serveur fait tout seul</h3>
+<ul>
+<li><b>La nuit (1 h – 7 h)</b> : pour chaque morceau <b>m4a</b>, du plus récent au plus ancien, un à la fois : analyse, accords, séparation des instruments, analyse fine. Ensuite, les aperçus des documents Office (si LibreOffice est installé). Les WAV et MP3 sont analysés à la demande. Suivi dans <span class="ui">Réglages</span> › <span class="ui">État du serveur</span>.</li>
+<li><b>Chaque heure</b> : purge de la corbeille et des versions de plus de 30 jours.</li>
+<li><b>Chaque jour</b> : copie de sauvegarde de la base (7 gardées), mise à jour de l'outil d'import YouTube, ménage des mélanges non réécoutés depuis 30 jours.</li>
+<li><b>Chaque semaine</b> (entre 7 h et 10 h) : vérification complète de l'intégrité des fichiers.</li>
+</ul>
+<h3 id="admin-sauvegarde">Sauvegarder</h3>
+<p>Le serveur sauvegarde sa base chaque jour, mais <b>pas vos fichiers</b> sur un autre disque. Copiez régulièrement le dossier des données (<span class="ui">Préférences</span> › <span class="ui">Serveur</span> › <span class="ui">Ouvrir le dossier des données</span>), au moins <code>backups</code> et <code>blobs</code>, vers un disque externe ou un NAS. Par exemple, dans une invite de commande :</p>
+<p><code>robocopy D:\28JoursBox-Serveur E:\Sauvegarde /MIR /XD tmp uploads</code></p>
+<h3 id="admin-config">Le fichier server.json</h3>
+<p>Réglages avancés dans <code>C:\ProgramData\28JoursBox\server.json</code> (à modifier en administrateur, puis <span class="ui">Redémarrer le service</span>) :</p>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Réglage</th><th>Rôle (valeur par défaut)</th></tr></thead>
+<tbody>
+<tr><th>VersionRetentionDays / TrashRetentionDays</th><td>Durée de conservation des versions et de la corbeille (30 jours).</td></tr>
+<tr><th>QuotaBytes</th><td>Limite de stockage du groupe (0 = illimité).</td></tr>
+<tr><th>PrecomputeFromHour / PrecomputeToHour</th><td>Heures de la préparation de nuit (1 et 7).</td></tr>
+<tr><th>ImportMaxMinutes / ImportTimeoutMinutes</th><td>Durée maximale d'une vidéo importée (20) et d'un import (15).</td></tr>
+<tr><th>HttpPort / HttpsPort / PublicUrl</th><td>Ports (8080, 8443) et adresse publique.</td></tr>
+<tr><th>LibreOfficePath</th><td>Chemin de soffice.exe si LibreOffice n'est pas à l'emplacement habituel.</td></tr>
+</tbody></table></div>
+<h3 id="admin-commandes">Commandes utiles</h3>
+<p>Dans une invite de commande <b>en administrateur</b>, dans <code>C:\Program Files\28JoursBox</code> :</p>
+<ul>
+<li><code>28JoursBox.exe move-server-data --to E:\28JoursBox-Serveur</code> : déplacer les données vers un disque plus grand. Le service est arrêté, tout est copié et vérifié, puis il redémarre. L'ancien dossier est seulement renommé (« .ancien ») : supprimez-le une fois le serveur vérifié.</li>
+<li><code>28JoursBox.exe import-folder --from D:\AncienDossier</code> : ranger dans le groupe un dossier du disque du serveur (pour venir d'un autre logiciel de synchronisation sans tout renvoyer depuis un PC). Arborescence et dates gardées ; <code>--move</code> évite la copie sur le même disque. Relancé après une interruption, il reprend.</li>
+<li><code>28JoursBox.exe fsck</code> : vérifier l'intégrité du stockage (« Intégrité OK. »).</li>
+</ul>
+</section>
+<section id="depannage">
+<h2>Dépannage</h2>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th>Situation</th><th>Que faire</th></tr></thead>
+<tbody>
+<tr><th>« Le serveur ne répond pas » / icône « Hors ligne » / « Serveur injoignable »</th><td>Vérifiez que le PC serveur est allumé, pas en veille, et que son réseau est en profil Privé. En 4G, vérifiez l'accès extérieur (Préférences › Serveur). Les PC réessaient tout seuls.</td></tr>
+<tr><th>« Le mot de passe du groupe a changé »</th><td>Demandez le nouveau lien. PC : panneau › <span class="ui">Entrer le nouveau mot de passe</span>. Téléphone : ouvrez le nouveau lien.</td></tr>
+<tr><th>« Trop de tentatives »</th><td>Attendez une minute avant de réessayer.</td></tr>
+<tr><th>Un PC a été réinstallé</th><td>Refaites l'assistant avec le lien en choisissant <b>le même dossier</b> : les fichiers identiques ne sont pas renvoyés, rien n'est supprimé. Révoquez ensuite l'ancien PC dans <span class="ui">Réglages</span> › <span class="ui">Mes appareils</span>.</td></tr>
+<tr><th>Des dossiers manquent sur un PC</th><td><span class="ui">Préférences</span> › <span class="ui">Synchro sélective</span> : cochez-les.</td></tr>
+<tr><th>La synchro est lente quand le logiciel de musique est ouvert</th><td>C'est voulu (synchro bridée). Réglable dans <span class="ui">Préférences</span> › <span class="ui">Bande passante</span>.</td></tr>
+<tr><th>Un fichier « (copie en conflit de …) » est apparu</th><td>Deux personnes ont modifié le même fichier. Comparez, gardez la bonne version, supprimez l'autre (panneau › <span class="ui">Conflits</span>).</td></tr>
+<tr><th>« Aperçu indisponible : LibreOffice n'est pas installé sur le serveur. »</th><td>Installez <a href="#install-libreoffice">LibreOffice</a> sur le PC serveur.</td></tr>
+<tr><th>« … FFmpeg n'est pas installé sur le serveur »</th><td>Le serveur a été installé avec l'installateur client : installez <b>28JoursBox-Serveur-Setup.msi</b> sur le PC serveur.</td></tr>
+<tr><th>Le micro est refusé</th><td>iPhone : « aA » › Réglages du site web › Microphone › Autoriser. Android : cadenas › Autorisations › Micro. L'appli ajoutée à l'écran d'accueil s'en souvient.</td></tr>
+<tr><th>« Le son n'a pas pu démarrer »</th><td>Touchez à nouveau Lecture (le téléphone exige un toucher).</td></tr>
+<tr><th>Des prises restent « à envoyer »</th><td>Touchez <span class="ui">Tout envoyer</span> dans le bandeau de la liste des fichiers, une fois le réseau revenu.</td></tr>
+<tr><th>« Quota de stockage du serveur atteint »</th><td>L'administrateur augmente <code>QuotaBytes</code> ou fait de la place (corbeille).</td></tr>
+<tr><th>Il faut transmettre un problème</th><td>Administrateur : <span class="ui">Réglages</span> › <span class="ui">Journal</span> › <span class="ui">Copier</span>, puis posez la question sur le <a href="forum.html">forum</a>. Journaux du PC : <span class="ui">Préférences</span> › <span class="ui">Général</span> › <span class="ui">Ouvrir le dossier des journaux</span>.</td></tr>
+</tbody></table></div>
+<p>Une question qui n'est pas ici ? Posez-la sur le <a href="forum.html">forum</a>.</p>
+</section>
+</article>
+</div></div></section>
+<footer>
+<div class="wrap">
+<div class="foot">
+<div>
+<a class="brand" href="index.html" style="color:var(--text);margin-bottom:12px"><img alt="" src="img/logo.png"/>28JoursBox</a>
+<p data-i18n="le_cloud_prive_et_le_3">The private cloud and pocket rehearsal studio for bands. Free, made by a musician for their own band.</p>
+</div>
+<div>
+<h4 data-i18n="le_projet">The project</h4>
+<a data-i18n="telecharger" href="telecharger.html">Download</a>
+<a data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="forum" href="forum.html">Forum</a>
+<a data-i18n="soutenir" href="don.html">Support</a>
+</div>
+<div>
+<h4 data-i18n="communaute">Community</h4>
+<a data-i18n="forum" href="forum.html">Forum</a>
+<a data-gh="/issues/new" data-i18n="signaler_un_bug" href="forum.html">Report a bug</a>
+<a data-gh="/releases" data-i18n="toutes_les_versions" href="telecharger.html">All versions</a>
+</div>
+</div>
+<div class="credits" data-i18n="2026_28joursbox_les_dons_sont">© <span id="year">2026</span> 28JoursBox · Donations are voluntary and don't unlock any extra features.</div>
+</div>
+</footer>
+<script src="config.js?v=8"></script>
+<script src="i18n.js?v=8"></script>
+<script src="site.js?v=8"></script><script src="guide.js?v=9"></script>
+</body>
+</html>

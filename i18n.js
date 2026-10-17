@@ -20,7 +20,7 @@
 
   function load(code) {
     if (cache[code]) return Promise.resolve(cache[code]);
-    return fetch(`lang/${code}.json?v=7`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
+    return fetch(`lang/${code}.json?v=8`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
   }
 
   function apply(d) {
@@ -29,7 +29,7 @@
       if (s == null) return;
       if (el.tagName === 'TITLE') el.textContent = s; else el.innerHTML = s;
     });
-    ['content', 'alt', 'aria-label'].forEach((attr) => {
+    ['content', 'alt', 'aria-label', 'placeholder'].forEach((attr) => {
       document.querySelectorAll(`[data-i18n-${attr}]`).forEach((el) => {
         const s = d[el.getAttribute(`data-i18n-${attr}`)];
         if (s != null) el.setAttribute(attr, s);
