@@ -268,7 +268,7 @@
  "shot_lecteur": "3. In Blöcken bearbeiten, die loopen",
  "shot_accords": "5. Die Akkorde spielen, als Gitarrengriffe",
  "shot_mixage": "4. Instrumente trennen und mischen",
- "shot_metronome": "1. Die Probe aufnehmen, auf Wunsch mit Klick",
+ "shot_metronome": "1. Die Probe aufnehmen, mit Klick oder echtem Schlagzeug",
  "shot_actions": "6. Teilen oder in die DAW übertragen (Studio One, Cubase)",
  "req_server_title": "💻 Der Server-PC",
  "req_server_lead": "Der PC, der die Songs der Band speichert und eingeschaltet bleibt. Ein älterer PC reicht.",
@@ -433,7 +433,7 @@
  "rec_title": "Nimm die Probe mit dem Handy auf.<br/>Arbeite am nächsten Tag am Song weiter.",
  "rec_lead": "Kein Toningenieur, keine Kabel, kein Computer im Proberaum: Ein Handy reicht für schnelle Demos. Danach kann jeder zu Hause eine Struktur vorschlagen und seine eigene Version des Songs machen, die die anderen hören.",
  "rec_s1_t": "Bei der Probe aufnehmen",
- "rec_s1_p": "<b>+</b> › <b>Audio aufnehmen</b>, dann der große rote Knopf. Beim Stoppen ist der gespielte Teil schon vorausgewählt (ohne das Gerede davor und danach) und der Pegel eingestellt. Schneiden, Ein- und Ausblenden mit einem Finger; auf Wunsch mit Klick aufnehmen.",
+ "rec_s1_p": "<b>+</b> › <b>Audio aufnehmen</b>, dann der große rote Knopf. Beim Stoppen ist der gespielte Teil schon vorausgewählt (ohne das Gerede davor und danach) und der Pegel eingestellt. Schneiden, Ein- und Ausblenden mit einem Finger; auf Wunsch mit Klick aufnehmen. Lust auf Groove? Ein echtes Schlagzeug kann den Klick ersetzen: 10 Stile (Rock, Funk, Reggae, Jazz …), im Studio aufgenommen.",
  "rec_s2_t": "Kein Netz? Auf dem Handy behalten",
  "rec_s2_p": "Im Proberaum gibt es selten WLAN: Wähle <b>Auf dem Handy behalten</b> und dann <b>Alle senden</b>, sobald du wieder Netz hast. Der Take wird verlustfrei übertragen (FLAC, etwa halb so groß wie WAV), setzt nach einem Abbruch von selbst fort, ohne etwas zu verlieren, und landet als m4a im gewählten Ordner.",
  "rec_s3_t": "Der Server versteht den Song",
@@ -464,5 +464,6 @@
  "ph_c3_t": "💻 Auch auf jedem PC",
  "ph_c3_p": "Sie landen im 28JoursBox-Ordner jedes Bandmitglieds, bereit für ein Plakat, einen Videoschnitt oder Social Media.",
  "ph_c4_t": "🔗 Per Link geteilt",
- "ph_c4_p": "Den ganzen Konzertordner für den Club oder die Fans: ein öffentlicher Link nur zum Ansehen, auf Wunsch mit Passwort und Ablaufdatum."
+ "ph_c4_p": "Den ganzen Konzertordner für den Club oder die Fans: ein öffentlicher Link nur zum Ansehen, auf Wunsch mit Passwort und Ablaufdatum.",
+ "pillar_drums": "Echtes Schlagzeug zum Mitspielen (10 Stile)"
 }

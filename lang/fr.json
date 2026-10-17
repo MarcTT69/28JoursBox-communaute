@@ -268,7 +268,7 @@
  "shot_lecteur": "3. La retravailler en blocs qui bouclent",
  "shot_accords": "5. Jouer les accords, en diagrammes de guitare",
  "shot_mixage": "4. Séparer les instruments et mixer",
- "shot_metronome": "1. Enregistrer la répète, au clic si besoin",
+ "shot_metronome": "1. Enregistrer la répète, au clic ou sur une vraie batterie",
  "shot_actions": "6. Partager, ou passer au logiciel de musique (Studio One, Cubase)",
  "req_server_title": "💻 Le PC serveur",
  "req_server_lead": "Le PC qui garde les morceaux du groupe et reste allumé. Un PC un peu ancien convient.",
@@ -433,7 +433,7 @@
  "rec_title": "Enregistrez la répète au téléphone.<br/>Retravaillez le morceau le lendemain.",
  "rec_lead": "Pas d'ingé son, pas de câbles, pas d'ordinateur dans la salle de répète : un téléphone suffit pour faire des maquettes rapidement. Ensuite, chacun chez soi peut proposer une structure et faire sa version du morceau, que les autres entendent.",
  "rec_s1_t": "Enregistrer en répète",
- "rec_s1_p": "<b>+</b> › <b>Enregistrer de l'audio</b>, puis le gros bouton rouge. À l'arrêt, la partie jouée est présélectionnée (sans les bavardages avant et après) et le niveau est réglé. Coupez, faites les fondus d'un doigt ; enregistrez au clic si vous voulez.",
+ "rec_s1_p": "<b>+</b> › <b>Enregistrer de l'audio</b>, puis le gros bouton rouge. À l'arrêt, la partie jouée est présélectionnée (sans les bavardages avant et après) et le niveau est réglé. Coupez, faites les fondus d'un doigt ; enregistrez au clic si vous voulez. Envie d'un groove ? Une vraie batterie peut remplacer le clic : 10 styles (rock, funk, reggae, jazz…), enregistrés en studio.",
  "rec_s2_t": "Pas de réseau ? Gardez-la sur le téléphone",
  "rec_s2_p": "En salle de répète, le réseau manque souvent : choisissez <b>Garder sur le téléphone</b>, puis <b>Tout envoyer</b> une fois de retour sur le réseau. La prise voyage sans perte (FLAC, environ deux fois plus léger qu'un WAV), reprend toute seule après une coupure sans rien perdre, et arrive en m4a dans le dossier choisi.",
  "rec_s3_t": "Le serveur comprend le morceau",
@@ -464,5 +464,6 @@
  "ph_c3_t": "💻 Sur chaque PC aussi",
  "ph_c3_p": "Elles arrivent dans le dossier 28JoursBox de chaque membre, prêtes pour une affiche, un montage vidéo ou les réseaux sociaux.",
  "ph_c4_t": "🔗 Partagées par un lien",
- "ph_c4_p": "Tout le dossier du concert pour la salle ou vos fans : un lien public en lecture seule, avec mot de passe et date de fin si vous voulez."
+ "ph_c4_p": "Tout le dossier du concert pour la salle ou vos fans : un lien public en lecture seule, avec mot de passe et date de fin si vous voulez.",
+ "pillar_drums": "Une vraie batterie pour enregistrer dessus (10 styles)"
 }

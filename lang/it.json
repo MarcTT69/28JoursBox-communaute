@@ -268,7 +268,7 @@
  "shot_lecteur": "3. Rielaborala in blocchi che vanno in loop",
  "shot_accords": "5. Suona gli accordi, in diagrammi per chitarra",
  "shot_mixage": "4. Separa gli strumenti e mixa",
- "shot_metronome": "1. Registra le prove, col click se vuoi",
+ "shot_metronome": "1. Registra le prove, col click o con una vera batteria",
  "shot_actions": "6. Condividilo o passalo alla DAW (Studio One, Cubase)",
  "req_server_title": "💻 Il PC server",
  "req_server_lead": "Il PC che conserva i brani della band e resta acceso. Va bene anche un PC non recente.",
@@ -433,7 +433,7 @@
  "rec_title": "Registra le prove con il telefono.<br/>Rielabora il brano il giorno dopo.",
  "rec_lead": "Niente fonico, niente cavi, niente computer in sala prove: basta un telefono per fare demo al volo. Poi ognuno, a casa, può proporre una struttura e fare la sua versione del brano, che gli altri ascoltano.",
  "rec_s1_t": "Registra alle prove",
- "rec_s1_p": "<b>+</b> › <b>Registra audio</b>, poi il grande pulsante rosso. Quando ti fermi, la parte suonata è già preselezionata (senza le chiacchiere prima e dopo) e il livello è regolato. Taglia, fai dissolvenze in entrata e in uscita con un dito; se vuoi, registra con il click.",
+ "rec_s1_p": "<b>+</b> › <b>Registra audio</b>, poi il grande pulsante rosso. Quando ti fermi, la parte suonata è già preselezionata (senza le chiacchiere prima e dopo) e il livello è regolato. Taglia, fai dissolvenze in entrata e in uscita con un dito; se vuoi, registra con il click. Vuoi un groove? Una vera batteria può sostituire il click: 10 stili (rock, funk, reggae, jazz…), registrati in studio.",
  "rec_s2_t": "Niente rete? Tienila sul telefono",
  "rec_s2_p": "In sala prove il Wi-Fi c'è di rado: scegli <b>Tieni sul telefono</b>, poi <b>Invia tutto</b> appena torni in rete. La take viaggia senza perdita (FLAC, circa la metà di un WAV), riprende da sola dopo un'interruzione senza perdere nulla e arriva in m4a nella cartella che hai scelto.",
  "rec_s3_t": "Il server capisce il brano",
@@ -464,5 +464,6 @@
  "ph_c3_t": "💻 Anche su ogni PC",
  "ph_c3_p": "Arrivano nella cartella 28JoursBox del PC di ogni membro, pronte per una locandina, un montaggio video o i social.",
  "ph_c4_t": "🔗 Condivise con un link",
- "ph_c4_p": "Tutta la cartella del concerto per il locale o i fan: un link pubblico in sola lettura, con password e data di scadenza se vuoi."
+ "ph_c4_p": "Tutta la cartella del concerto per il locale o i fan: un link pubblico in sola lettura, con password e data di scadenza se vuoi.",
+ "pillar_drums": "Batteria vera su cui registrare (10 stili)"
 }

@@ -268,7 +268,7 @@
  "shot_lecteur": "3. Retócalo en bloques que se repiten en bucle",
  "shot_accords": "5. Toca los acordes, en diagramas de guitarra",
  "shot_mixage": "4. Separa los instrumentos y mezcla",
- "shot_metronome": "1. Graba el ensayo, con clic si quieres",
+ "shot_metronome": "1. Graba el ensayo, con clic o con una batería real",
  "shot_actions": "6. Compártelo o pásalo a tu DAW (Studio One, Cubase)",
  "req_server_title": "💻 El PC servidor",
  "req_server_lead": "El PC que guarda las canciones del grupo y se queda encendido. Un PC algo antiguo sirve.",
@@ -433,7 +433,7 @@
  "rec_title": "Graba el ensayo con el móvil.<br/>Retoca la canción al día siguiente.",
  "rec_lead": "Sin técnico de sonido, sin cables, sin ordenador en la sala de ensayo: un móvil basta para hacer maquetas rápidas. Después, cada uno en casa puede proponer una estructura y hacer su versión de la canción, que los demás escuchan.",
  "rec_s1_t": "Graba en el ensayo",
- "rec_s1_p": "<b>+</b> › <b>Grabar audio</b> y luego el botón rojo grande. Al parar, la parte tocada queda preseleccionada (sin la charla de antes y después) y el nivel queda ajustado. Recorta y haz fundidos de entrada y salida con el dedo; si quieres, graba con claqueta.",
+ "rec_s1_p": "<b>+</b> › <b>Grabar audio</b> y luego el botón rojo grande. Al parar, la parte tocada queda preseleccionada (sin la charla de antes y después) y el nivel queda ajustado. Recorta y haz fundidos de entrada y salida con el dedo; si quieres, graba con claqueta. ¿Quieres groove? Una batería real puede sustituir al clic: 10 estilos (rock, funk, reggae, jazz…), grabados en estudio.",
  "rec_s2_t": "¿Sin cobertura? Guárdala en el móvil",
  "rec_s2_p": "En los locales de ensayo casi nunca hay wifi: elige <b>Guardar en el móvil</b> y luego <b>Enviar todo</b> cuando vuelvas a tener red. La toma viaja sin pérdida (FLAC, más o menos la mitad de pesado que un WAV), se reanuda sola tras un corte sin perder nada y llega en m4a a la carpeta que hayas elegido.",
  "rec_s3_t": "El servidor entiende la canción",
@@ -464,5 +464,6 @@
  "ph_c3_t": "💻 También en cada PC",
  "ph_c3_p": "Llegan a la carpeta 28JoursBox del PC de cada miembro, listos para un cartel, un montaje de vídeo o las redes sociales.",
  "ph_c4_t": "🔗 Compartidos con un enlace",
- "ph_c4_p": "Toda la carpeta del concierto para la sala o tus fans: un enlace público de solo lectura, con contraseña y fecha de fin si quieres."
+ "ph_c4_p": "Toda la carpeta del concierto para la sala o tus fans: un enlace público de solo lectura, con contraseña y fecha de fin si quieres.",
+ "pillar_drums": "Batería real para grabar encima (10 estilos)"
 }
