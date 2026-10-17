@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=8" rel="stylesheet"/>
+<link href="style.css?v=12" rel="stylesheet"/>
 </head>
 <body>
 <nav class="nav">
@@ -21,7 +21,7 @@
 <button aria-expanded="false" aria-label="Menu" class="nav-toggle" data-i18n-aria-label="menu"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
 <div class="nav-links">
 <a data-i18n="decouvrir" href="index.html">Discover</a>
-<a aria-current="page" data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="forum" href="forum.html">Forum</a>
+<a data-i18n="nav_why" href="pourquoi.html">Why not the cloud?</a><a aria-current="page" data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="forum" href="forum.html">Forum</a>
 <a data-i18n="soutenir" href="don.html">Support</a>
 <a class="btn small" data-i18n="telecharger" href="telecharger.html">Download</a>
 </div>
@@ -45,7 +45,7 @@
 <li><b>Le PC serveur</b> : un PC Windows du groupe qui garde tous les fichiers, fait les analyses musicales (la nuit) et reste allumé. Une seule personne l'installe : elle devient <b>administrateur</b>.</li>
 <li><b>Les PC des membres</b> : chacun a un dossier <span class="ui">28JoursBox</span> sur son Bureau, qui se synchronise tout seul avec le serveur.</li>
 <li><b>Les téléphones (et tout navigateur)</b> : rien à installer. On ouvre le lien d'invitation et on retrouve tous les fichiers, le lecteur avancé, l'enregistreur…</li>
-</ul>
+</ul><div class="callout tip" id="guide-dc"><span>🏠</span><p><b>Tout reste chez vous.</b> Fichiers, versions, prises, analyses et pistes séparées sont stockés sur le disque du PC serveur, pas dans un data center ; les calculs d'IA tournent sur ce PC, la nuit. Le revers : la sauvegarde est l'affaire du groupe (voir <a href="#admin-sauvegarde">Sauvegarder</a>). <a href="pourquoi.html">Pourquoi ce choix ?</a></p></div>
 <h3 id="acces">Pseudo et mot de passe du groupe</h3>
 <p>Il n'y a pas de compte personnel avec mot de passe. Chaque membre choisit un <b>pseudo</b>, et <b>un seul mot de passe</b> vaut pour tout le groupe. Il est déjà inclus dans le <b>lien d'invitation</b> : en pratique, on n'a jamais à le taper.</p>
 <div class="callout warn"><span>⚠️</span><p><b>Gardez toujours le même pseudo</b>, sur tous vos appareils, et ne prenez jamais celui d'un autre membre : un pseudo qui existe déjà ouvre la session de ce membre (les majuscules ne comptent pas, « Marc » = « marc »). Un pseudo nouveau crée un nouveau membre.</p></div>
@@ -644,7 +644,7 @@ Menu ⋯ du morceau › <span class="ui">Vers Studio One…</span><br/><br/>
 <div>
 <h4 data-i18n="le_projet">The project</h4>
 <a data-i18n="telecharger" href="telecharger.html">Download</a>
-<a data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="forum" href="forum.html">Forum</a>
+<a data-i18n="nav_why" href="pourquoi.html">Why not the cloud?</a><a data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="forum" href="forum.html">Forum</a>
 <a data-i18n="soutenir" href="don.html">Support</a>
 </div>
 <div>
@@ -657,8 +657,8 @@ Menu ⋯ du morceau › <span class="ui">Vers Studio One…</span><br/><br/>
 <div class="credits" data-i18n="2026_28joursbox_les_dons_sont">© <span id="year">2026</span> 28JoursBox · Donations are voluntary and don't unlock any extra features.</div>
 </div>
 </footer>
-<script src="config.js?v=8"></script>
-<script src="i18n.js?v=8"></script>
-<script src="site.js?v=8"></script><script src="guide.js?v=9"></script>
+<script src="config.js?v=10"></script>
+<script src="i18n.js?v=10"></script>
+<script src="site.js?v=12"></script><script src="guide.js?v=10"></script>
 </body>
 </html>

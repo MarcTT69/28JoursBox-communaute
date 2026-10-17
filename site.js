@@ -86,7 +86,15 @@
     renderDon();
   }));
 
-  const refresh = () => { fixLinks(); renderMetas(); renderDon(); };
+  // Tableaux empilés sur mobile : chaque cellule reçoit le titre de sa colonne
+  function labelTables() {
+    document.querySelectorAll('table.stack-sm').forEach((tb) => {
+      const heads = [...tb.querySelectorAll('thead th')].map((th) => th.textContent.trim());
+      tb.querySelectorAll('tbody tr').forEach((tr) => [...tr.children].forEach((cell, i) => { if (heads[i]) cell.dataset.label = heads[i]; }));
+    });
+  }
+
+  const refresh = () => { fixLinks(); renderMetas(); renderDon(); labelTables(); };
   refresh();
   document.addEventListener('langchange', refresh);
 

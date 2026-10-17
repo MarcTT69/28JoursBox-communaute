@@ -489,3 +489,34 @@ ol.how > li::before { content: counter(how); position: absolute; left: 0; top: 0
   .toc details:not([open]) > :not(summary) { display: none; }
 }
 .guide-lang-note:has(p:empty) { display: none; }
+
+/* ---------- Réponse aux data centers ---------- */
+.dc-cards { grid-template-columns: repeat(4, 1fr); }
+.dc-cards h3 { font-size: 1.1rem; }
+@media (max-width: 1000px) { .dc-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .dc-cards { grid-template-columns: 1fr; } }
+.why { max-width: 900px; }
+.why-block { margin-bottom: 64px; }
+.why-block h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.why-block > p { color: var(--text-2); font-size: 1.05rem; }
+.why-block p b { color: var(--text); }
+.why-table td, .why-table th { text-align: left !important; }
+.why-table td.us { font-weight: 600; color: var(--text); }
+.why-stats { margin: 26px 0 14px; }
+.why-stats .stat b { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+.why-flip { list-style: none; padding: 0; display: grid; gap: 14px; margin-top: 18px; }
+.why-flip li { background: rgba(250,204,21,.06); border: 1px solid rgba(250,204,21,.25); border-radius: 14px; padding: 16px 18px; color: var(--text-2); }
+.why-flip li b { color: var(--text); }
+.why .callout ul { margin: 8px 0 0; padding-left: 18px; }
+.why .callout li { color: var(--text-2); }
+.small { font-size: .88rem; }
+.stat b span { font-size: inherit; color: inherit; }
+@media (max-width: 640px) {
+  table.stack-sm { min-width: 0; }
+  table.stack-sm thead { display: none; }
+  table.stack-sm tr { display: block; padding: 14px 16px; border-bottom: 1px solid rgba(255,255,255,.08); }
+  table.stack-sm th, table.stack-sm td { display: block; padding: 4px 0; border: 0; background: none; }
+  table.stack-sm tbody th { font-size: 1.02rem; margin-bottom: 4px; width: auto; }
+  table.stack-sm td::before { content: attr(data-label); display: block; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+  table.stack-sm td.us::before { color: var(--accent-2); }
+}
