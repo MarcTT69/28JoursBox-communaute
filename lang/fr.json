@@ -260,5 +260,14 @@
  "js.don_soon": "Le lien PayPal sera bientôt disponible.",
  "js.version": "Version {v} · {d}",
  "js.dl_default": "Windows 10 / 11 · 64 bits",
- "js.language": "Langue"
+ "js.language": "Langue",
+ "shot_eyebrow": "Captures réelles",
+ "shot_title": "Voici ce que votre groupe voit sur son téléphone",
+ "shot_lead": "Capturées dans l'appli avec un de nos morceaux, « Born to lose ».",
+ "shot_liste": "Le dossier du groupe et le mini-lecteur",
+ "shot_lecteur": "Lecteur avancé : les parties en couleurs",
+ "shot_accords": "Les accords du morceau en diagrammes de guitare",
+ "shot_mixage": "Pistes séparées : chant, guitares, basse, batterie",
+ "shot_metronome": "Enregistrer au clic, calé sur la grille",
+ "shot_actions": "Studio One, WAV, mail, WhatsApp : en un geste"
 }

@@ -260,5 +260,14 @@
  "js.don_soon": "El enlace de PayPal estará disponible pronto.",
  "js.version": "Versión {v} · {d}",
  "js.dl_default": "Windows 10 / 11 · 64 bits",
- "js.language": "Idioma"
+ "js.language": "Idioma",
+ "shot_eyebrow": "Capturas reales",
+ "shot_title": "Esto es lo que tu grupo ve en el móvil",
+ "shot_lead": "Capturas de la app con una de nuestras canciones, «Born to lose». Por ahora, la interfaz de la app está en francés.",
+ "shot_liste": "La carpeta del grupo y el minirreproductor",
+ "shot_lecteur": "Reproductor avanzado: secciones por colores",
+ "shot_accords": "Los acordes de la canción en diagramas de guitarra",
+ "shot_mixage": "Pistas separadas: voz, guitarras, bajo, batería",
+ "shot_metronome": "Graba con clic, ajustado a la rejilla",
+ "shot_actions": "Studio One, WAV, correo, WhatsApp: con un toque"
 }

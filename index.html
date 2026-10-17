@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=2" rel="stylesheet"/>
+<link href="style.css?v=3" rel="stylesheet"/>
 </head>
 <body>
 <nav class="nav">
@@ -50,30 +50,7 @@
 </div>
 </div>
 <!-- Maquette : le lecteur avancé sur un téléphone -->
-<div aria-label="Preview of the advanced player on a phone" class="phone" data-i18n-aria-label="apercu_du_lecteur_avance_sur">
-<div class="screen">
-<div class="notch"></div>
-<div class="ph-top"><span data-i18n="repete_du_jeudi">Thursday rehearsal</span><span class="pill" data-i18n="analyse_fine">● Fine analysis</span></div>
-<div class="ph-title" data-i18n="notre_morceau_prise_3">Our song — take 3</div>
-<div class="chord-now"><b>Am</b><span>→ F</span><em data-i18n="la_mineur_124_bpm">A minor<br/>124 BPM</em></div>
-<div class="chords-row"><span>C</span><span>G</span><span class="on">Am</span><span>F</span><span>C</span><span>G</span><span>F</span><span>F</span></div>
-<div class="parts">
-<div class="part" data-i18n="a_intro" style="flex:1.2;background:var(--intro)"><small>A</small>Intro</div>
-<div class="part" data-i18n="a_b_couplet" style="flex:2.4;background:var(--couplet)"><small>A B</small>Verse</div>
-<div class="part" data-i18n="c_c_refrain" style="flex:2;background:var(--refrain)"><small>C C</small>Chorus</div>
-<div class="part" data-i18n="d_pont" style="flex:1.2;background:var(--pont)"><small>D</small>Bridge</div>
-<div class="part" data-i18n="c_solo" style="flex:1.4;background:var(--solo)"><small>C</small>Solo</div>
-<div class="playhead"></div>
-</div>
-<div class="part-legend"><span data-i18n="intro"><i style="background:var(--intro)"></i>Intro</span><span data-i18n="couplet"><i style="background:var(--couplet)"></i>Verse</span><span data-i18n="refrain"><i style="background:var(--refrain)"></i>Chorus</span><span data-i18n="pont"><i style="background:var(--pont)"></i>Bridge</span><span data-i18n="solo"><i style="background:var(--solo)"></i>Solo</span></div>
-<div class="wave"></div>
-<div class="ph-ctrl">
-<span class="tempo" data-i18n="tempo_85">Tempo <b>85%</b></span>
-<span class="ph-play"><svg viewbox="0 0 24 24"><path d="M7 5l12 7-12 7z"></path></svg></span>
-<span class="loop">⟲ ×4</span>
-</div>
-</div>
-</div>
+<div class="phone shot"><img alt="Advanced player: color-coded sections" data-i18n-alt="shot_lecteur" height="808" loading="eager" src="img/captures/lecteur.png" width="373"/></div>
 </div>
 </header>
 <!-- ============ PROBLÈME / SOLUTION ============ -->
@@ -142,24 +119,16 @@
 </div>
 </div>
 </div>
-</section>
+</section><section id="captures"><div class="wrap">
+<div class="section-head center reveal"><span class="eyebrow" data-i18n="shot_eyebrow">Real screenshots</span><h2 data-i18n="shot_title">This is what your band sees on their phones</h2><p class="lead" data-i18n="shot_lead">Captured in the app with one of our own songs, "Born to lose". The app's interface is currently in French.</p></div>
+<div class="gallery"><figure class="reveal"><div class="phone shot"><img alt="The band folder, with the mini-player" data-i18n-alt="shot_liste" height="808" loading="lazy" src="img/captures/liste.png" width="373"/></div><figcaption data-i18n="shot_liste">The band folder, with the mini-player</figcaption></figure><figure class="reveal"><div class="phone shot"><img alt="Advanced player: color-coded sections" data-i18n-alt="shot_lecteur" height="808" loading="lazy" src="img/captures/lecteur.png" width="373"/></div><figcaption data-i18n="shot_lecteur">Advanced player: color-coded sections</figcaption></figure><figure class="reveal"><div class="phone shot"><img alt="The song's chords as guitar diagrams" data-i18n-alt="shot_accords" height="808" loading="lazy" src="img/captures/accords.png" width="373"/></div><figcaption data-i18n="shot_accords">The song's chords as guitar diagrams</figcaption></figure><figure class="reveal"><div class="phone shot"><img alt="Separated tracks: vocals, guitars, bass, drums" data-i18n-alt="shot_mixage" height="808" loading="lazy" src="img/captures/mixage.png" width="373"/></div><figcaption data-i18n="shot_mixage">Separated tracks: vocals, guitars, bass, drums</figcaption></figure><figure class="reveal"><div class="phone shot"><img alt="Record to the click, locked to the grid" data-i18n-alt="shot_metronome" height="808" loading="lazy" src="img/captures/metronome.png" width="373"/></div><figcaption data-i18n="shot_metronome">Record to the click, locked to the grid</figcaption></figure><figure class="reveal"><div class="phone shot"><img alt="Studio One, WAV, email, WhatsApp: one tap" data-i18n-alt="shot_actions" height="808" loading="lazy" src="img/captures/actions.png" width="373"/></div><figcaption data-i18n="shot_actions">Studio One, WAV, email, WhatsApp: one tap</figcaption></figure></div></div></section>
 <!-- ============ VITRINES ============ -->
 <section id="studio">
 <div class="wrap">
 <div class="feature">
 <div class="media reveal">
 <div class="photo"><img alt="A band rehearsing in a bedroom with drums, guitar and a laptop" data-i18n-alt="un_groupe_repete_dans_une" loading="lazy" src="https://images.unsplash.com/photo-1776464487858-9bd497910008?w=1200&amp;q=72&amp;auto=format&amp;fit=crop"/></div>
-<div class="overlay-card">
-<h4 data-i18n="structure_detectee">Detected structure</h4>
-<div class="parts" style="height:40px">
-<div class="part" data-i18n="intro_2" style="flex:1;background:var(--intro)">Intro</div>
-<div class="part" data-i18n="couplet_2" style="flex:2;background:var(--couplet)">Verse</div>
-<div class="part" style="flex:.8;background:var(--prerefrain)"></div>
-<div class="part" data-i18n="refrain_2" style="flex:1.8;background:var(--refrain)">Chorus</div>
-<div class="part" data-i18n="outro" style="flex:1;background:var(--outro)">Outro</div>
-</div>
-<div class="chords-row" style="margin-top:8px"><span>Em</span><span class="on">C</span><span>G</span><span>D</span></div>
-</div>
+<div class="phone shot overlay-phone"><img alt="The song's chords as guitar diagrams" data-i18n-alt="shot_accords" height="808" loading="lazy" src="img/captures/accords.png" width="373"/></div>
 </div>
 <div class="reveal">
 <span class="eyebrow" data-i18n="le_morceau_compris_tout_seul">The song, understood automatically</span>
@@ -176,15 +145,7 @@
 <div class="feature flip">
 <div class="media reveal">
 <div class="photo tall"><img alt="A guitarist playing a white electric guitar" data-i18n-alt="un_guitariste_joue_sur_une" loading="lazy" src="https://images.unsplash.com/photo-1779026226306-421239f3d489?w=1000&amp;q=72&amp;auto=format&amp;fit=crop"/></div>
-<div class="overlay-card left">
-<h4 data-i18n="table_de_mixage">Mixer</h4>
-<div class="mixer">
-<div class="strip"><span data-i18n="chant">Vocals</span><div class="fader"><i style="height:70%;background:var(--refrain)"></i><b style="bottom:64%"></b></div><div class="ms"><span>M</span><span>S</span></div></div>
-<div class="strip"><span data-i18n="guitares">Guitars</span><div class="fader"><i style="height:0;background:var(--solo)"></i><b style="bottom:-2%"></b></div><div class="ms"><span class="m">M</span><span>S</span></div></div>
-<div class="strip"><span data-i18n="basse">Bass</span><div class="fader"><i style="height:55%;background:var(--couplet)"></i><b style="bottom:49%"></b></div><div class="ms"><span>M</span><span>S</span></div></div>
-<div class="strip"><span data-i18n="batterie">Drums</span><div class="fader"><i style="height:80%;background:var(--outro)"></i><b style="bottom:74%"></b></div><div class="ms"><span>M</span><span>S</span></div></div>
-</div>
-</div>
+<div class="phone shot overlay-phone left"><img alt="Separated tracks: vocals, guitars, bass, drums" data-i18n-alt="shot_mixage" height="808" loading="lazy" src="img/captures/mixage.png" width="373"/></div>
 </div>
 <div class="reveal">
 <span class="eyebrow" data-i18n="instruments_separes">Separated instruments</span>
@@ -202,11 +163,7 @@
 <div class="feature">
 <div class="media reveal">
 <div class="photo"><img alt="A drummer playing in a neon-lit room" data-i18n-alt="un_batteur_joue_dans_une" loading="lazy" src="https://images.unsplash.com/photo-1761145249446-92c8feb8edf0?w=1200&amp;q=72&amp;auto=format&amp;fit=crop&amp;crop=faces"/></div>
-<div class="overlay-card">
-<h4 data-i18n="prise_calee_sur_la_grille">⏺ Take locked to the grid</h4>
-<div class="grid-bars"><span data-n="1"></span><span class="rec" data-n="2"></span><span class="rec" data-n="3"></span><span class="rec" data-n="4"></span><span class="rec" data-n="5"></span><span class="rec" data-n="6"></span><span class="rec" data-n="7"></span><span data-n="8"></span></div>
-<div class="rec-line"><span data-i18n="124_bpm_clic_silencieux">124 BPM · silent click</span><b data-i18n="cale">Aligned ✓</b></div>
-</div>
+<div class="phone shot overlay-phone"><img alt="Record to the click, locked to the grid" data-i18n-alt="shot_metronome" height="808" loading="lazy" src="img/captures/metronome.png" width="373"/></div>
 </div>
 <div class="reveal">
 <span class="eyebrow" data-i18n="enregistrer_par_dessus">Record over it</span>
@@ -366,7 +323,7 @@
 </div>
 </footer>
 <script src="config.js?v=2"></script>
-<script src="i18n.js?v=2"></script>
-<script src="site.js?v=2"></script>
+<script src="i18n.js?v=3"></script>
+<script src="site.js?v=3"></script>
 </body>
 </html>

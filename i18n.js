@@ -20,7 +20,7 @@
 
   function load(code) {
     if (cache[code]) return Promise.resolve(cache[code]);
-    return fetch(`lang/${code}.json`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
+    return fetch(`lang/${code}.json?v=3`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
   }
 
   function apply(d) {
