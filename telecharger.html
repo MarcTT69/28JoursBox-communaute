@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=3" rel="stylesheet"/>
+<link href="style.css?v=4" rel="stylesheet"/>
 </head>
 <body>
 <nav class="nav">
@@ -87,10 +87,31 @@
 <span class="eyebrow" data-i18n="configuration">Requirements</span>
 <h2 data-i18n="ce_qu_il_vous_faut">What you need</h2>
 </div>
-<div class="req">
-<div class="reveal"><h3 data-i18n="pc_serveur">💻 Server PC</h3><p data-i18n="windows_10_ou_11_64">Windows 10 or 11, 64-bit, ideally 4 cores or more. Disk space for your songs. It stays on: turn off sleep when plugged in.</p></div>
-<div class="reveal"><h3 data-i18n="pc_des_membres_2">🖥️ Members' PCs</h3><p data-i18n="windows_10_ou_11_64_2">Windows 10 or 11, 64-bit. Cubase or Studio One optional: project locks are set automatically if they're installed.</p></div>
-<div class="reveal"><h3 data-i18n="telephones">📱 Phones</h3><p data-i18n="iphone_ou_android_avec_un">iPhone or Android with a recent browser (Safari, Chrome). Nothing to install. Works on mobile data thanks to Tailscale, set up from the server wizard.</p></div>
+
+<div class="req-block reveal">
+<h3 data-i18n="req_server_title">💻 The server PC</h3>
+<p class="muted" data-i18n="req_server_lead">The PC that holds the band's songs and stays on. An older PC is fine.</p>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th></th><th data-i18n="req_th_min">Minimum</th><th data-i18n="req_th_rec">Recommended</th></tr></thead>
+<tbody><tr><th scope="row"><span data-i18n="req_os">System</span></th><td><span data-i18n="req_os_min">Windows 10, 64-bit</span></td><td><span data-i18n="req_os_rec">Windows 11, 64-bit</span></td></tr><tr><th scope="row"><span data-i18n="req_cpu">Processor</span></th><td><span data-i18n="req_cpu_min">Any recent x64 processor</span></td><td><span data-i18n="req_cpu_rec">4 cores or more, with AVX2 (Intel 4th gen, AMD Ryzen or newer)</span></td></tr><tr><th scope="row"><span data-i18n="req_ram">Memory (RAM)</span></th><td><span data-i18n="req_ram_min">8 GB</span></td><td><span data-i18n="req_ram_rec">16 GB if the PC is also used for other things</span></td></tr><tr><th scope="row"><span data-i18n="req_gpu">Graphics card</span></th><td><span data-i18n="req_gpu_min">Not needed</span></td><td><span data-i18n="req_gpu_rec">Not needed: heavy processing runs overnight</span></td></tr><tr><th scope="row"><span data-i18n="req_soft">Software</span></th><td><span data-i18n="req_soft_min">About 1.7 GB (1 GB download)</span></td><td><span data-i18n="req_soft_rec">On the system drive (the songs can go on another disk)</span></td></tr><tr><th scope="row"><span data-i18n="req_disk">Storage for songs</span></th><td><span data-i18n="req_disk_min">Depends on your files (see below)</span></td><td><span data-i18n="req_disk_rec">A dedicated disk of 500 GB to 1 TB, plus an external disk for backups</span></td></tr><tr><th scope="row"><span data-i18n="req_power">Availability</span></th><td><span data-i18n="req_power_min">Stays on, sleep turned off when plugged in</span></td><td><span data-i18n="req_power_rec">Wired network connection</span></td></tr><tr><th scope="row"><span data-i18n="req_net">Home internet (upload)</span></th><td><span data-i18n="req_net_min">5 Mbit/s, to listen on mobile data</span></td><td><span data-i18n="req_net_rec">20 Mbit/s or more (fiber) for several members or big files</span></td></tr></tbody>
+</table></div>
+</div>
+<div class="req-block reveal">
+<h3 data-i18n="req_storage_title">💾 How much storage?</h3>
+<p data-i18n="req_storage_lead">28JoursBox itself adds little: about <b>45 MB per analyzed song</b> for the separated tracks (measured: 154 songs = 6.9 GB). What fills the disk is <b>your own files</b>: rehearsal WAVs and Cubase / Studio One projects. Edited and deleted files are also kept 30 days (versions and trash).</p>
+<div class="table-wrap"><table class="spec">
+<thead><tr><th></th><th data-i18n="req_ex_files">Your files</th><th data-i18n="req_ex_stems">Separated tracks</th><th data-i18n="req_ex_total">Total</th></tr></thead>
+<tbody><tr><th scope="row"><span data-i18n="req_ex1">100 songs in MP3 / m4a (about 5 MB each)</span></th><td><span data-i18n="req_ex1_files">0.5 GB</span></td><td><span data-i18n="req_ex1_stems">4.5 GB</span></td><td><b><span data-i18n="req_ex1_total">≈ 5 GB</span></b></td></tr><tr><th scope="row"><span data-i18n="req_ex2">100 rehearsals in WAV, 4 min (about 40 MB each)</span></th><td><span data-i18n="req_ex2_files">4 GB</span></td><td><span data-i18n="req_ex2_stems">4.5 GB</span></td><td><b><span data-i18n="req_ex2_total">≈ 9 GB</span></b></td></tr><tr><th scope="row"><span data-i18n="req_ex3">20 multitrack Cubase / Studio One projects (1 to 5 GB each)</span></th><td><span data-i18n="req_ex3_files">20–100 GB</span></td><td><span data-i18n="req_ex3_stems">—</span></td><td><b><span data-i18n="req_ex3_total">≈ 20–100 GB</span></b></td></tr></tbody>
+</table></div>
+<p class="muted small" data-i18n="req_ex_note">Tracks are separated automatically overnight for m4a files, and on request for WAV and MP3. Plan an external disk of the same size as your data for backups.</p>
+</div>
+<div class="req-block reveal">
+<h3 data-i18n="req_time_title">⏱️ How long does analysis take?</h3>
+<p data-i18n="req_time_text">Each new song is prepared overnight (1 am to 7 am): beats, chords, separated tracks and fine analysis. Measured on an 8-core PC: about 2.6 minutes of processing per minute of music, so about 10 minutes for a 4-minute song and around 30 songs per night. On a 4-core PC, count about twice as long. New songs are ready the next morning; a large first import can take a few nights.</p>
+</div>
+<div class="req req-2">
+<div class="reveal"><h3 data-i18n="pc_des_membres_2">🖥️ Members' PCs</h3><p data-i18n="req_members_text">Windows 10 or 11, 64-bit. About 320 MB for the software, plus the space of the folders you choose to keep on this PC. Cubase or Studio One optional: project locks are set automatically if they're installed.</p></div>
+<div class="reveal"><h3 data-i18n="telephones">📱 Phones</h3><p data-i18n="req_phones_text">iPhone or Android with a recent browser (Safari, Chrome). Nothing to install, no storage used: songs play from the server. On mobile data, listening uses about 0.2 to 0.3 Mbit/s.</p></div>
 </div>
 <div class="note info reveal" style="margin-top:28px">
 <span class="i">💡</span>
@@ -122,7 +143,7 @@
 </div>
 </footer>
 <script src="config.js?v=2"></script>
-<script src="i18n.js?v=3"></script>
-<script src="site.js?v=3"></script>
+<script src="i18n.js?v=4"></script>
+<script src="site.js?v=4"></script>
 </body>
 </html>
