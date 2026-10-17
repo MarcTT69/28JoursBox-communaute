@@ -52,7 +52,7 @@
     const date = new Date(release.published_at).toLocaleDateString(locale(), { day: 'numeric', month: 'long', year: 'numeric' });
     metas.forEach((m) => {
       const asset = (release.assets || []).find((x) => x.name === m.dataset.dlMeta);
-      const size = asset ? ` · ${Math.round(asset.size / 1048576).toLocaleString(locale())} MB` : '';
+      const size = asset ? ` · ${Math.round(asset.size / 1048576).toLocaleString(locale())} ${T('js.mb')}` : '';
       m.textContent = T('js.version', { v: release.tag_name, d: date }) + size;
     });
   }

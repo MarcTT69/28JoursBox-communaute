@@ -319,5 +319,6 @@
  "req_ex2_total": "≈ 9 GB",
  "req_ex3_files": "20–100 GB",
  "req_ex3_stems": "—",
- "req_ex3_total": "≈ 20–100 GB"
+ "req_ex3_total": "≈ 20–100 GB",
+ "js.mb": "MB"
 }
