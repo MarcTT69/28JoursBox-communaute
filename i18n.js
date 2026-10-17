@@ -5,6 +5,10 @@
     ['de', 'Deutsch'], ['it', 'Italiano'], ['pt', 'Português'],
   ];
   const codes = LANGS.map((l) => l[0]);
+  // Pages générées (une par langue) : la langue est dans l'adresse, les autres versions dans <link rel=alternate>
+  const staticLang = document.documentElement.dataset.staticLang;
+  const root = document.documentElement.dataset.root || '';
+  const altUrl = (code) => document.querySelector(`link[rel="alternate"][hreflang="${code}"]`)?.href;
   const cache = {};
   let dict = {};
 
@@ -20,7 +24,7 @@
 
   function load(code) {
     if (cache[code]) return Promise.resolve(cache[code]);
-    return fetch(`lang/${code}.json?v=13`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
+    return fetch(`${root}lang/${code}.json?v=15`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
   }
 
   function apply(d) {
@@ -75,6 +79,8 @@
       const b = e.target.closest('[data-lang]');
       if (!b) return;
       close();
+      const url = staticLang && altUrl(b.dataset.lang);
+      if (url) { store.set(b.dataset.lang); if (b.dataset.lang !== staticLang) location.href = url + location.hash; return; }
       setLang(b.dataset.lang, true);
     });
     box.onkeydown = (e) => { if (e.key === 'Escape') { close(); btn.focus(); } };
@@ -86,8 +92,23 @@
 
   const I18N = window.I18N = { lang: 'en', t, setLang, langs: LANGS };
 
-  // Choix : ?lang=xx dans l'adresse, puis le choix mémorisé, sinon anglais
   const fromUrl = new URLSearchParams(location.search).get('lang');
+  if (staticLang) {
+    // ?lang=xx, ou un choix mémorisé quand on arrive sur la version anglaise : aller à la bonne page
+    const wanted = codes.includes(fromUrl) ? fromUrl : (staticLang === 'en' ? store.get() : null);
+    if (codes.includes(fromUrl)) store.set(fromUrl);
+    const url = wanted && wanted !== staticLang && altUrl(wanted);
+    if (url) { location.replace(url + location.hash); return; }
+    I18N.lang = staticLang;
+    renderMenu();
+    Promise.all([load('en'), load(staticLang)]).then(([, d]) => {
+      dict = d; renderMenu();
+      document.dispatchEvent(new CustomEvent('langchange', { detail: staticLang }));
+    }).catch(() => {});
+    return;
+  }
+
+  // Aperçu local (source non générée) : ?lang=xx, puis le choix mémorisé, sinon anglais
   const initial = codes.includes(fromUrl) ? fromUrl : (store.get() || 'en');
   if (codes.includes(fromUrl)) store.set(fromUrl);
   renderMenu();
