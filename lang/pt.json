@@ -453,5 +453,16 @@
  "rec_shot2": "A música dividida em partes",
  "rec_s6_t": "Cada um a sua versão, depois a DAW",
  "rec_s6_p": "Salve o seu arranjo: ele vira um novo arquivo na pasta da banda, que os outros ouvem e comentam. Quando a estrutura estiver definida, <b>Para o Studio One ou Cubase</b> cria um projeto pronto para abrir com as faixas separadas, ou você leva o WAV para qualquer DAW.",
- "pillar_folders": "Envio de pastas inteiras, download em zip"
+ "pillar_folders": "Envio de pastas inteiras, download em zip",
+ "ph_eyebrow": "Fotos e vídeos",
+ "ph_title": "As fotos e os vídeos da banda também",
+ "ph_lead": "Fotos de shows, vídeos de ensaio, cartazes, setlists: envie direto do celular e a banda toda vê na hora, em cada celular e cada PC. Guardados em casa com todo o resto, não em um data center.",
+ "ph_c1_t": "📷 Direto do celular",
+ "ph_c1_p": "Tire uma foto ou grave um vídeo pelo app, ou escolha vários da galeria: o app lembra a data do seu último envio.",
+ "ph_c2_t": "🖼️ Em tela cheia para todos",
+ "ph_c2_p": "Miniaturas na lista, fotos e vídeos em tela cheia, também na horizontal. Deslize para a próxima.",
+ "ph_c3_t": "💻 Em cada PC também",
+ "ph_c3_p": "Chegam à pasta 28JoursBox do PC de cada membro, prontas para um cartaz, uma edição de vídeo ou as redes sociais.",
+ "ph_c4_t": "🔗 Compartilhadas por um link",
+ "ph_c4_p": "A pasta inteira do show para a casa de shows ou os fãs: um link público só de leitura, com senha e data de validade se quiser."
 }

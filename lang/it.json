@@ -453,5 +453,16 @@
  "rec_shot2": "Il brano diviso in sezioni",
  "rec_s6_t": "Ognuno la sua versione, poi la DAW",
  "rec_s6_p": "Salva il tuo arrangiamento: diventa un nuovo file nella cartella della band, che gli altri ascoltano e commentano. Quando la struttura è decisa, <b>Verso Studio One o Cubase</b> crea un progetto pronto da aprire con le tracce separate, oppure porti il WAV in qualsiasi DAW.",
- "pillar_folders": "Invio di cartelle intere, download in zip"
+ "pillar_folders": "Invio di cartelle intere, download in zip",
+ "ph_eyebrow": "Foto e video",
+ "ph_title": "Anche le foto e i video della band",
+ "ph_lead": "Foto dei concerti, video delle prove, locandine, scalette: inviale direttamente dal telefono e tutta la band le vede subito, su ogni telefono e ogni PC. Salvate a casa con tutto il resto, non in un data center.",
+ "ph_c1_t": "📷 Direttamente dal telefono",
+ "ph_c1_p": "Scatta una foto o un video dall'app, oppure scegline diversi dalla galleria: l'app ti ricorda la data dell'ultimo invio.",
+ "ph_c2_t": "🖼️ A schermo intero per tutti",
+ "ph_c2_p": "Miniature nell'elenco, foto e video a schermo intero, anche in orizzontale. Scorri per passare alla successiva.",
+ "ph_c3_t": "💻 Anche su ogni PC",
+ "ph_c3_p": "Arrivano nella cartella 28JoursBox del PC di ogni membro, pronte per una locandina, un montaggio video o i social.",
+ "ph_c4_t": "🔗 Condivise con un link",
+ "ph_c4_p": "Tutta la cartella del concerto per il locale o i fan: un link pubblico in sola lettura, con password e data di scadenza se vuoi."
 }

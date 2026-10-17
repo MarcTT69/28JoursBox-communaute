@@ -453,5 +453,16 @@
  "rec_shot2": "Der Song, in Teile zerlegt",
  "rec_s6_t": "Jeder seine Version, dann ab in die DAW",
  "rec_s6_p": "Speichere dein Arrangement: Es wird eine neue Datei im Band-Ordner, die die anderen anhören und kommentieren. Steht die Struktur, erstellt <b>Zu Studio One oder Cubase</b> ein fertiges Projekt mit getrennten Spuren, oder du nimmst die WAV in jede beliebige DAW mit.",
- "pillar_folders": "Ganze Ordner hochladen, als ZIP herunterladen"
+ "pillar_folders": "Ganze Ordner hochladen, als ZIP herunterladen",
+ "ph_eyebrow": "Fotos & Videos",
+ "ph_title": "Auch die Fotos und Videos der Band",
+ "ph_lead": "Konzertfotos, Probenvideos, Plakate, Setlists: direkt vom Handy hochladen, und die ganze Band sieht sie sofort, auf jedem Handy und jedem PC. Zu Hause gespeichert wie alles andere, nicht in einem Rechenzentrum.",
+ "ph_c1_t": "📷 Direkt vom Handy",
+ "ph_c1_p": "Mach ein Foto oder Video direkt in der App oder wähle mehrere aus der Galerie: Die App zeigt dir, wann du zuletzt welche geschickt hast.",
+ "ph_c2_t": "🖼️ Vollbild für alle",
+ "ph_c2_p": "Vorschaubilder in der Liste, Fotos und Videos im Vollbild, auch im Querformat. Wischen für das nächste.",
+ "ph_c3_t": "💻 Auch auf jedem PC",
+ "ph_c3_p": "Sie landen im 28JoursBox-Ordner jedes Bandmitglieds, bereit für ein Plakat, einen Videoschnitt oder Social Media.",
+ "ph_c4_t": "🔗 Per Link geteilt",
+ "ph_c4_p": "Den ganzen Konzertordner für den Club oder die Fans: ein öffentlicher Link nur zum Ansehen, auf Wunsch mit Passwort und Ablaufdatum."
 }

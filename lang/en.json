@@ -453,5 +453,16 @@
  "rec_shot2": "The song, cut into sections",
  "rec_s6_t": "Everyone makes their version, then on to the DAW",
  "rec_s6_p": "Save your arrangement: it becomes a new file in the band folder, which the others can listen to and comment on. When the structure is settled, <b>To Studio One or Cubase</b> creates a ready-to-open project with separated tracks, or you take the WAV into any DAW.",
- "pillar_folders": "Send whole folders, download them as a zip"
+ "pillar_folders": "Send whole folders, download them as a zip",
+ "ph_eyebrow": "Photos & videos",
+ "ph_title": "The band's photos and videos too",
+ "ph_lead": "Gig photos, rehearsal videos, posters, setlists: send them straight from your phone and the whole band can see them right away, on every phone and every PC. Stored at home with everything else, not in a data center.",
+ "ph_c1_t": "📷 Straight from the phone",
+ "ph_c1_p": "Take a photo or a video from the app, or pick several from your gallery: the app reminds you when you last sent some.",
+ "ph_c2_t": "🖼️ Full screen for everyone",
+ "ph_c2_p": "Thumbnails in the list, photos and videos full screen, in landscape too. Swipe to the next one.",
+ "ph_c3_t": "💻 On every PC too",
+ "ph_c3_p": "They land in the 28JoursBox folder of every member's PC, ready for a poster, a video edit or social media.",
+ "ph_c4_t": "🔗 Shared with a link",
+ "ph_c4_p": "A whole gig folder for the venue or your fans: a public read-only link, with a password and an end date if you like."
 }

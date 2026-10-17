@@ -453,5 +453,16 @@
  "rec_shot2": "La canción, dividida en partes",
  "rec_s6_t": "Cada uno su versión, y luego al DAW",
  "rec_s6_p": "Guarda tu arreglo: se convierte en un archivo nuevo en la carpeta del grupo, que los demás escuchan y comentan. Cuando la estructura está clara, <b>A Studio One o Cubase</b> crea un proyecto listo para abrir con las pistas separadas, o llevas el WAV a cualquier DAW.",
- "pillar_folders": "Envío de carpetas enteras, descarga en zip"
+ "pillar_folders": "Envío de carpetas enteras, descarga en zip",
+ "ph_eyebrow": "Fotos y vídeos",
+ "ph_title": "También las fotos y vídeos del grupo",
+ "ph_lead": "Fotos de conciertos, vídeos de ensayos, carteles, setlists: envíalos directamente desde el móvil y todo el grupo los ve al momento, en cada móvil y cada PC. Guardados en casa con todo lo demás, no en un centro de datos.",
+ "ph_c1_t": "📷 Directamente del móvil",
+ "ph_c1_p": "Haz una foto o un vídeo desde la app, o elige varios de la galería: la app te recuerda la fecha de tu último envío.",
+ "ph_c2_t": "🖼️ A pantalla completa para todos",
+ "ph_c2_p": "Miniaturas en la lista, fotos y vídeos a pantalla completa, también en horizontal. Desliza para pasar a la siguiente.",
+ "ph_c3_t": "💻 También en cada PC",
+ "ph_c3_p": "Llegan a la carpeta 28JoursBox del PC de cada miembro, listos para un cartel, un montaje de vídeo o las redes sociales.",
+ "ph_c4_t": "🔗 Compartidos con un enlace",
+ "ph_c4_p": "Toda la carpeta del concierto para la sala o tus fans: un enlace público de solo lectura, con contraseña y fecha de fin si quieres."
 }

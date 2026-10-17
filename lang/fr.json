@@ -453,5 +453,16 @@
  "rec_shot2": "Le morceau découpé en parties",
  "rec_s6_t": "Chacun sa version, puis le logiciel de musique",
  "rec_s6_p": "Enregistrez votre arrangement : il devient un nouveau fichier dans le dossier du groupe, que les autres écoutent et commentent. Quand la structure est trouvée, <b>Vers Studio One ou Cubase</b> crée un projet prêt à ouvrir avec les pistes séparées, ou vous emportez le WAV dans n'importe quel logiciel de musique.",
- "pillar_folders": "Envoi de dossiers entiers, téléchargement en zip"
+ "pillar_folders": "Envoi de dossiers entiers, téléchargement en zip",
+ "ph_eyebrow": "Photos et vidéos",
+ "ph_title": "Les photos et vidéos du groupe, aussi",
+ "ph_lead": "Photos de concert, vidéos de répète, affiches, setlists : envoyez-les directement depuis le téléphone, et tout le groupe les voit aussitôt, sur chaque téléphone et chaque PC. Rangées à la maison avec tout le reste, pas dans un data center.",
+ "ph_c1_t": "📷 Directement du téléphone",
+ "ph_c1_p": "Prenez une photo ou une vidéo depuis l'appli, ou choisissez-en plusieurs dans la galerie : l'appli rappelle la date de votre dernier envoi.",
+ "ph_c2_t": "🖼️ En plein écran pour tous",
+ "ph_c2_p": "Vignettes dans la liste, photos et vidéos en plein écran, en paysage aussi. Glissez pour passer à la suivante.",
+ "ph_c3_t": "💻 Sur chaque PC aussi",
+ "ph_c3_p": "Elles arrivent dans le dossier 28JoursBox de chaque membre, prêtes pour une affiche, un montage vidéo ou les réseaux sociaux.",
+ "ph_c4_t": "🔗 Partagées par un lien",
+ "ph_c4_p": "Tout le dossier du concert pour la salle ou vos fans : un lien public en lecture seule, avec mot de passe et date de fin si vous voulez."
 }
