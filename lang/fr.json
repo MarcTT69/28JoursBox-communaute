@@ -3,10 +3,10 @@
  "vos_morceaux_repetes_et_projets": "Vos morceaux, répètes et projets Cubase / Studio One synchronisés entre tous les PC et téléphones du groupe, sur votre propre machine. Instruments séparés, accords, structure, tempo, boucles. Gratuit, sans abonnement.",
  "28joursbox_votre_groupe_vos_morceaux": "28JoursBox · Votre groupe. Vos morceaux. Votre serveur.",
  "le_cloud_prive_et_le": "Le cloud privé et le studio de répétition de poche d'un groupe de musique. Gratuit et sans abonnement.",
- "un_groupe_repete_dans_une": "Un groupe répète dans une chambre, batterie, guitare et ordinateur",
- "un_guitariste_joue_sur_une": "Un guitariste joue sur une guitare électrique blanche",
- "un_batteur_joue_dans_une": "Un batteur joue dans une salle éclairée au néon",
- "un_groupe_joue_sur_scene": "Un groupe joue sur scène, guitare, basse et batterie",
+ "un_groupe_repete_dans_une": "Le local de répétition du groupe, instruments et table de mixage prêts",
+ "un_guitariste_joue_sur_une": "Un guitariste joue sur une guitare électrique blanche en répète",
+ "un_batteur_joue_dans_une": "Un batteur au casque dans la salle d'enregistrement",
+ "un_groupe_joue_sur_scene": "Le groupe sur scène, le batteur au centre",
  "menu": "Menu",
  "apercu_du_lecteur_avance_sur": "Aperçu du lecteur avancé sur un téléphone",
  "decouvrir": "Découvrir",
@@ -180,7 +180,6 @@
  "communaute": "Communauté",
  "signaler_un_bug": "Signaler un bug",
  "toutes_les_versions": "Toutes les versions",
- "2026_28joursbox_photos_spencer_plouzek": "© <span id=\"year\">2026</span> 28JoursBox · Photos <a href=\"https://unsplash.com/photos/band-performing-live-on-stage-with-instruments-tKEV3aixY8c\">Spencer Plouzek</a>, <a href=\"https://unsplash.com/photos/musicians-practicing-in-a-room-with-a-drum-set-GgeDXcUblwU\">Jorge Antonio Palmero Guerrero</a>, <a href=\"https://unsplash.com/photos/musician-playing-drums-in-a-neon-lit-room-T9FFWcs8y9A\">Les Taylor</a>, <a href=\"https://unsplash.com/photos/man-with-glasses-playing-a-white-electric-guitar-NCB_osrbsR8\">Khue Le Quang</a> sur Unsplash.",
  "telecharger_28joursbox": "Télécharger 28JoursBox gratuitement (Windows)",
  "telechargez_gratuitement_28joursbox_pour_windows": "Téléchargez gratuitement 28JoursBox pour Windows : l'installateur du serveur du groupe et celui des PC des membres.",
  "gratuit_windows_10_11": "Gratuit · Windows 10 / 11",
@@ -465,5 +464,7 @@
  "ph_c3_p": "Elles arrivent dans le dossier 28JoursBox de chaque membre, prêtes pour une affiche, un montage vidéo ou les réseaux sociaux.",
  "ph_c4_t": "🔗 Partagées par un lien",
  "ph_c4_p": "Tout le dossier du concert pour la salle ou vos fans : un lien public en lecture seule, avec mot de passe et date de fin si vous voulez.",
- "pillar_drums": "Une vraie batterie pour enregistrer dessus (10 styles)"
+ "pillar_drums": "Une vraie batterie pour enregistrer dessus (10 styles)",
+ "ph_alt": "Photo du groupe",
+ "credits_photos": "© <span id=\"year\">2026</span> 28JoursBox · Photos : notre groupe, en répète et sur scène."
 }

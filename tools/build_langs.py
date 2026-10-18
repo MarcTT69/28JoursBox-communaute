@@ -14,7 +14,7 @@ BASE = 'https://marctt69.github.io/28JoursBox-communaute/'
 LANGS = ['en', 'fr', 'es', 'de', 'it', 'pt']
 LOCALE = {'en': 'en_US', 'fr': 'fr_FR', 'es': 'es_ES', 'de': 'de_DE', 'it': 'it_IT', 'pt': 'pt_BR'}
 PAGES = ['index.html', 'pourquoi.html', 'telecharger.html', 'guide.html', 'forum.html', 'don.html']
-OG_IMAGE = 'https://images.unsplash.com/photo-1768264261042-8022207d0b80?w=1200&h=630&fit=crop&q=70&auto=format'
+OG_IMAGE = BASE + 'img/photos/og.jpg'
 SKIP = {'_site', '.git', '.github', 'tools', 'README.md'}
 ATTRS = ['content', 'alt', 'aria-label', 'placeholder']
 dicts = {c: json.load(open(SRC / f'lang/{c}.json', encoding='utf-8')) for c in LANGS}

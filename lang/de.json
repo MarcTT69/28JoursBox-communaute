@@ -3,10 +3,10 @@
  "vos_morceaux_repetes_et_projets": "Deine Songs, Proben und Cubase-/Studio-One-Projekte, synchronisiert auf allen PCs und Handys der Band, auf deinem eigenen Rechner. Getrennte Instrumente, Akkorde, Songstruktur, Tempo, Loops. Kostenlos, ohne Abo.",
  "28joursbox_votre_groupe_vos_morceaux": "28JoursBox · Deine Band. Deine Songs. Dein Server.",
  "le_cloud_prive_et_le": "Die private Cloud und das Proberaum-Studio für die Hosentasche, gemacht für Bands. Kostenlos, ohne Abo.",
- "un_groupe_repete_dans_une": "Eine Band probt in einem Zimmer mit Schlagzeug, Gitarre und Laptop",
- "un_guitariste_joue_sur_une": "Ein Gitarrist spielt eine weiße E-Gitarre",
- "un_batteur_joue_dans_une": "Ein Schlagzeuger spielt in einem neonbeleuchteten Raum",
- "un_groupe_joue_sur_scene": "Eine Band auf der Bühne mit Gitarre, Bass und Schlagzeug",
+ "un_groupe_repete_dans_une": "Der Proberaum der Band, Instrumente und Mischpult bereit",
+ "un_guitariste_joue_sur_une": "Ein Gitarrist spielt bei der Probe eine weiße E-Gitarre",
+ "un_batteur_joue_dans_une": "Ein Schlagzeuger mit Kopfhörern im Aufnahmeraum",
+ "un_groupe_joue_sur_scene": "Die Band auf der Bühne, der Schlagzeuger in der Mitte",
  "menu": "Menü",
  "apercu_du_lecteur_avance_sur": "Vorschau des erweiterten Players auf einem Handy",
  "decouvrir": "Entdecken",
@@ -180,7 +180,6 @@
  "communaute": "Community",
  "signaler_un_bug": "Bug melden",
  "toutes_les_versions": "Alle Versionen",
- "2026_28joursbox_photos_spencer_plouzek": "© <span id=\"year\">2026</span> 28JoursBox · Fotos von <a href=\"https://unsplash.com/photos/band-performing-live-on-stage-with-instruments-tKEV3aixY8c\">Spencer Plouzek</a>, <a href=\"https://unsplash.com/photos/musicians-practicing-in-a-room-with-a-drum-set-GgeDXcUblwU\">Jorge Antonio Palmero Guerrero</a>, <a href=\"https://unsplash.com/photos/musician-playing-drums-in-a-neon-lit-room-T9FFWcs8y9A\">Les Taylor</a>, <a href=\"https://unsplash.com/photos/man-with-glasses-playing-a-white-electric-guitar-NCB_osrbsR8\">Khue Le Quang</a> auf Unsplash.",
  "telecharger_28joursbox": "28JoursBox kostenlos herunterladen (Windows)",
  "telechargez_gratuitement_28joursbox_pour_windows": "Lade 28JoursBox für Windows kostenlos herunter: den Installer für den Server deiner Band und den für die PCs der Mitglieder.",
  "gratuit_windows_10_11": "Kostenlos · Windows 10 / 11",
@@ -465,5 +464,7 @@
  "ph_c3_p": "Sie landen im 28JoursBox-Ordner jedes Bandmitglieds, bereit für ein Plakat, einen Videoschnitt oder Social Media.",
  "ph_c4_t": "🔗 Per Link geteilt",
  "ph_c4_p": "Den ganzen Konzertordner für den Club oder die Fans: ein öffentlicher Link nur zum Ansehen, auf Wunsch mit Passwort und Ablaufdatum.",
- "pillar_drums": "Echtes Schlagzeug zum Mitspielen (10 Stile)"
+ "pillar_drums": "Echtes Schlagzeug zum Mitspielen (10 Stile)",
+ "ph_alt": "Foto der Band",
+ "credits_photos": "© <span id=\"year\">2026</span> 28JoursBox · Fotos: unsere Band, bei der Probe und auf der Bühne."
 }
