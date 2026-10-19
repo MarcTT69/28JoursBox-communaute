@@ -544,3 +544,40 @@ ol.how > li::before { content: counter(how); position: absolute; left: 0; top: 0
 .photo-wall img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; box-shadow: 0 16px 40px -20px rgba(0,0,0,.9); transition: transform .4s; }
 .photo-wall img:hover { transform: scale(1.04); }
 @media (max-width: 860px) { .photo-wall { grid-template-columns: repeat(3, 1fr); } }
+
+/* Page « Accès depuis l'extérieur » : schémas */
+.net-diagram { margin: 22px 0; padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; }
+.net-diagram svg { display: block; width: 100%; height: auto; }
+.net-diagram figcaption { margin-top: 14px; color: var(--text-2); font-size: .95rem; }
+.net-diagram figcaption p { margin: 8px 0; }
+.nd-home { fill: rgba(46,204,113,.05); stroke: rgba(46,204,113,.35); stroke-width: 2; stroke-dasharray: 8 6; }
+.nd-zone { fill: var(--text-2); font: 600 18px var(--body, Inter, sans-serif); }
+.nd-node { fill: var(--bg-2); stroke: var(--border); stroke-width: 2; }
+.nd-server { stroke: rgba(124,58,237,.7); }
+.nd-box { stroke: rgba(168,85,247,.8); }
+.nd-relay { stroke: rgba(148,163,184,.8); }
+.nd-phone { stroke: rgba(79,140,255,.7); }
+.nd-cloud { fill: rgba(79,140,255,.07); stroke: rgba(79,140,255,.4); stroke-width: 2; }
+.nd-name { fill: var(--text); font: 700 20px var(--display, sans-serif); }
+.nd-small { fill: var(--text-2); font: 500 15px var(--body, Inter, sans-serif); }
+.nd-tslabel { fill: #94a3b8; font-style: italic; }
+.nd-path { fill: none; stroke-width: 4; stroke-linecap: round; }
+.nd-local { stroke: #2ecc71; }
+.nd-direct { stroke: #a855f7; }
+.nd-ts { stroke: #94a3b8; stroke-dasharray: 3 9; }
+.nd-num { stroke: none; }
+.nd-num-local { fill: #2ecc71; } .nd-num-direct { fill: #a855f7; } .nd-num-ts { fill: #64748b; }
+.nd-numtxt { fill: #fff; font: 800 16px var(--display, sans-serif); }
+.nd-key { display: inline-block; width: 22px; height: 22px; border-radius: 50%; color: #fff; font: 800 .8rem/22px var(--display); text-align: center; margin-right: 4px; }
+.nd-key-local { background: #2ecc71; } .nd-key-direct { background: #a855f7; } .nd-key-ts { background: #64748b; }
+.rule-mock { max-width: 640px; }
+.rm-win { fill: var(--bg-2); stroke: var(--border); stroke-width: 2; }
+.rm-bar { fill: rgba(255,255,255,.05); }
+.rm-dot { fill: rgba(255,255,255,.18); }
+.rm-head { fill: var(--text-2); font: 600 14px var(--body, Inter, sans-serif); }
+.rm-lab { fill: var(--text-2); font: 500 15px var(--body, Inter, sans-serif); }
+.rm-field { fill: rgba(255,255,255,.04); stroke: var(--border); stroke-width: 1.5; }
+.rm-hl { stroke: rgba(168,85,247,.8); }
+.rm-val { fill: var(--text); font: 600 15px ui-monospace, Consolas, monospace; }
+.guide details.more { margin: 16px 0; padding: 12px 16px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.guide details.more summary { cursor: pointer; font-weight: 600; color: var(--text); }

@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=22" rel="stylesheet"/>
+<link href="style.css?v=23" rel="stylesheet"/>
 </head>
 <body>
 <nav class="nav">
@@ -71,7 +71,7 @@
 <p>Ce qui est mis en place : le service Windows, une règle de pare-feu (réseau <b>Privé</b> seulement), les données dans <code>C:\ProgramData\28JoursBox</code>.</p>
 <div class="callout tip"><span>💡</span><p>Pour que le serveur reste joignable : désactivez la mise en veille sur secteur (Paramètres Windows › Système › Alimentation), branchez-le en câble, et vérifiez que le réseau Windows est en profil <b>Privé</b>.</p></div>
 <h3 id="install-4g">Accès depuis l'extérieur (4G) : Tailscale</h3>
-<p>Sans réglage, le serveur n'est joignable que depuis le Wi-Fi de la maison. Deux solutions, cumulables : <b>Tailscale</b>, le plus simple (rien à régler sur la box), et l'<a href="#install-direct">accès direct</a>, plus rapide. Les PC des membres prennent tout seuls le chemin le plus rapide qui répond : réseau local, accès direct, puis Tailscale. Avec Tailscale, seul le PC serveur installe quelque chose ; les téléphones et les autres PC n'installent rien.</p>
+<p>Sans réglage, le serveur n'est joignable que depuis le Wi-Fi de la maison. Deux solutions, cumulables : <b>Tailscale</b>, le plus simple (rien à régler sur la box), et l'<a href="#install-direct">accès direct</a>, plus rapide. Les PC des membres prennent tout seuls le chemin le plus rapide qui répond : réseau local, accès direct, puis Tailscale. Avec Tailscale, seul le PC serveur installe quelque chose ; les téléphones et les autres PC n'installent rien. Le schéma du principe et le pas à pas détaillé (y compris box par box) sont sur la page <a href="acces-exterieur.html">Accès depuis l'extérieur</a>.</p>
 <ol class="how">
 <li>Sur le PC serveur, menu de l'icône près de l'horloge › <span class="ui">Accès depuis l'extérieur (4G)…</span> (sur un PC serveur qui synchronise aussi des fichiers : <span class="ui">Préférences</span> › <span class="ui">Serveur</span>, carte <span class="ui">Accès depuis l'extérieur (4G)</span>). Cliquez sur <span class="ui">Installer Tailscale</span> : la page de téléchargement de Tailscale s'ouvre ; installez-le et connectez-vous à Tailscale.</li>
 <li>Revenez et cliquez sur <span class="ui">J'ai installé Tailscale, vérifier</span> (ou <span class="ui">Vérifier à nouveau</span> si Tailscale n'était pas encore connecté).</li>
@@ -81,7 +81,7 @@
 <p>Le PC serveur vérifie la publication toutes les 5 minutes et la rétablit si besoin. Si vous renommez la machine dans Tailscale, une notification <span class="ui">Nouvelle adresse du serveur</span> apparaît : cliquez dessus pour l'appliquer. Alternatives pour les initiés : Cloudflare Tunnel, ou redirection de ports de la box avec un proxy (Caddy), en renseignant <code>PublicUrl</code> dans <code>server.json</code>.</p>
 <h3 id="install-direct">Accès direct (plus rapide, sans Tailscale) <span class="badge-admin">admin</span></h3>
 <p>Les relais de Tailscale sont souvent limités à quelques Mo/s. Avec l'accès direct, les membres se connectent directement à la box du PC serveur : bien plus rapide pour les grosses synchros et pour lancer un WAV sur le téléphone. Tailscale reste en secours, et l'accès direct s'active ou se désactive à tout moment.</p>
-<ol class="how">
+<div class="callout tip"><span>🧭</span><p>Pas à pas détaillé, avec les menus exacts des box Orange, SFR, Bouygues et Free, comment donner une adresse fixe au PC serveur et que faire si ça ne marche pas : <a href="acces-exterieur.html#direct">Accès direct pas à pas</a> et <a href="acces-exterieur.html#box">Box par box</a>.</p></div><ol class="how">
 <li>Sur <a href="https://www.duckdns.org" rel="noopener" target="_blank">duckdns.org</a> (gratuit) : connectez-vous (avec un compte Google, par exemple), réservez un nom (ex. « mongroupe ») et copiez le <b>jeton (token)</b> affiché en haut de la page.</li>
 <li>Sur la box (Livebox : <code>http://192.168.1.1</code>, menu Réseau) : dans <b>Baux DHCP statiques</b>, donnez toujours la même adresse au PC serveur.</li>
 <li>Toujours sur la box, <b>NAT/PAT</b> : redirigez le port <b>8443</b> (TCP) vers l'adresse du PC serveur, port 8443. (443 seulement si la box le permet : l'adresse n'affiche alors pas de port.)</li>
@@ -698,7 +698,7 @@ Menu ⋯ du morceau › <span class="ui">Vers Studio One…</span><br/><br/>
 <div>
 <h4 data-i18n="le_projet">The project</h4>
 <a data-i18n="telecharger" href="telecharger.html">Download</a>
-<a data-i18n="nav_why" href="pourquoi.html">Why?</a><a data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="forum" href="forum.html">Forum</a>
+<a data-i18n="nav_why" href="pourquoi.html">Why?</a><a data-i18n="nav_guide" href="guide.html">User guide</a><a data-i18n="nav_acces" href="acces-exterieur.html">Remote access</a><a data-i18n="forum" href="forum.html">Forum</a>
 <a data-i18n="soutenir" href="don.html">Support</a>
 </div>
 <div>
@@ -712,7 +712,7 @@ Menu ⋯ du morceau › <span class="ui">Vers Studio One…</span><br/><br/>
 </div>
 </footer>
 <script src="config.js?v=10"></script>
-<script src="i18n.js?v=22"></script>
-<script src="site.js?v=22"></script><script src="guide.js?v=22"></script>
+<script src="i18n.js?v=23"></script>
+<script src="site.js?v=23"></script><script src="guide.js?v=23"></script>
 </body>
 </html>

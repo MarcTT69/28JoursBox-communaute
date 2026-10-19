@@ -165,7 +165,7 @@
  "ca_marche_sur_mac": "¿Funciona en Mac?",
  "pas_encore_pour_le_serveur": "Todavía no para el servidor ni para la carpeta sincronizada. Eso sí, la app web funciona en cualquier navegador, también en Mac, iPhone y iPad.",
  "et_en_dehors_de_la": "¿Y fuera de casa, con datos móviles?",
- "oui_grace_a_tailscale_gratuit": "Sí. Lo más sencillo: Tailscale (gratis), integrado en el servidor, sin configurar nada en el router ni instalar nada en los móviles. Más rápido: el acceso directo, configurado una vez por el administrador (un nombre DuckDNS gratis, un puerto redirigido en el router, un certificado HTTPS obtenido automáticamente); Tailscale queda entonces de respaldo. En casa, los PC siguen usando la red local, más rápida para los WAV grandes.",
+ "oui_grace_a_tailscale_gratuit": "Sí. Lo más sencillo: Tailscale (gratis), integrado en el servidor, sin configurar nada en el router ni instalar nada en los móviles. Más rápido: el acceso directo, configurado una vez por el administrador (un nombre DuckDNS gratis, un puerto redirigido en el router, un certificado HTTPS obtenido automáticamente); Tailscale queda entonces de respaldo. En casa, los PC siguen usando la red local, más rápida para los WAV grandes. <a href=\"acces-exterieur.html\">Paso a paso, router por router</a>.",
  "mes_morceaux_sont_ils_envoyes": "¿Mis canciones se envían a una IA online?",
  "non_la_separation_des_instruments": "No. La separación de instrumentos, la detección de acordes, tempo y estructura, y la transcripción de voz a texto se hacen en tu servidor. No se envía nada a un servicio en línea.",
  "faut_il_une_carte_graphique": "¿Hace falta una tarjeta gráfica?",
@@ -296,7 +296,7 @@
  "req_power_rec": "Conectado a la red por cable",
  "req_net": "Internet de casa (subida)",
  "req_net_min": "5 Mbit/s, para escuchar con datos móviles",
- "req_net_rec": "20 Mbit/s o más (fibra). Para el acceso directo rápido: un router que permita redirigir un puerto",
+ "req_net_rec": "20 Mbit/s o más (fibra). Para el acceso directo rápido: un router que permita redirigir un puerto (<a href=\"acces-exterieur.html\">cómo hacerlo</a>)",
  "req_storage_title": "💾 ¿Cuánto almacenamiento?",
  "req_storage_lead": "28JoursBox en sí añade poco: unos <b>45 MB por canción analizada</b> para las pistas separadas (medido: 154 canciones = 6,9 GB). Lo que llena el disco son <b>tus propios archivos</b>: los WAV de los ensayos y los proyectos de Cubase / Studio One. Los archivos modificados o borrados también se guardan 30 días (versiones y papelera).",
  "req_ex_files": "Tus archivos",
@@ -470,5 +470,12 @@
  "pillar_transcribe": "Reuniones y notas de voz transcritas a texto",
  "why_r7": "Transcribir una reunión o una nota de voz",
  "why_r7_a": "La grabación va a un servicio de reconocimiento de voz en línea",
- "why_r7_b": "Transcrito en tu PC, unos 4 minutos por hora de grabación"
+ "why_r7_b": "Transcrito en tu PC, unos 4 minutos por hora de grabación",
+ "acces_title": "Acceso desde fuera: Tailscale y acceso directo · 28JoursBox",
+ "acces_desc": "Accede a tu servidor 28JoursBox desde cualquier lugar: el principio en un esquema, Tailscale paso a paso y luego el acceso directo, más rápido, con IP fija y redirección de puertos, router por router.",
+ "acces_eyebrow": "Acceso desde fuera",
+ "acces_h1": "Tu servidor, <span class=\"grad-text\">desde cualquier lugar</span>",
+ "acces_lead": "En casa todo pasa por el Wi-Fi. Fuera (4G, local de ensayo, de gira), dos caminos: Tailscale, listo en 5 minutos, o el acceso directo, mucho más rápido. Primero el principio, luego cada paso.",
+ "acces_lang_note": "Esta página está en francés, como la guía. Las secciones por router cubren los operadores franceses (Orange, SFR, Bouygues, Free); con otro operador, busca «redirección de puertos» y «reserva DHCP» en tu router.",
+ "nav_acces": "Acceso remoto"
 }
