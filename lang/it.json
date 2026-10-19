@@ -523,5 +523,10 @@
  "vc_wav": "Convertire in WAV",
  "vc_studioone": "Verso Studio One o Cubase",
  "vc_editer": "Modificare: tenere il passaggio buono",
- "vc_fondu": "Dissolvenza in entrata con un tocco"
+ "vc_fondu": "Dissolvenza in entrata con un tocco",
+ "vt_securite": "Sicurezza e impostazioni",
+ "vc_reglages": "Impostazioni: lingua, dispositivi, cestino",
+ "vc_corbeille": "Il cestino: nulla si perde per 30 giorni",
+ "vc_versions": "La cronologia delle versioni",
+ "vc_etatserveur": "Lo stato del server, dal telefono"
 }

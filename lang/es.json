@@ -523,5 +523,10 @@
  "vc_wav": "Convertir a WAV",
  "vc_studioone": "A Studio One o Cubase",
  "vc_editer": "Editar: quedarse con lo bueno",
- "vc_fondu": "Un fundido de entrada con un toque"
+ "vc_fondu": "Un fundido de entrada con un toque",
+ "vt_securite": "Seguridad y ajustes",
+ "vc_reglages": "Ajustes: idioma, dispositivos, papelera",
+ "vc_corbeille": "La papelera: nada se pierde durante 30 días",
+ "vc_versions": "El historial de versiones",
+ "vc_etatserveur": "El estado del servidor, desde el móvil"
 }

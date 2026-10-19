@@ -523,5 +523,10 @@
  "vc_wav": "Convert to WAV",
  "vc_studioone": "To Studio One or Cubase",
  "vc_editer": "Edit: keep the good part",
- "vc_fondu": "A fade-in with one tap"
+ "vc_fondu": "A fade-in with one tap",
+ "vt_securite": "Safety and settings",
+ "vc_reglages": "Settings: language, devices, trash",
+ "vc_corbeille": "The trash: nothing is lost for 30 days",
+ "vc_versions": "Version history",
+ "vc_etatserveur": "The server's status, from your phone"
 }

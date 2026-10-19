@@ -523,5 +523,10 @@
  "vc_wav": "In WAV umwandeln",
  "vc_studioone": "Nach Studio One oder Cubase",
  "vc_editer": "Bearbeiten: den guten Teil behalten",
- "vc_fondu": "Einblenden mit einem Tippen"
+ "vc_fondu": "Einblenden mit einem Tippen",
+ "vt_securite": "Sicherheit und Einstellungen",
+ "vc_reglages": "Einstellungen: Sprache, Geräte, Papierkorb",
+ "vc_corbeille": "Der Papierkorb: 30 Tage geht nichts verloren",
+ "vc_versions": "Der Versionsverlauf",
+ "vc_etatserveur": "Der Serverstatus, vom Handy aus"
 }

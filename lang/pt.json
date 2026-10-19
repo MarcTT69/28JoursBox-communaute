@@ -523,5 +523,10 @@
  "vc_wav": "Converter para WAV",
  "vc_studioone": "Para Studio One ou Cubase",
  "vc_editer": "Editar: manter o trecho bom",
- "vc_fondu": "Fade-in com um toque"
+ "vc_fondu": "Fade-in com um toque",
+ "vt_securite": "Segurança e configurações",
+ "vc_reglages": "Configurações: idioma, aparelhos, lixeira",
+ "vc_corbeille": "A lixeira: nada se perde por 30 dias",
+ "vc_versions": "O histórico de versões",
+ "vc_etatserveur": "O estado do servidor, pelo celular"
 }

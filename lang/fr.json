@@ -523,5 +523,10 @@
  "vc_wav": "Convertir en WAV",
  "vc_studioone": "Vers Studio One ou Cubase",
  "vc_editer": "Éditer : garder le bon passage",
- "vc_fondu": "Fondu d'entrée en un toucher"
+ "vc_fondu": "Fondu d'entrée en un toucher",
+ "vt_securite": "Sécurité et réglages",
+ "vc_reglages": "Les réglages : langue, appareils, corbeille",
+ "vc_corbeille": "La corbeille : rien n'est perdu pendant 30 jours",
+ "vc_versions": "L'historique des versions",
+ "vc_etatserveur": "L'état du serveur, depuis le téléphone"
 }
