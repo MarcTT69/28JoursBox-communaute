@@ -41,8 +41,8 @@ def translate(soup, d):
 
 def relink(soup):
     """Pages d'un sous-dossier de langue : les ressources (css, js, img, lang) remontent d'un niveau ; les pages .html restent dans la langue."""
-    for el in soup.find_all(['link', 'script', 'img', 'source']):
-        for a in ('href', 'src'):
+    for el in soup.find_all(['link', 'script', 'img', 'source', 'video']):
+        for a in ('href', 'src', 'poster'):
             v = el.get(a)
             if v and not v.startswith(('http', '/', '#', 'data:', 'mailto:')) and not v.split('?')[0].split('#')[0].endswith('.html'):
                 el[a] = '../' + v

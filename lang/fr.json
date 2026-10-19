@@ -477,5 +477,9 @@
  "acces_h1": "Votre serveur, <span class=\"grad-text\">de partout</span>",
  "acces_lead": "À la maison, tout passe par le Wi-Fi. Dehors (4G, local de répète, en tournée), deux chemins : Tailscale, prêt en 5 minutes, ou l'accès direct, bien plus rapide. Le principe d'abord, puis chaque étape.",
  "acces_lang_note": "Cette page est en français, comme le mode d'emploi. Les sections box par box concernent les opérateurs français (Orange, SFR, Bouygues, Free).",
- "nav_acces": "Accès extérieur"
+ "nav_acces": "Accès extérieur",
+ "vid_eyebrow": "En vidéo",
+ "vid_title": "Voyez-le en action",
+ "vid_lead": "De courtes vidéos tournées dans l'appli, avec le son de nos propres morceaux.",
+ "vid_passage": "Travailler un passage : zoomer, boucler un bloc, ralentir, changer de tonalité, couper la basse"
 }

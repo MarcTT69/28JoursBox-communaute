@@ -477,5 +477,9 @@
  "acces_h1": "Seu servidor, <span class=\"grad-text\">de qualquer lugar</span>",
  "acces_lead": "Em casa tudo passa pelo Wi-Fi. Fora (4G, estúdio de ensaio, em turnê), dois caminhos: Tailscale, pronto em 5 minutos, ou o acesso direto, bem mais rápido. Primeiro o princípio, depois cada etapa.",
  "acces_lang_note": "Esta página está em francês, como o guia. As seções por roteador tratam das operadoras francesas (Orange, SFR, Bouygues, Free); com outra operadora, procure «redirecionamento de portas» e «reserva DHCP» no roteador.",
- "nav_acces": "Acesso remoto"
+ "nav_acces": "Acesso remoto",
+ "vid_eyebrow": "Em vídeo",
+ "vid_title": "Veja em ação",
+ "vid_lead": "Vídeos curtos gravados no app, com o som das nossas próprias músicas. O app aparece em francês.",
+ "vid_passage": "Trabalhar um trecho: zoom, repetir um bloco, desacelerar, mudar o tom, silenciar o baixo"
 }

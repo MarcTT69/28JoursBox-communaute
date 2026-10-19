@@ -477,5 +477,9 @@
  "acces_h1": "Your server, <span class=\"grad-text\">from anywhere</span>",
  "acces_lead": "At home everything goes through Wi-Fi. Away from home (4G, rehearsal room, on the road), two paths: Tailscale, ready in 5 minutes, or direct access, much faster. The principle first, then every step.",
  "acces_lang_note": "This page is written in French, like the user guide. The step-by-step box sections cover French internet providers (Orange, SFR, Bouygues, Free); with another provider, look for \"port forwarding\" and \"DHCP reservation\" in your router.",
- "nav_acces": "Remote access"
+ "nav_acces": "Remote access",
+ "vid_eyebrow": "In video",
+ "vid_title": "See it in action",
+ "vid_lead": "Short videos filmed in the app, with the sound of our own songs. The app is shown in French.",
+ "vid_passage": "Work on a passage: zoom, loop a block, slow it down, change the key, mute the bass"
 }
