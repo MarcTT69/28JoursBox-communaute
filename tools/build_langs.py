@@ -15,7 +15,7 @@ LANGS = ['en', 'fr', 'es', 'de', 'it', 'pt']
 LOCALE = {'en': 'en_US', 'fr': 'fr_FR', 'es': 'es_ES', 'de': 'de_DE', 'it': 'it_IT', 'pt': 'pt_BR'}
 PAGES = ['index.html', 'pourquoi.html', 'telecharger.html', 'guide.html', 'acces-exterieur.html', 'forum.html', 'don.html']
 OG_IMAGE = BASE + 'img/photos/og.jpg'
-SKIP = {'_site', '.git', '.github', 'tools', 'README.md'}
+SKIP = {'_site', '.git', '.github', 'tools', 'articles', 'README.md'}
 ATTRS = ['content', 'alt', 'aria-label', 'placeholder']
 dicts = {c: json.load(open(SRC / f'lang/{c}.json', encoding='utf-8')) for c in LANGS}
 
@@ -37,6 +37,19 @@ def translate(soup, d):
         for el in soup.select(f'[data-i18n-{a}]'):
             s = d.get(el[f'data-i18n-{a}'])
             if s is not None: el[a] = s
+
+
+def localize_article(soup, lang, page):
+    """Mode d'emploi et page d'accès : texte anglais dans la source, version française dans articles/<page>.fr.html.
+    Les autres langues gardent l'anglais, avec un bandeau qui le signale."""
+    alt = SRC / 'articles' / page.replace('.html', f'.{lang}.html')
+    note = soup.select_one('.guide-lang-note')
+    if alt.exists():
+        frag = BeautifulSoup(alt.read_text(encoding='utf-8'), 'html.parser')
+        soup.find('article').replace_with(frag.find('article'))
+        toc = soup.select_one('.toc ol'); new_toc = frag.find('ol')
+        if toc and new_toc: toc.replace_with(new_toc)
+    if note and (lang in ('en', 'fr')): note.decompose()
 
 
 def relink(soup):
@@ -102,6 +115,7 @@ for p in SRC.iterdir():
 for lang in LANGS:
     for page in PAGES:
         soup = BeautifulSoup((SRC / page).read_text(encoding='utf-8'), 'html.parser')
+        if soup.find('article', class_='guide'): localize_article(soup, lang, page)
         if lang != 'en':
             translate(soup, dicts[lang])
             relink(soup)

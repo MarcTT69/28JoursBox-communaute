@@ -1,0 +1,250 @@
+<article class="guide acces" lang="fr"><section id="principe">
+<h2>Le principe en une image</h2>
+<p>Le serveur 28JoursBox tourne sur un PC chez vous. À la maison, tout le monde le joint par le Wi-Fi ou le câble. Dès qu'on sort (répétition, trajet, téléphone en 4G), il faut un chemin depuis Internet jusqu'à ce PC. Deux chemins existent, et ils se cumulent :</p>
+<figure class="net-diagram">
+<svg aria-labelledby="net-title net-desc" role="img" viewbox="0 0 900 400" xmlns="http://www.w3.org/2000/svg">
+<title id="net-title">Les trois chemins pour joindre le serveur 28JoursBox</title>
+<desc id="net-desc">À la maison, les PC passent par le réseau local. Depuis l'extérieur, un téléphone en 4G passe soit directement par la box, dont le port 8443 est redirigé vers le PC serveur, soit par un relais Tailscale vers lequel le PC serveur garde un tunnel ouvert.</desc>
+<defs>
+<marker id="arr-local" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10"><path d="M0 0L10 5L0 10z" fill="#2ecc71"></path></marker>
+<marker id="arr-direct" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10"><path d="M0 0L10 5L0 10z" fill="#a855f7"></path></marker>
+<marker id="arr-ts" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10"><path d="M0 0L10 5L0 10z" fill="#94a3b8"></path></marker>
+</defs>
+<!-- La maison -->
+<rect class="nd-home" height="350" rx="24" width="430" x="8" y="40"></rect>
+<text class="nd-zone" x="30" y="74">🏠 Chez vous (réseau local)</text>
+<rect class="nd-node nd-server" height="104" rx="16" width="214" x="36" y="92"></rect>
+<text class="nd-name" text-anchor="middle" x="143" y="128">PC serveur</text>
+<text class="nd-small" text-anchor="middle" x="143" y="154">28JoursBox · port 8443</text>
+<text class="nd-small" text-anchor="middle" x="143" y="176">adresse fixe 192.168.1.20</text>
+<rect class="nd-node" height="80" rx="16" width="214" x="36" y="290"></rect>
+<text class="nd-name" text-anchor="middle" x="143" y="324">PC d'un membre</text>
+<text class="nd-small" text-anchor="middle" x="143" y="350">Wi-Fi ou câble</text>
+<rect class="nd-node nd-box" height="86" rx="16" width="124" x="300" y="200"></rect>
+<text class="nd-name" text-anchor="middle" x="362" y="236">Box</text>
+<text class="nd-small" text-anchor="middle" x="362" y="262">8443 → PC</text>
+<ellipse class="nd-cloud" cx="575" cy="243" rx="88" ry="54"></ellipse>
+<text class="nd-name" text-anchor="middle" x="575" y="250">Internet</text>
+<rect class="nd-node nd-relay" height="72" rx="16" width="190" x="490" y="40"></rect>
+<text class="nd-name" text-anchor="middle" x="585" y="72">Relais Tailscale</text>
+<text class="nd-small" text-anchor="middle" x="585" y="96">…ts.net</text>
+<rect class="nd-node nd-phone" height="190" rx="22" width="124" x="768" y="150"></rect>
+<text class="nd-name" text-anchor="middle" x="830" y="240">Téléphone</text>
+<text class="nd-small" text-anchor="middle" x="830" y="266">en 4G</text>
+<line class="nd-path nd-local" marker-end="url(#arr-local)" marker-start="url(#arr-local)" x1="143" x2="143" y1="284" y2="202"></line>
+<circle class="nd-num nd-num-local" cx="143" cy="243" r="16"></circle><text class="nd-numtxt" text-anchor="middle" x="143" y="249">1</text>
+<line class="nd-path nd-direct" marker-end="url(#arr-direct)" x1="762" x2="672" y1="258" y2="250"></line>
+<line class="nd-path nd-direct" marker-end="url(#arr-direct)" x1="486" x2="432" y1="243" y2="243"></line>
+<line class="nd-path nd-direct" marker-end="url(#arr-direct)" x1="300" x2="258" y1="214" y2="186"></line>
+<circle class="nd-num nd-num-direct" cx="718" cy="290" r="16"></circle><text class="nd-numtxt" text-anchor="middle" x="718" y="296">2</text>
+<line class="nd-path nd-ts" marker-end="url(#arr-ts)" x1="790" x2="688" y1="144" y2="96"></line>
+<line class="nd-path nd-ts" marker-end="url(#arr-ts)" x1="484" x2="258" y1="78" y2="120"></line>
+<circle class="nd-num nd-num-ts" cx="744" cy="104" r="16"></circle><text class="nd-numtxt" text-anchor="middle" x="744" y="110">3</text>
+<text class="nd-small nd-tslabel" text-anchor="middle" x="372" y="128">tunnel chiffré</text>
+</svg>
+<figcaption>
+<p><span class="nd-key nd-key-local">1</span> <b>Réseau local</b> : à la maison, tout passe directement, en Wi-Fi ou par câble. C'est le plus rapide, rien à régler.</p>
+<p><span class="nd-key nd-key-direct">2</span> <b>Accès direct</b> : depuis l'extérieur, le téléphone joint votre box à une adresse fixe (un nom DuckDNS gratuit), et la box fait suivre les demandes du port 8443 au PC serveur. Rapide, mais il faut régler la box une fois.</p>
+<p><span class="nd-key nd-key-ts">3</span> <b>Tailscale</b> : le PC serveur garde un tunnel chiffré ouvert vers un relais sur Internet ; le téléphone passe par ce relais. Rien à régler sur la box, mais plus lent (le relais limite le débit).</p>
+</figcaption>
+</figure>
+<p>Les PC des membres choisissent tout seuls, dans cet ordre : <b>réseau local</b>, puis <b>accès direct</b>, puis <b>Tailscale</b>. Personne n'a rien à changer quand il passe de la maison à la 4G.</p>
+<h3 id="choisir">Quelle solution choisir ?</h3>
+<div class="table-wrap"><table class="spec"><thead><tr><th></th><th>Tailscale</th><th>Accès direct</th></tr></thead><tbody>
+<tr><th>Réglage de la box</th><td>Aucun</td><td>Oui, une fois : adresse fixe du PC + redirection d'un port</td></tr>
+<tr><th>Temps de mise en place</th><td>5 minutes</td><td>15 à 30 minutes</td></tr>
+<tr><th>Vitesse depuis l'extérieur</th><td>Limitée par le relais (souvent quelques Mo/s)</td><td>Celle de votre connexion (fibre : très rapide)</td></tr>
+<tr><th>Fonctionne avec une box 4G/5G ou une IP partagée</th><td>Oui</td><td>Non (voir <a href="#direct-verifier">Ma box est-elle compatible ?</a>)</td></tr>
+<tr><th>Comptes à créer</th><td>Un compte Tailscale (gratuit)</td><td>Un compte DuckDNS (gratuit)</td></tr>
+<tr><th>Rien à installer côté membres</th><td>Oui</td><td>Oui</td></tr>
+</tbody></table></div>
+<div class="callout tip"><span>💡</span><p><b>Notre conseil :</b> commencez par <a href="#tailscale">Tailscale</a>, ça marche partout en 5 minutes. Si les écoutes en 4G ou les grosses synchros vous paraissent lentes, ajoutez l'<a href="#direct">accès direct</a> : Tailscale reste alors en secours, au cas où.</p></div>
+</section>
+<section id="tailscale">
+<h2>Tailscale pas à pas</h2>
+<p>Tailscale est un service gratuit qui crée un tunnel chiffré entre votre PC serveur et Internet. Le PC serveur ouvre lui-même ce tunnel vers l'extérieur : c'est pour ça que la box n'a besoin d'aucun réglage. Seul le <b>PC serveur</b> installe Tailscale ; les téléphones et les PC des membres n'installent rien.</p>
+<h3 id="ts-avant">Avant de commencer</h3>
+<ul>
+<li>Être sur le <b>PC serveur</b>, avec 28JoursBox démarré (icône près de l'horloge).</li>
+<li>Avoir un compte Google, Microsoft, Apple ou GitHub pour se connecter à Tailscale (la création du compte Tailscale se fait avec, gratuitement, en un clic).</li>
+<li>Pouvoir accepter une demande « administrateur » de Windows.</li>
+</ul>
+<h3 id="ts-etapes">Les étapes</h3>
+<ol class="how">
+<li>Clic sur l'icône 28JoursBox près de l'horloge › <span class="ui">Accès depuis l'extérieur (4G)…</span><br/>Sur un PC serveur qui synchronise aussi des fichiers : <span class="ui">Préférences</span> › <span class="ui">Serveur</span>, carte <span class="ui">Accès depuis l'extérieur (4G)</span>.</li>
+<li>Cliquez sur <span class="ui">Installer Tailscale</span>. La page de téléchargement de Tailscale s'ouvre dans le navigateur : téléchargez la version Windows, installez-la (suivant, suivant…), puis connectez-vous quand Tailscale le demande (choisissez Google, Microsoft…). Une icône Tailscale apparaît à son tour près de l'horloge.</li>
+<li>Revenez dans la fenêtre 28JoursBox et cliquez sur <span class="ui">J'ai installé Tailscale, vérifier</span>. Si Tailscale n'était pas encore connecté, terminez la connexion puis cliquez sur <span class="ui">Vérifier à nouveau</span>.</li>
+<li>Cliquez sur <span class="ui">Activer l'accès extérieur</span>. La première fois, une page Tailscale s'ouvre et demande d'autoriser <b>Funnel</b> (c'est la fonction qui rend le serveur joignable depuis Internet) : acceptez, puis revenez.</li>
+<li>Windows demande une autorisation administrateur : acceptez.</li>
+<li>Le message « Accès extérieur activé : https://&lt;pc&gt;.&lt;nom&gt;.ts.net » s'affiche. C'est l'adresse du serveur depuis l'extérieur. Le lien d'invitation des membres l'utilise désormais tout seul.</li>
+</ol>
+<h3 id="ts-tester">Vérifier que ça marche</h3>
+<ol class="how">
+<li>Sur un téléphone, <b>coupez le Wi-Fi</b> (pour être vraiment en 4G).</li>
+<li>Ouvrez l'adresse https://&lt;pc&gt;.&lt;nom&gt;.ts.net dans le navigateur : la page de connexion 28JoursBox doit s'afficher.</li>
+<li>Les téléphones qui ont déjà installé l'appli : rien à faire, ils passent par cette adresse hors de la maison.</li>
+</ol>
+<h3 id="ts-ensuite">Ensuite, tout seul</h3>
+<p>Le PC serveur vérifie la publication toutes les 5 minutes et la rétablit si besoin (après un redémarrage, une coupure de box…). Si vous renommez la machine dans Tailscale, l'adresse change : une notification <span class="ui">Nouvelle adresse du serveur</span> apparaît sur le PC serveur, cliquez dessus pour l'appliquer. Le PC serveur doit rester allumé (et pas en veille) pour être joignable, comme pour tout le reste.</p>
+<div class="callout warn"><span>⚠️</span><p>Le PC serveur doit rester connecté à Tailscale : ne vous déconnectez pas du compte dans l'icône Tailscale. Si la fenêtre 28JoursBox indique que Tailscale n'est pas connecté, ouvrez l'icône Tailscale et reconnectez-vous, puis <span class="ui">Vérifier à nouveau</span>.</p></div>
+</section>
+<section id="direct">
+<h2>Accès direct pas à pas</h2>
+<p>Avec l'accès direct, il n'y a plus de relais : le téléphone ou le PC du membre parle directement à votre box, qui fait suivre au PC serveur. C'est aussi rapide que votre connexion Internet. Il faut pour cela trois choses, réglées une seule fois :</p>
+<ol>
+<li><b>Une adresse sur Internet qui ne change pas</b> : votre box change parfois d'adresse publique. Un nom gratuit chez <b>DuckDNS</b> (ex. <code>mongroupe.duckdns.org</code>) suit tout seul ces changements ; 28JoursBox le met à jour pour vous.</li>
+<li><b>Une adresse fixe pour le PC serveur dans la maison</b> : sinon, après un redémarrage, la box peut lui donner une autre adresse et la redirection tomberait dans le vide.</li>
+<li><b>Une redirection de port sur la box</b> : « tout ce qui arrive d'Internet sur le port 8443, envoie-le au PC serveur ». Sans elle, la box bloque (c'est son rôle par défaut).</li>
+</ol>
+<p>Le certificat HTTPS (le cadenas du navigateur) est ensuite obtenu et renouvelé tout seul par 28JoursBox, gratuitement, auprès de Let's Encrypt. Aucun autre port n'est nécessaire (pas besoin d'ouvrir le port 80).</p>
+<h3 id="direct-verifier">Étape 0 : ma box est-elle compatible ?</h3>
+<p>L'accès direct demande que votre box ait sa <b>propre adresse IPv4 publique</b>. C'est le cas de la plupart des box fibre et ADSL en France, mais pas toujours :</p>
+<ul>
+<li><b>Box 4G / 5G</b> (Orange Flybox, SFR Box 4G/5G, Bouygues 4G/5G Box, Free 4G/5G…) : l'adresse est presque toujours partagée entre de nombreux clients. L'accès direct ne fonctionnera pas : restez sur <a href="#tailscale">Tailscale</a>.</li>
+<li><b>IP partagée sur la fibre ou l'ADSL</b> : les quatre opérateurs attribuent de plus en plus souvent une adresse IPv4 <b>partagée</b> entre plusieurs clients. Elle se change en adresse dédiée : en libre-service chez Free (« IP fixe V4 full-stack »), en option chez Bouygues, auprès du service client chez SFR, RED et Orange. Le détail est dans chaque section <a href="#box">box par box</a>.</li>
+<li><b>Opérateurs locaux ou petits opérateurs</b> : renseignez-vous sur la « redirection de ports » et l'« IP partagée » (ou « CG-NAT »).</li>
+</ul>
+<div class="callout"><span>🔎</span><p><b>Test simple :</b> dans l'interface de la box, notez l'« adresse IPv4 publique » (ou « adresse IP WAN »). Si elle commence par <code>100.</code> suivi d'un nombre entre 64 et 127 (ex. <code>100.72.…</code>), ou par <code>10.</code>, <code>172.</code> ou <code>192.168.</code>, si elle est absente, si la box affiche « Carrier-grade NAT », ou si (chez Free) elle n'est associée qu'à une plage de ports, l'adresse est partagée : l'accès direct ne marchera pas tel quel. Sinon, c'est bon signe. 28JoursBox affiche aussi, une fois activé, l'<b>adresse de la box</b> qu'il a vérifiée.</p></div>
+<h3 id="duckdns">Étape 1 : réserver un nom DuckDNS (gratuit)</h3>
+<ol class="how">
+<li>Allez sur <a href="https://www.duckdns.org" rel="noopener" target="_blank">www.duckdns.org</a> et connectez-vous avec l'un des boutons proposés (Google ou GitHub, par exemple). Pas de compte ni de mot de passe à créer.</li>
+<li>En haut de la page, repérez la ligne <b>token</b> : une longue suite de lettres et de chiffres. C'est votre <b>jeton</b> ; copiez-le et gardez-le pour plus tard. Ne le partagez pas : il permet de modifier votre nom (on peut le régénérer depuis la page du compte DuckDNS).</li>
+<li>Dans le champ <b>sub domain</b>, tapez le nom voulu (lettres, chiffres et tirets, ex. <code>mongroupe</code>) puis cliquez sur <b>add domain</b>. Si le nom est déjà pris, essayez-en un autre.</li>
+<li>Votre adresse sera <code>mongroupe.duckdns.org</code>. Pas besoin de remplir la colonne « current ip » : 28JoursBox s'en charge.</li>
+</ol>
+<h3 id="ip-fixe">Étape 2 : donner une adresse fixe au PC serveur</h3>
+<p>Dans la maison, chaque appareil reçoit de la box une adresse du type <code>192.168.1.xx</code>. Par défaut elle peut changer. On demande à la box de <b>toujours donner la même</b> au PC serveur : c'est le « bail DHCP statique » (ou « adresse IP fixe », « réservation DHCP » selon les box). C'est la méthode la plus sûre : rien à toucher dans Windows.</p>
+<p><b>D'abord, repérez le PC serveur.</b> Sur le PC serveur : <span class="ui">Paramètres</span> › <span class="ui">Réseau et Internet</span> › <span class="ui">Ethernet</span> (ou <span class="ui">Wi-Fi</span> › le nom de votre réseau). Notez :</p>
+<ul>
+<li>l'<b>adresse IPv4</b> (ex. <code>192.168.1.20</code>) ;</li>
+<li>l'<b>adresse physique (MAC)</b> (ex. <code>3C-52-82-AB-CD-EF</code>), parfois demandée par la box ;</li>
+<li>le <b>nom du PC</b> (<span class="ui">Paramètres</span> › <span class="ui">Système</span> › <span class="ui">Informations système</span>), qui permet de le retrouver dans la liste des appareils de la box.</li>
+</ul>
+<p>Plus rapide pour les initiés : touche Windows, tapez <code>cmd</code>, puis <code>ipconfig /all</code>.</p>
+<div class="callout tip"><span>💡</span><p>Branchez si possible le PC serveur <b>en câble</b> (Ethernet) à la box : plus rapide et plus stable que le Wi-Fi. Si vous passez du Wi-Fi au câble plus tard, l'adresse MAC change : refaites le bail statique avec la nouvelle.</p></div>
+<div class="callout warn"><span>🛡️</span><p><b>Réseau « privé » obligatoire :</b> 28JoursBox n'ouvre le Pare-feu Windows que pour les réseaux privés. Vérifiez sur le PC serveur : <span class="ui">Paramètres</span> › <span class="ui">Réseau et Internet</span> › <span class="ui">Ethernet</span> (ou <span class="ui">Wi-Fi</span>) › <span class="ui">Type de profil réseau</span> : <span class="ui">Privé</span>. En « Public », Windows bloque les connexions venues de la box.</p></div>
+<p>Ensuite, dans l'interface de la box, ajoutez un bail statique pour ce PC (le chemin exact de chaque box est donné plus bas : <a href="#box-orange">Orange</a>, <a href="#box-sfr">SFR</a>, <a href="#box-bouygues">Bouygues</a>, <a href="#box-free">Free</a>). Faites toujours le bail statique <b>avant</b> la redirection. Redémarrez ensuite le PC serveur et vérifiez qu'il a bien l'adresse choisie.</p>
+<details class="more"><summary>Et si ma box ne propose pas de bail statique ? (adresse fixe dans Windows)</summary>
+<p>Rare, mais possible. On peut alors fixer l'adresse dans Windows : <span class="ui">Paramètres</span> › <span class="ui">Réseau et Internet</span> › <span class="ui">Ethernet</span> › <span class="ui">Attribution d'adresse IP</span> › <span class="ui">Modifier</span> › <span class="ui">Manuel</span>, activez <b>IPv4</b> et saisissez :</p>
+<ul>
+<li><b>Adresse IP</b> : une adresse hors de la plage distribuée par la box (ex. <code>192.168.1.200</code> si la box distribue de .10 à .150 ; la plage est indiquée dans les réglages DHCP de la box) ;</li>
+<li><b>Masque de sous-réseau</b> : <code>255.255.255.0</code> ;</li>
+<li><b>Passerelle</b> et <b>DNS préféré</b> : l'adresse de la box (ex. <code>192.168.1.1</code>, ou <code>192.168.1.254</code> chez Bouygues et Free).</li>
+</ul>
+<p>Une erreur de saisie coupe Internet sur ce PC : revenez alors sur <span class="ui">Automatique (DHCP)</span>.</p>
+</details>
+<h3 id="redirection">Étape 3 : rediriger le port 8443 vers le PC serveur</h3>
+<p>Dans l'interface de la box, cherchez « NAT/PAT », « redirection de ports » ou « gestion des ports », et créez une règle avec ces informations :</p>
+<figure class="net-diagram rule-mock">
+<svg aria-labelledby="rule-title" role="img" viewbox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<title id="rule-title">Ce qu'il faut saisir dans la règle de redirection de la box</title>
+<rect class="rm-win" height="296" rx="18" width="636" x="2" y="2"></rect>
+<rect class="rm-bar" height="44" rx="18" width="636" x="2" y="2"></rect>
+<rect class="rm-bar" height="16" width="636" x="2" y="30"></rect>
+<circle class="rm-dot" cx="28" cy="24" r="6"></circle><circle class="rm-dot" cx="48" cy="24" r="6"></circle><circle class="rm-dot" cx="68" cy="24" r="6"></circle>
+<text class="rm-head" text-anchor="middle" x="320" y="29">Redirection de port (exemple, tous opérateurs)</text>
+<text class="rm-lab" x="36" y="86">Nom de la règle</text>
+<rect class="rm-field" height="32" rx="8" width="340" x="260" y="66"></rect><text class="rm-val" x="274" y="87">28JoursBox</text>
+<text class="rm-lab" x="36" y="128">Protocole</text>
+<rect class="rm-field" height="32" rx="8" width="340" x="260" y="108"></rect><text class="rm-val" x="274" y="129">TCP</text>
+<text class="rm-lab" x="36" y="170">Port externe (côté Internet)</text>
+<rect class="rm-field" height="32" rx="8" width="340" x="260" y="150"></rect><text class="rm-val" x="274" y="171">8443</text>
+<text class="rm-lab" x="36" y="212">Port interne (côté PC)</text>
+<rect class="rm-field" height="32" rx="8" width="340" x="260" y="192"></rect><text class="rm-val" x="274" y="213">8443</text>
+<text class="rm-lab" x="36" y="254">Appareil / IP de destination</text>
+<rect class="rm-field rm-hl" height="32" rx="8" width="340" x="260" y="234"></rect><text class="rm-val" x="274" y="255">PC serveur · 192.168.1.20</text>
+</svg>
+<figcaption>Les intitulés changent d'une box à l'autre, mais ce sont toujours ces cinq informations. L'adresse 192.168.1.20 est un exemple : mettez celle de <b>votre</b> PC serveur (voir l'étape « adresse fixe »).</figcaption>
+</figure>
+<p><b>443 au lieu de 8443 ?</b> Si votre box accepte de rediriger le port 443, l'adresse sera plus courte (sans <code>:8443</code>). Mettez alors 443 en port externe <b>et</b> dans le champ <span class="ui">Port ouvert sur la box</span> de 28JoursBox, avec 8443 en port interne. Beaucoup de box (Bbox, Freebox notamment) réservent le 443 pour leur propre accès à distance : dans le doute, gardez 8443.</p>
+<h3 id="activer">Étape 4 : activer dans 28JoursBox <span class="badge-admin">admin</span></h3>
+<ol class="how">
+<li>Ouvrez 28JoursBox (sur le PC serveur, ou ailleurs après avoir débloqué l'administration avec le mot de passe administrateur) › <span class="ui">Réglages</span> › carte <span class="ui">Accès direct (sans Tailscale)</span>.</li>
+<li>Renseignez <span class="ui">Nom DuckDNS</span> (juste <code>mongroupe</code>, sans « .duckdns.org »), <span class="ui">Jeton DuckDNS (token)</span> (collez le jeton copié à l'étape 1) et <span class="ui">Port ouvert sur la box</span> (<code>8443</code>, ou <code>443</code>).</li>
+<li>Cochez <span class="ui">Activer l'accès direct</span>, puis <span class="ui">Enregistrer</span>.</li>
+<li>L'état passe à « Mise en place en cours (certificat HTTPS : une à deux minutes)… », puis à « Actif : les PC des membres passent par l'accès direct (Tailscale reste en secours) ». La carte affiche l'adresse de la box vérifiée et la date de validité du certificat (renouvelé tout seul).</li>
+</ol>
+<h3 id="tester">Étape 5 : tester depuis l'extérieur</h3>
+<ol class="how">
+<li>Sur un téléphone, <b>coupez le Wi-Fi</b>.</li>
+<li>Ouvrez l'<b>adresse rapide</b> affichée dans la carte (ex. <code>https://mongroupe.duckdns.org:8443</code>) : la page de connexion 28JoursBox doit s'afficher, avec le cadenas.</li>
+<li>Ou touchez <span class="ui">Vérifier maintenant</span> dans la carte.</li>
+</ol>
+<p>Attention : tester depuis le Wi-Fi de la maison ne prouve rien (beaucoup de box ne savent pas « faire demi-tour »). Testez toujours en 4G.</p>
+<p>Les PC des membres suivent tout seuls. Les téléphones gardent l'adresse de l'appli installée ; les écoutes et les téléchargements passent par l'accès direct quand il répond, et reviennent automatiquement sur Tailscale sinon.</p>
+</section>
+<section id="box">
+<h2>Box par box</h2>
+<p>Les interfaces changent selon le modèle et les mises à jour : si un intitulé diffère un peu, cherchez le mot le plus proche (« DHCP », « NAT », « ports »). Chaque section renvoie vers l'aide officielle de l'opérateur, toujours à jour. Pour toutes les box : connectez-vous depuis un appareil de la maison (Wi-Fi ou câble).</p>
+<h3 id="box-orange">Orange et Sosh : Livebox</h3>
+<p><b>Se connecter :</b> ouvrez <code>http://192.168.1.1</code> (ou <code>http://livebox</code>). Identifiant <code>admin</code> ; mot de passe : par défaut, les 8 premiers caractères (sans espace) de la clé de sécurité inscrite sur l'étiquette sous la Livebox ou sur son écran. En cas d'oubli : lien « Mot de passe oublié » sur la page de connexion.</p>
+<ol class="how">
+<li><b>Adresse fixe du PC</b> : icône <span class="ui">Paramètres avancés</span> en bas de page › <span class="ui">Réseau</span> › onglet <span class="ui">DHCP</span> › partie <span class="ui">Baux DHCP statiques</span>. Choisissez le PC serveur dans la liste des appareils, saisissez l'adresse voulue, puis <span class="ui">Ajouter</span>.</li>
+<li><b>Redirection</b> : même page <span class="ui">Réseau</span>, onglet <span class="ui">NAT/PAT</span>. Créez une règle personnalisée : nom <code>28JoursBox</code>, port interne <code>8443</code>, port externe <code>8443</code>, protocole <span class="ui">TCP</span>, appareil : le PC serveur (laissez « IP externe » vide). Cliquez sur <span class="ui">Créer</span> : la règle apparaît dans le tableau du bas. Elle peut mettre quelques minutes à s'appliquer.</li>
+</ol>
+<div class="callout warn"><span>⚠️</span><p><b>IP partagée chez Orange :</b> depuis 2025, certaines lignes fibre reçoivent une adresse IPv4 partagée, et la redirection ne marche alors pas. Faites le test de l'<a href="#direct-verifier">étape 0</a>. Si l'adresse est partagée, demandez une adresse IPv4 dédiée au service client Orange, ou restez sur Tailscale.</p></div>
+<p>Aide officielle Orange : <a href="https://assistance.orange.fr/livebox-modem/toutes-les-livebox-et-modems/installer-et-utiliser/piloter-et-parametrer-votre-materiel/l-interface-de-configuration/comment-acceder-a-l-interface-de-configuration-de-ma-livebox_457878-987107" rel="noopener" target="_blank">accéder à l'interface</a> · <a href="https://assistance.orange.fr/livebox-modem/toutes-les-livebox-et-modems/installer-et-utiliser/piloter-et-parametrer-votre-materiel/l-interface-de-configuration/comment-attribuer-une-adresse-ip-statique-a-un-equipement-connecte-a-la-livebox_463191-992451" rel="noopener" target="_blank">adresse IP statique</a> · <a href="https://assistance.orange.fr/livebox-modem/toutes-les-livebox-et-modems/installer-et-utiliser/piloter-et-parametrer-votre-materiel/le-parametrage-avance-reseau-nat-pat-ip/configurer-des-regles-nat-pat/livebox-6-et-7-configurer-les-regles-nat-pour-pouvoir-utiliser-certains-jeux-ou-applications-serveur_362613-896058" rel="noopener" target="_blank">règles NAT/PAT (Livebox 6 et 7, avec captures)</a> · <a href="https://assistance.orange.fr/ordinateurs-peripheriques/installer-et-utiliser/les-consoles-de-jeux/xbox/livebox-5-configurer-pour-utiliser-un-jeu-ou-une-application-serveur_287340-827962" rel="noopener" target="_blank">Livebox 5</a>.</p>
+<h3 id="box-sfr">SFR et RED by SFR : SFR Box</h3>
+<p><b>Se connecter :</b> ouvrez <code>http://192.168.1.1</code>. Identifiant <code>admin</code> ; mot de passe : la clé de sécurité Wi-Fi inscrite sur l'étiquette de la box (sauf si vous l'avez changé). Autre possibilité : appuyez environ 5 secondes sur le bouton WPS de la box pour déverrouiller l'accès.</p>
+<p><b>SFR Box 8 / 8X :</b></p>
+<ol class="how">
+<li><b>Vérifier l'IPv4</b> : section <span class="ui">WAN</span> › <span class="ui">Informations générales</span>. Si l'adresse IPv4 est absente ou commence par <code>10.</code>, la ligne est en IP partagée : la redirection ne marchera pas (voir l'encadré plus bas).</li>
+<li><b>Adresse fixe du PC</b> : section <span class="ui">LAN</span> › <span class="ui">Baux statique</span> › rubrique <span class="ui">IPv4</span> › <span class="ui">ajouter bail statique</span>. Choisissez le PC serveur dans la liste et la fin de l'adresse (entre 2 et 253), puis <span class="ui">Créer</span>. Redémarrez la box.</li>
+<li><b>Redirection</b> : menu <span class="ui">Sécurité</span> › <span class="ui">Accès</span> › section <span class="ui">Réseau v4</span>, rubrique <span class="ui">Redirection des ports</span> › <span class="ui">Créer une règle</span> : nom <code>28JoursBox</code>, IP de l'équipement : celle du PC serveur, protocole <span class="ui">TCP</span>, ports interne et externe <code>8443</code>, accès depuis toute adresse. Activez la règle.</li>
+</ol>
+<p><b>NB6, box Plus :</b> adresse fixe dans <span class="ui">Réseau v4</span> › <span class="ui">DHCP</span> (adresses statiques), redirection dans <span class="ui">Réseau v4</span> › <span class="ui">NAT</span> (nom, protocole TCP, port externe 8443, IP de destination, port de destination 8443). Si <span class="ui">Etat</span> › <span class="ui">Internet</span> indique « Carrier-grade NAT », l'adresse est partagée.</p>
+<div class="callout warn"><span>⚠️</span><p><b>IP partagée chez SFR et RED :</b> beaucoup de lignes fibre passent en IP partagée. Pour retrouver une IPv4 dédiée (« full stack »), il faut la demander au service client (chat SFR, ou appli RED &amp; Moi pour RED). Sinon, Tailscale fonctionne très bien.</p></div>
+<p>Aide officielle SFR : <a href="https://assistance.sfr.fr/internet-tel-fixe/box-8/se-connecter-en-ipv6-ipv4.html" rel="noopener" target="_blank">SFR Box 8 : IPv4, bail statique et redirection (avec captures)</a> · <a href="https://assistance.sfr.fr/internet-tel-fixe/box-nb6/maitriser-fonctions-avancees-box-nb6-box-plus.html" rel="noopener" target="_blank">NB6 et box Plus : fonctions avancées</a>.</p>
+<h3 id="box-bouygues">Bouygues Telecom et B&amp;You : Bbox</h3>
+<p><b>Se connecter :</b> ouvrez <code>https://mabbox.bytel.fr</code> (<code>http://192.168.1.254</code> y mène aussi), ou depuis l'appli Bouygues Telecom : ligne Bbox › <span class="ui">Gérer ma Bbox</span> › <span class="ui">Accéder à mon interface admin</span>. En cas d'oubli du mot de passe : lien « mot de passe oublié ? », avec une validation sur la box.</p>
+<ol class="how">
+<li><b>Adresse fixe du PC</b> : menu d'icônes à gauche › <span class="ui">Réglages avancés</span> › serveur <span class="ui">DHCP</span> IPv4 : ajoutez une règle d'adresse IP statique. Choisissez le PC serveur (ou saisissez son adresse MAC), l'adresse voulue et un nom, puis <span class="ui">Appliquer</span>.</li>
+<li><b>Redirection</b> : <span class="ui">Réglages avancés</span> › <span class="ui">Redirection de ports</span> › ajouter ou modifier des règles, section <span class="ui">NAT &amp; PAT</span> : nom <code>28JoursBox</code>, protocole <span class="ui">TCP</span>, IP de destination : le PC serveur, IP source vide, port externe <code>8443</code>, port interne <code>8443</code>, puis <span class="ui">Appliquer</span>.</li>
+</ol>
+<div class="callout warn"><span>⚠️</span><p><b>Port 443 :</b> sur la Bbox, il est souvent pris par l'accès à distance de la box elle-même : gardez 8443. <b>IP partagée :</b> certaines lignes Bbox sont en IPv4 partagée ; l'option « Adresse IP dédiée » se demande depuis l'espace client (ligne Bbox › ajouter une option › Internet &amp; Maison).</p></div>
+<p>Bouygues ne publie pas de fiche officielle pour ces deux réglages : les menus ci-dessus viennent de la Bbox WiFi 6 (Must, Ultym) et peuvent légèrement varier. Aide officielle : <a href="https://www.assistance.bouyguestelecom.fr/s/article/connexion-installation-interface-administration-bbox" rel="noopener" target="_blank">accéder à l'interface de la Bbox</a>.</p>
+<h3 id="box-free">Free : Freebox</h3>
+<p><b>Se connecter :</b> ouvrez <code>http://mafreebox.freebox.fr</code> (Freebox OS). Pas de mot de passe sur étiquette : la première fois, cliquez sur <span class="ui">Première connexion</span>, validez sur la Freebox (flèche droite sur l'écran du Freebox Server, ou selon le modèle), puis choisissez votre mot de passe.</p>
+<ol class="how">
+<li><b>Vérifier l'adresse IP</b> : Freebox OS › <span class="ui">Etat de la Freebox</span> › <span class="ui">Etat Internet</span>. Si la plage de ports indiquée n'est pas « 0 à 65535 », votre IPv4 est <b>partagée</b> : demandez l'option <b>IP fixe V4 full-stack</b> dans l'Espace Abonné › <span class="ui">Ma Freebox</span> › <span class="ui">Demandez une adresse IP V4 fixe full-stack</span> › <span class="ui">Valider</span>, puis redémarrez le Freebox Server 30 minutes plus tard.</li>
+<li><b>Adresse fixe du PC</b> : <span class="ui">Paramètres de la Freebox</span> › <span class="ui">Mode avancé</span> › <span class="ui">DHCP</span> › onglet <span class="ui">Baux statiques</span> (pas « Baux actifs ») › <span class="ui">Ajouter un bail DHCP statique</span> : adresse MAC du PC serveur, adresse voulue, commentaire.</li>
+<li><b>Redirection</b> (après le bail statique) : <span class="ui">Paramètres de la Freebox</span> › <span class="ui">Mode avancé</span> › <span class="ui">Gestion des ports</span> › <span class="ui">Ajouter une redirection</span> : IP destination : le PC serveur, redirection active, IP source : toutes, protocole <span class="ui">TCP</span>, port de début <code>8443</code>, port de fin <code>8443</code>, port de destination <code>8443</code>, commentaire <code>28JoursBox</code>.</li>
+</ol>
+<p>Depuis le téléphone, l'appli Freebox permet aussi ces réglages (<span class="ui">Réseau</span> › <span class="ui">Paramètres réseau avancés</span> › <span class="ui">DHCP</span> / <span class="ui">Redirection de port</span>). Si vous créez le bail statique après la redirection, supprimez puis recréez la redirection.</p>
+<p>Aide officielle Free : <a href="https://assistance.free.fr/articles/freebox-os-acceder-a-freebox-os-depuis-mon-domicile-468" rel="noopener" target="_blank">accéder à Freebox OS</a> · <a href="https://assistance.free.fr/articles/1758" rel="noopener" target="_blank">IP fixe V4 full-stack</a> · <a href="https://assistance.free.fr/articles/1395" rel="noopener" target="_blank">DHCP et redirection depuis l'appli</a>.</p>
+<h3 id="box-autres">Autres cas</h3>
+<ul>
+<li><b>Box 4G / 5G</b> (tous opérateurs) : adresse partagée, la redirection ne marchera probablement pas. Tailscale fonctionne très bien.</li>
+<li><b>Routeur personnel derrière la box</b> (TP-Link, Asus, Netgear…) : il y a deux redirections à faire, sur la box vers le routeur, puis sur le routeur vers le PC serveur.</li>
+<li><b>Autre opérateur</b> : cherchez dans l'interface de la box « NAT », « redirection de ports » ou « port forwarding », et « DHCP statique » ou « réservation ». Les cinq informations de la règle restent les mêmes.</li>
+</ul>
+</section>
+<section id="depannage-acces">
+<h2>Ça ne marche pas ?</h2>
+<div class="table-wrap"><table class="spec"><thead><tr><th>Ce que vous voyez</th><th>Que faire</th></tr></thead><tbody>
+<tr><th>« Nom DuckDNS invalide : lettres, chiffres et tirets… »</th><td>Saisissez seulement le nom (<code>mongroupe</code>), sans <code>.duckdns.org</code>, sans espace ni accent.</td></tr>
+<tr><th>« DuckDNS refuse la demande : vérifiez le nom et le jeton… »</th><td>Recopiez le jeton depuis le haut de la page duckdns.org (sans espace avant ou après) et vérifiez que le nom figure bien dans votre liste de domaines DuckDNS.</td></tr>
+<tr><th>« Let's Encrypt ne répond pas à temps. »</th><td>Réessayez quelques minutes plus tard avec <span class="ui">Vérifier maintenant</span>. Vérifiez que le PC serveur a bien accès à Internet et qu'aucun VPN n'est actif.</td></tr>
+<tr><th>« Seul un administrateur peut régler l'accès direct. »</th><td>Faites le réglage sur le PC serveur, ou débloquez l'administration : <span class="ui">Réglages</span> › <span class="ui">Administration</span> › <span class="ui">Débloquer</span> (mot de passe administrateur).</td></tr>
+<tr><th>Le certificat est obtenu, mais rien ne s'ouvre en 4G</th><td>La redirection ne va pas au bon endroit : vérifiez l'adresse du PC serveur (a-t-elle changé ? le bail statique est-il bien enregistré ?), le port (8443 des deux côtés), le protocole (TCP). Redémarrez la box si elle le demande. Vérifiez la <a href="#direct-verifier">compatibilité de la box</a> (IP partagée, box 4G).</td></tr>
+<tr><th>Ça marche en 4G, mais pas pour un membre au travail ou à l'hôtel</th><td>Certains réseaux d'entreprise bloquent les ports autres que 443. Pas de souci : son PC repasse tout seul par Tailscale. Pour éviter ça, utilisez le port 443 si votre box le permet.</td></tr>
+<tr><th>Un VPN est actif sur le PC serveur</th><td>Un VPN fait sortir le PC par un autre chemin que la box : l'accès direct échoue. Désactivez le VPN sur le PC serveur, ou excluez 28JoursBox du VPN.</td></tr>
+<tr><th>Tailscale : « non connecté »</th><td>Ouvrez l'icône Tailscale près de l'horloge et reconnectez-vous, puis <span class="ui">Vérifier à nouveau</span> dans 28JoursBox.</td></tr>
+<tr><th>Tailscale : la page Funnel ne s'est pas ouverte</th><td>Cliquez à nouveau sur <span class="ui">Activer l'accès extérieur</span>. Si besoin, connectez-vous sur le site de Tailscale avec le même compte et autorisez Funnel dans la console d'administration.</td></tr>
+<tr><th>Rien ne marche depuis l'extérieur, ni direct ni Tailscale</th><td>Le PC serveur est-il allumé, pas en veille, et 28JoursBox démarré ? Réglez la mise en veille de Windows sur « Jamais » quand le PC est branché.</td></tr>
+</tbody></table></div>
+<p>Toujours bloqué ? Posez la question sur le <a href="forum.html">forum</a> en indiquant votre opérateur et le modèle de box (sans jamais donner votre jeton DuckDNS ni vos mots de passe).</p>
+</section>
+<section id="securite-acces">
+<h2>Et la sécurité ?</h2>
+<ul>
+<li>Avec Tailscale comme avec l'accès direct, tout passe en <b>HTTPS</b> (chiffré), et l'accès demande le mot de passe du groupe.</li>
+<li>L'accès direct ouvre <b>un seul port</b>, vers le seul PC serveur : n'ouvrez rien d'autre, et n'activez pas la « DMZ » de la box.</li>
+<li>Gardez Windows et 28JoursBox à jour.</li>
+<li>Le jeton DuckDNS ne doit pas circuler : il permet de modifier votre nom DuckDNS. En cas de doute, régénérez-le sur duckdns.org et collez le nouveau dans 28JoursBox.</li>
+<li>Pour tout arrêter, décochez <span class="ui">Activer l'accès direct</span> et supprimez la règle sur la box. Tailscale reprend la main.</li>
+<li>En activant l'accès direct, vous acceptez les conditions d'utilisation de Let's Encrypt.</li>
+</ul>
+</section>
+</article>
+<ol><li><a href="#principe">Le principe en une image</a><ol><li><a href="#choisir">Quelle solution choisir ?</a></li></ol></li><li><a href="#tailscale">Tailscale pas à pas</a><ol><li><a href="#ts-avant">Avant de commencer</a></li><li><a href="#ts-etapes">Les étapes</a></li><li><a href="#ts-tester">Vérifier que ça marche</a></li><li><a href="#ts-ensuite">Ensuite, tout seul</a></li></ol></li><li><a href="#direct">Accès direct pas à pas</a><ol><li><a href="#direct-verifier">Étape 0 : ma box est-elle compatible ?</a></li><li><a href="#duckdns">Étape 1 : réserver un nom DuckDNS (gratuit)</a></li><li><a href="#ip-fixe">Étape 2 : donner une adresse fixe au PC serveur</a></li><li><a href="#redirection">Étape 3 : rediriger le port 8443 vers le PC serveur</a></li><li><a href="#activer">Étape 4 : activer dans 28JoursBox</a></li><li><a href="#tester">Étape 5 : tester depuis l'extérieur</a></li></ol></li><li><a href="#box">Box par box</a><ol><li><a href="#box-orange">Orange et Sosh : Livebox</a></li><li><a href="#box-sfr">SFR et RED by SFR : SFR Box</a></li><li><a href="#box-bouygues">Bouygues Telecom et B&amp;You : Bbox</a></li><li><a href="#box-free">Free : Freebox</a></li><li><a href="#box-autres">Autres cas</a></li></ol></li><li><a href="#depannage-acces">Ça ne marche pas ?</a></li><li><a href="#securite-acces">Et la sécurité ?</a></li></ol>

@@ -24,7 +24,7 @@
 
   function load(code) {
     if (cache[code]) return Promise.resolve(cache[code]);
-    return fetch(`${root}lang/${code}.json?v=27`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
+    return fetch(`${root}lang/${code}.json?v=28`).then((r) => (r.ok ? r.json() : Promise.reject())).then((d) => (cache[code] = d));
   }
 
   function apply(d) {
