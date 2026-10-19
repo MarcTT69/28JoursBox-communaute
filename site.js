@@ -21,6 +21,16 @@
     : null;
   document.querySelectorAll('.reveal').forEach((el) => (io ? io.observe(el) : el.classList.add('in')));
 
+  // Vidéos d'exemple : muettes, en boucle, lues seulement quand elles sont à l'écran
+  const vids = document.querySelectorAll('video.demo');
+  if (vids.length && 'IntersectionObserver' in window) {
+    const vio = new IntersectionObserver((entries) => entries.forEach((e) => {
+      const v = e.target;
+      if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
+    }), { threshold: 0.35 });
+    vids.forEach((v) => { v.muted = true; vio.observe(v); });
+  }
+
   // Forme d'onde animée de la maquette
   document.querySelectorAll('.wave').forEach((w) => {
     for (let i = 0; i < 46; i++) {

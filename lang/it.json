@@ -479,7 +479,18 @@
  "acces_lang_note": "Questa pagina è in francese, come la guida. Le sezioni per router riguardano gli operatori francesi (Orange, SFR, Bouygues, Free); con un altro operatore, cerca «inoltro porte» e «prenotazione DHCP» nel router.",
  "nav_acces": "Accesso remoto",
  "vid_eyebrow": "In video",
- "vid_title": "Guardalo in azione",
- "vid_lead": "Brevi video girati nell'app, con il suono dei nostri brani. L'app è mostrata in francese.",
- "vid_passage": "Lavorare su un passaggio: zoom, loop di un blocco, rallentare, cambiare tonalità, togliere il basso"
+ "vid_title": "Esempi visivi delle funzioni",
+ "vid_lead": "Ogni breve video mostra una funzione, girata nell'app (in francese).",
+ "vc_dossier": "La cartella della band",
+ "vc_ecouter": "Ascoltare con un tocco",
+ "vc_glisser": "Scorrere: azioni rapide",
+ "vc_menu": "Il menu di un file: WAV, Studio One, Cubase, testo",
+ "vc_ajouter": "Aggiungere: registrare, importare, foto",
+ "vc_rechercher": "Trovare un file",
+ "vc_photos": "Foto e video dei concerti",
+ "vc_zoomer": "Zoom sul brano",
+ "vc_boucle": "Ripetere un blocco in loop",
+ "vc_tempo": "Rallentare senza cambiare l'intonazione",
+ "vc_tonalite": "Cambiare tonalità: gli accordi seguono",
+ "vc_pistes": "Separare gli strumenti, togliere il basso"
 }

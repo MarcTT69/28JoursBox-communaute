@@ -479,7 +479,18 @@
  "acces_lang_note": "Diese Seite ist auf Französisch, wie die Anleitung. Die Router-Abschnitte betreffen französische Anbieter (Orange, SFR, Bouygues, Free); bei anderen Anbietern suche im Router nach „Portweiterleitung“ und „DHCP-Reservierung“.",
  "nav_acces": "Fernzugriff",
  "vid_eyebrow": "Im Video",
- "vid_title": "So sieht es aus",
- "vid_lead": "Kurze Videos aus der App, mit dem Sound unserer eigenen Songs. Die App wird auf Französisch gezeigt.",
- "vid_passage": "Eine Stelle üben: zoomen, einen Block loopen, verlangsamen, die Tonart ändern, den Bass stummschalten"
+ "vid_title": "Die Funktionen im Bild",
+ "vid_lead": "Jedes kurze Video zeigt eine Funktion, direkt in der App gefilmt (auf Französisch).",
+ "vc_dossier": "Der Band-Ordner",
+ "vc_ecouter": "Mit einem Tippen anhören",
+ "vc_glisser": "Wischen: Schnellaktionen",
+ "vc_menu": "Das Dateimenü: WAV, Studio One, Cubase, Text",
+ "vc_ajouter": "Hinzufügen: aufnehmen, importieren, Fotos",
+ "vc_rechercher": "Eine Datei finden",
+ "vc_photos": "Konzertfotos und -videos",
+ "vc_zoomer": "In den Song zoomen",
+ "vc_boucle": "Einen Block loopen",
+ "vc_tempo": "Langsamer, ohne die Tonhöhe zu ändern",
+ "vc_tonalite": "Tonart ändern: die Akkorde folgen",
+ "vc_pistes": "Instrumente trennen, den Bass stummschalten"
 }

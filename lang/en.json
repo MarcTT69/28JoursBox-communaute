@@ -479,7 +479,18 @@
  "acces_lang_note": "This page is written in French, like the user guide. The step-by-step box sections cover French internet providers (Orange, SFR, Bouygues, Free); with another provider, look for \"port forwarding\" and \"DHCP reservation\" in your router.",
  "nav_acces": "Remote access",
  "vid_eyebrow": "In video",
- "vid_title": "See it in action",
- "vid_lead": "Short videos filmed in the app, with the sound of our own songs. The app is shown in French.",
- "vid_passage": "Work on a passage: zoom, loop a block, slow it down, change the key, mute the bass"
+ "vid_title": "Visual examples of the features",
+ "vid_lead": "Each short video shows one feature, filmed in the app (in French).",
+ "vc_dossier": "The band folder",
+ "vc_ecouter": "Listen with one tap",
+ "vc_glisser": "Swipe for quick actions",
+ "vc_menu": "A file's menu: WAV, Studio One, Cubase, text",
+ "vc_ajouter": "Add: record, import, photos",
+ "vc_rechercher": "Find a file",
+ "vc_photos": "Gig photos and videos",
+ "vc_zoomer": "Zoom into the song",
+ "vc_boucle": "Loop a block",
+ "vc_tempo": "Slow down without changing the pitch",
+ "vc_tonalite": "Change the key: the chords follow",
+ "vc_pistes": "Separate the instruments, mute the bass"
 }

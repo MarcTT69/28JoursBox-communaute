@@ -479,7 +479,18 @@
  "acces_lang_note": "Cette page est en français, comme le mode d'emploi. Les sections box par box concernent les opérateurs français (Orange, SFR, Bouygues, Free).",
  "nav_acces": "Accès extérieur",
  "vid_eyebrow": "En vidéo",
- "vid_title": "Voyez-le en action",
- "vid_lead": "De courtes vidéos tournées dans l'appli, avec le son de nos propres morceaux.",
- "vid_passage": "Travailler un passage : zoomer, boucler un bloc, ralentir, changer de tonalité, couper la basse"
+ "vid_title": "Exemples visuels des fonctionnalités",
+ "vid_lead": "Chaque courte vidéo montre une fonctionnalité, filmée dans l'appli.",
+ "vc_dossier": "Le dossier du groupe",
+ "vc_ecouter": "Écouter en un toucher",
+ "vc_glisser": "Glisser : les actions rapides",
+ "vc_menu": "Le menu d'un fichier : WAV, Studio One, Cubase, texte",
+ "vc_ajouter": "Ajouter : enregistrer, importer, photos",
+ "vc_rechercher": "Retrouver un fichier",
+ "vc_photos": "Photos et vidéos des concerts",
+ "vc_zoomer": "Zoomer sur le morceau",
+ "vc_boucle": "Jouer un bloc en boucle",
+ "vc_tempo": "Ralentir sans changer la note",
+ "vc_tonalite": "Changer de tonalité : les accords suivent",
+ "vc_pistes": "Séparer les instruments, couper la basse"
 }
