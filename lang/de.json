@@ -525,8 +525,14 @@
  "vc_editer": "Bearbeiten: den guten Teil behalten",
  "vc_fondu": "Einblenden mit einem Tippen",
  "vt_securite": "Sicherheit und Einstellungen",
- "vc_reglages": "Einstellungen: Sprache, Geräte, Papierkorb",
+ "vc_reglages": "Einstellungen und Gruppenverwaltung",
  "vc_corbeille": "Der Papierkorb: 30 Tage geht nichts verloren",
  "vc_versions": "Der Versionsverlauf",
- "vc_etatserveur": "Der Serverstatus, vom Handy aus"
+ "vc_etatserveur": "Der Serverstatus, vom Handy aus",
+ "vc_decouper": "Einen Konzertmitschnitt in Songs aufteilen",
+ "pillar_split": "Konzert- oder Probenmitschnitt automatisch in Songs aufgeteilt",
+ "pillar_ocr": "Abfotografierte Seiten (Songtexte, Setlist) werden zu Text",
+ "why_r8": "Einen Konzertmitschnitt in Songs aufteilen",
+ "why_r8_a": "Von Hand, Song für Song, in einem Audioeditor",
+ "why_r8_b": "Mit einem Tippen: eine Datei pro Song, gleiche Qualität, ohne Gerede und Stimmen"
 }

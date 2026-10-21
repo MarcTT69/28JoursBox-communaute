@@ -525,8 +525,14 @@
  "vc_editer": "Éditer : garder le bon passage",
  "vc_fondu": "Fondu d'entrée en un toucher",
  "vt_securite": "Sécurité et réglages",
- "vc_reglages": "Les réglages : langue, appareils, corbeille",
+ "vc_reglages": "Les réglages et l'administration du groupe",
  "vc_corbeille": "La corbeille : rien n'est perdu pendant 30 jours",
  "vc_versions": "L'historique des versions",
- "vc_etatserveur": "L'état du serveur, depuis le téléphone"
+ "vc_etatserveur": "L'état du serveur, depuis le téléphone",
+ "vc_decouper": "Découper un concert en morceaux de musique",
+ "pillar_split": "Un concert ou une répète découpés en morceaux, tout seuls",
+ "pillar_ocr": "Pages photographiées (paroles, setlist) transformées en texte",
+ "why_r8": "Découper l'enregistrement d'un concert en morceaux",
+ "why_r8_a": "À la main, morceau par morceau, dans un logiciel audio",
+ "why_r8_b": "En un toucher : un fichier par morceau, même qualité, sans les discussions ni l'accordage"
 }

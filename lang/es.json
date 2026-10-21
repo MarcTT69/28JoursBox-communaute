@@ -525,8 +525,14 @@
  "vc_editer": "Editar: quedarse con lo bueno",
  "vc_fondu": "Un fundido de entrada con un toque",
  "vt_securite": "Seguridad y ajustes",
- "vc_reglages": "Ajustes: idioma, dispositivos, papelera",
+ "vc_reglages": "Ajustes y administración del grupo",
  "vc_corbeille": "La papelera: nada se pierde durante 30 días",
  "vc_versions": "El historial de versiones",
- "vc_etatserveur": "El estado del servidor, desde el móvil"
+ "vc_etatserveur": "El estado del servidor, desde el móvil",
+ "vc_decouper": "Dividir un concierto en canciones",
+ "pillar_split": "Un concierto o un ensayo dividido en canciones, automáticamente",
+ "pillar_ocr": "Páginas fotografiadas (letras, setlist) convertidas en texto",
+ "why_r8": "Dividir la grabación de un concierto en canciones",
+ "why_r8_a": "A mano, canción por canción, en un editor de audio",
+ "why_r8_b": "Con un toque: un archivo por canción, misma calidad, sin charlas ni afinación"
 }

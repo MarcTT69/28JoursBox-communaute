@@ -525,8 +525,14 @@
  "vc_editer": "Modificare: tenere il passaggio buono",
  "vc_fondu": "Dissolvenza in entrata con un tocco",
  "vt_securite": "Sicurezza e impostazioni",
- "vc_reglages": "Impostazioni: lingua, dispositivi, cestino",
+ "vc_reglages": "Impostazioni e amministrazione del gruppo",
  "vc_corbeille": "Il cestino: nulla si perde per 30 giorni",
  "vc_versions": "La cronologia delle versioni",
- "vc_etatserveur": "Lo stato del server, dal telefono"
+ "vc_etatserveur": "Lo stato del server, dal telefono",
+ "vc_decouper": "Dividere un concerto in brani",
+ "pillar_split": "Un concerto o una prova divisi in brani, da soli",
+ "pillar_ocr": "Pagine fotografate (testi, scaletta) trasformate in testo",
+ "why_r8": "Dividere la registrazione di un concerto in brani",
+ "why_r8_a": "A mano, brano per brano, in un editor audio",
+ "why_r8_b": "Con un tocco: un file per brano, stessa qualità, senza chiacchiere né accordatura"
 }

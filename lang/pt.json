@@ -525,8 +525,14 @@
  "vc_editer": "Editar: manter o trecho bom",
  "vc_fondu": "Fade-in com um toque",
  "vt_securite": "Segurança e configurações",
- "vc_reglages": "Configurações: idioma, aparelhos, lixeira",
+ "vc_reglages": "Configurações e administração do grupo",
  "vc_corbeille": "A lixeira: nada se perde por 30 dias",
  "vc_versions": "O histórico de versões",
- "vc_etatserveur": "O estado do servidor, pelo celular"
+ "vc_etatserveur": "O estado do servidor, pelo celular",
+ "vc_decouper": "Dividir um show em músicas",
+ "pillar_split": "Um show ou ensaio dividido em músicas, automaticamente",
+ "pillar_ocr": "Páginas fotografadas (letras, setlist) transformadas em texto",
+ "why_r8": "Dividir a gravação de um show em músicas",
+ "why_r8_a": "À mão, música por música, num editor de áudio",
+ "why_r8_b": "Com um toque: um arquivo por música, mesma qualidade, sem conversas nem afinação"
 }

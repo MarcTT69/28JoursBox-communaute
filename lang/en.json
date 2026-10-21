@@ -525,8 +525,14 @@
  "vc_editer": "Edit: keep the good part",
  "vc_fondu": "A fade-in with one tap",
  "vt_securite": "Safety and settings",
- "vc_reglages": "Settings: language, devices, trash",
+ "vc_reglages": "Settings and group administration",
  "vc_corbeille": "The trash: nothing is lost for 30 days",
  "vc_versions": "Version history",
- "vc_etatserveur": "The server's status, from your phone"
+ "vc_etatserveur": "The server's status, from your phone",
+ "vc_decouper": "Split a gig recording into songs",
+ "pillar_split": "A gig or rehearsal recording split into songs automatically",
+ "pillar_ocr": "Photographed pages (lyrics, setlists) turned into text",
+ "why_r8": "Splitting a gig recording into songs",
+ "why_r8_a": "By hand, song by song, in an audio editor",
+ "why_r8_b": "One tap: one file per song, same quality, talk and tuning left out"
 }
