@@ -71,7 +71,7 @@
 </ul>
 <h3 id="ts-etapes">Les étapes</h3>
 <ol class="how">
-<li>Clic sur l'icône 28JoursBox près de l'horloge › <span class="ui">Accès depuis l'extérieur (4G)…</span><br/>Sur un PC serveur qui synchronise aussi des fichiers : <span class="ui">Préférences</span> › <span class="ui">Serveur</span>, carte <span class="ui">Accès depuis l'extérieur (4G)</span>.</li>
+<li>Clic sur l'icône 28JoursBox près de l'horloge › <span class="ui">État du serveur…</span> (sur un PC serveur qui synchronise aussi des fichiers : engrenage <span class="ui">⚙</span> du panneau › <span class="ui">État du serveur…</span>), ligne <span class="ui">Accès extérieur</span> › <span class="ui">Régler…</span>. La fenêtre <span class="ui">Accès depuis l'extérieur (4G)</span> s'ouvre.</li>
 <li>Cliquez sur <span class="ui">Installer Tailscale</span>. La page de téléchargement de Tailscale s'ouvre dans le navigateur : téléchargez la version Windows, installez-la (suivant, suivant…), puis connectez-vous quand Tailscale le demande (choisissez Google, Microsoft…). Une icône Tailscale apparaît à son tour près de l'horloge.</li>
 <li>Revenez dans la fenêtre 28JoursBox et cliquez sur <span class="ui">J'ai installé Tailscale, vérifier</span>. Si Tailscale n'était pas encore connecté, terminez la connexion puis cliquez sur <span class="ui">Vérifier à nouveau</span>.</li>
 <li>Cliquez sur <span class="ui">Activer l'accès extérieur</span>. La première fois, une page Tailscale s'ouvre et demande d'autoriser <b>Funnel</b> (c'est la fonction qui rend le serveur joignable depuis Internet) : acceptez, puis revenez.</li>
@@ -159,8 +159,8 @@
 <p><b>443 au lieu de 8443 ?</b> Si votre box accepte de rediriger le port 443, l'adresse sera plus courte (sans <code>:8443</code>). Mettez alors 443 en port externe <b>et</b> dans le champ <span class="ui">Port ouvert sur la box</span> de 28JoursBox, avec 8443 en port interne. Beaucoup de box (Bbox, Freebox notamment) réservent le 443 pour leur propre accès à distance : dans le doute, gardez 8443.</p>
 <h3 id="activer">Étape 4 : activer dans 28JoursBox <span class="badge-admin">admin</span></h3>
 <ol class="how">
-<li>Ouvrez 28JoursBox (sur le PC serveur, ou ailleurs après avoir débloqué l'administration avec le mot de passe administrateur) › <span class="ui">Réglages</span> › carte <span class="ui">Accès direct (sans Tailscale)</span>.</li>
-<li>Renseignez <span class="ui">Nom DuckDNS</span> (juste <code>mongroupe</code>, sans « .duckdns.org »), <span class="ui">Jeton DuckDNS (token)</span> (collez le jeton copié à l'étape 1) et <span class="ui">Port ouvert sur la box</span> (<code>8443</code>, ou <code>443</code>).</li>
+<li>Ouvrez 28JoursBox (sur le PC serveur, ou ailleurs après avoir débloqué l'administration avec le mot de passe administrateur) › <span class="ui">Réglages</span> › <span class="ui">Serveur</span> › carte <span class="ui">Accès rapide par votre box</span>.</li>
+<li>Renseignez <span class="ui">Nom choisi sur duckdns.org</span> (juste <code>mongroupe</code>, sans « .duckdns.org »), <span class="ui">Code du compte duckdns.org</span> (collez le jeton copié à l'étape 1) et <span class="ui">Port ouvert sur la box</span> (<code>8443</code>, ou <code>443</code>).</li>
 <li>Cochez <span class="ui">Activer l'accès direct</span>, puis <span class="ui">Enregistrer</span>.</li>
 <li>L'état passe à « Mise en place en cours (certificat HTTPS : une à deux minutes)… », puis à « Actif : les PC des membres passent par l'accès direct (Tailscale reste en secours) ». La carte affiche l'adresse de la box vérifiée et la date de validité du certificat (renouvelé tout seul).</li>
 </ol>

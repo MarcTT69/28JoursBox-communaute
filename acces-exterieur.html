@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=29" rel="stylesheet"/>
+<link href="style.css?v=30" rel="stylesheet"/>
 </head>
 <body>
 <nav class="nav">
@@ -110,7 +110,7 @@
 </ul>
 <h3 id="ts-etapes">The steps</h3>
 <ol class="how">
-<li>Click the 28JoursBox icon next to the clock › <span class="ui">Accès depuis l'extérieur (4G)…</span> (Access from outside (4G)…)<br/>On a server PC that also syncs files: <span class="ui">Préférences</span> (Preferences) › <span class="ui">Serveur</span> (Server), card <span class="ui">Accès depuis l'extérieur (4G)</span>.</li>
+<li>Click the 28JoursBox icon next to the clock › <span class="ui">État du serveur…</span> (Server status…) (on a server PC that also syncs files: the panel's <span class="ui">⚙</span> gear › <span class="ui">État du serveur…</span>), row <span class="ui">Accès extérieur</span> (Outside access) › <span class="ui">Régler…</span> (Set up…). The <span class="ui">Accès depuis l'extérieur (4G)</span> (Access from outside (4G)) window opens.</li>
 <li>Click <span class="ui">Installer Tailscale</span> (Install Tailscale). The Tailscale download page opens in the browser: download the Windows version, install it (next, next…), then sign in when Tailscale asks (choose Google, Microsoft…). A Tailscale icon then appears next to the clock as well.</li>
 <li>Go back to the 28JoursBox window and click <span class="ui">J'ai installé Tailscale, vérifier</span> (I've installed Tailscale, check). If Tailscale wasn't signed in yet, finish signing in, then click <span class="ui">Vérifier à nouveau</span> (Check again).</li>
 <li>Click <span class="ui">Activer l'accès extérieur</span> (Turn on outside access). The first time, a Tailscale page opens and asks you to allow <b>Funnel</b> (the feature that makes the server reachable from the Internet): accept, then come back.</li>
@@ -195,19 +195,19 @@
 </svg>
 <figcaption>The labels vary from one router to another, but it's always these five pieces of information. The address 192.168.1.20 is an example: use the one of <b>your</b> server PC (see the "fixed address" step).</figcaption>
 </figure>
-<p><b>443 instead of 8443?</b> If your router lets you forward port 443, the address will be shorter (without <code>:8443</code>). In that case, use 443 as the external port <b>and</b> in the <span class="ui">Port ouvert sur la box</span> (Port open on the router) field of 28JoursBox, with 8443 as the internal port. Many routers (Bbox and Freebox in particular) reserve port 443 for their own remote access: when in doubt, keep 8443.</p>
+<p><b>443 instead of 8443?</b> If your router lets you forward port 443, the address will be shorter (without <code>:8443</code>). In that case, use 443 as the external port <b>and</b> in the <span class="ui">Port open on the router</span> field of 28JoursBox, with 8443 as the internal port. Many routers (Bbox and Freebox in particular) reserve port 443 for their own remote access: when in doubt, keep 8443.</p>
 <h3 id="activer">Step 4: turn it on in 28JoursBox <span class="badge-admin">admin</span></h3>
 <ol class="how">
-<li>Open 28JoursBox (on the server PC, or elsewhere after unlocking administration with the administrator password) › <span class="ui">Settings</span> › card <span class="ui">Accès direct (sans Tailscale)</span> (Direct access (without Tailscale)).</li>
-<li>Fill in <span class="ui">Nom DuckDNS</span> (just <code>mongroupe</code>, without ".duckdns.org"), <span class="ui">Jeton DuckDNS (token)</span> (paste the token copied in step 1) and <span class="ui">Port ouvert sur la box</span> (<code>8443</code>, or <code>443</code>).</li>
-<li>Check <span class="ui">Activer l'accès direct</span> (Enable direct access), then <span class="ui">Enregistrer</span> (Save).</li>
+<li>Open 28JoursBox (on the server PC, or elsewhere after unlocking administration with the administrator password) › <span class="ui">Settings</span> › <span class="ui">Server</span> › card <span class="ui">Fast access through your router</span>.</li>
+<li>Fill in <span class="ui">Name chosen on duckdns.org</span> (just <code>mongroupe</code>, without ".duckdns.org"), <span class="ui">duckdns.org account code</span> (paste the token copied in step 1) and <span class="ui">Port open on the router</span> (<code>8443</code>, or <code>443</code>).</li>
+<li>Check <span class="ui">Turn on direct access</span>, then <span class="ui">Save</span>.</li>
 <li>The status changes to "Setting up (HTTPS certificate: one to two minutes)…", then to "Active: members' PCs use direct access (Tailscale stays as a backup)." The card shows the checked router address and the certificate's expiration date (renewed automatically).</li>
 </ol>
 <h3 id="tester">Step 5: test from outside</h3>
 <ol class="how">
 <li>On a phone, <b>turn off Wi-Fi</b>.</li>
 <li>Open the <b>fast address</b> shown in the card (e.g. <code>https://mongroupe.duckdns.org:8443</code>): the 28JoursBox sign-in page should appear, with the padlock.</li>
-<li>Or tap <span class="ui">Vérifier maintenant</span> (Check now) in the card.</li>
+<li>Or tap <span class="ui">Check now</span> in the card.</li>
 </ol>
 <p>Note: testing from your home Wi-Fi proves nothing (many routers can't "loop back"). Always test on 4G.</p>
 <p>Members' PCs follow along on their own. Phones keep the address of the installed app; listening and downloads go through direct access when it responds, and automatically fall back to Tailscale otherwise.</p>
@@ -264,7 +264,7 @@
 <div class="table-wrap"><table class="spec"><thead><tr><th>What you see</th><th>What to do</th></tr></thead><tbody>
 <tr><th>"Invalid DuckDNS name: letters, numbers and hyphens…"</th><td>Enter only the name (<code>mongroupe</code>), without <code>.duckdns.org</code>, with no spaces or accents.</td></tr>
 <tr><th>"DuckDNS rejected the request: check the name and the token…"</th><td>Copy the token again from the top of the duckdns.org page (with no space before or after) and check that the name appears in your list of DuckDNS domains.</td></tr>
-<tr><th>"Let's Encrypt didn't respond in time."</th><td>Try again a few minutes later with <span class="ui">Vérifier maintenant</span> (Check now). Check that the server PC has Internet access and that no VPN is active.</td></tr>
+<tr><th>"Let's Encrypt didn't respond in time."</th><td>Try again a few minutes later with <span class="ui">Check now</span>. Check that the server PC has Internet access and that no VPN is active.</td></tr>
 <tr><th>"Only an administrator can set up direct access."</th><td>Make the setting on the server PC, or unlock administration: <span class="ui">Settings</span> › <span class="ui">Administration</span> › <span class="ui">Unlock</span> (administrator password).</td></tr>
 <tr><th>The certificate is obtained, but nothing opens on 4G</th><td>The port forward isn't going to the right place: check the server PC's address (has it changed? is the static lease saved?), the port (8443 on both sides), the protocol (TCP). Restart the router if it asks. Check the <a href="#direct-verifier">router's compatibility</a> (shared IP, 4G router).</td></tr>
 <tr><th>It works on 4G, but not for a member at work or at a hotel</th><td>Some corporate networks block ports other than 443. No problem: their PC automatically falls back to Tailscale. To avoid this, use port 443 if your router allows it.</td></tr>
@@ -282,7 +282,7 @@
 <li>Direct access opens <b>a single port</b>, to the server PC only: don't open anything else, and don't turn on the router's "DMZ."</li>
 <li>Keep Windows and 28JoursBox up to date.</li>
 <li>The DuckDNS token must not be passed around: it lets anyone change your DuckDNS name. If in doubt, regenerate it on duckdns.org and paste the new one into 28JoursBox.</li>
-<li>To stop everything, uncheck <span class="ui">Activer l'accès direct</span> (Enable direct access) and delete the rule on the router. Tailscale takes over.</li>
+<li>To stop everything, uncheck <span class="ui">Turn on direct access</span> and delete the rule on the router. Tailscale takes over.</li>
 <li>By turning on direct access, you accept the Let's Encrypt terms of use.</li>
 </ul>
 </section>
@@ -312,7 +312,7 @@
 </div>
 </footer>
 <script src="config.js?v=10"></script>
-<script src="i18n.js?v=29"></script>
-<script src="site.js?v=29"></script><script src="guide.js?v=29"></script>
+<script src="i18n.js?v=30"></script>
+<script src="site.js?v=30"></script><script src="guide.js?v=30"></script>
 </body>
 </html>
