@@ -521,7 +521,7 @@
  "vc_mail": "Enviar uma música por e-mail",
  "vc_inviter": "Convidar um novo membro",
  "vc_wav": "Converter para WAV",
- "vc_studioone": "Para Studio One ou Cubase: uma faixa por instrumento, grade alinhada",
+ "vc_studioone": "Para Studio One ou Cubase: tempo fixo ou variável",
  "vc_editer": "Editar: manter o trecho bom",
  "vc_fondu": "Fade-in com um toque",
  "vt_securite": "Segurança e configurações",
@@ -545,5 +545,14 @@
  "vc_accordentendu": "O acorde tocado, destacado durante a reprodução",
  "vc_basse": "O baixo no braço: escala e notas fora da escala",
  "vc_fusionner": "Juntar várias músicas em uma",
- "vc_pistes-hq": "Separação de alta qualidade: 5 faixas mais limpas"
+ "vc_pistes-hq": "Separação de alta qualidade: 5 faixas mais limpas",
+ "pillar_chat": "Um chat de grupo para a banda, com fotos, ao lado dos arquivos",
+ "pillar_agenda": "Uma agenda comum: ensaios, shows e ausências, sincronizada com o Google Agenda",
+ "why_r10": "Encontrar uma data de ensaio",
+ "why_r10_a": "Dezenas de mensagens num app de conversa e uma agenda à parte",
+ "why_r10_b": "Uma única grade: cada um marca as ausências, ensaios e shows ficam visíveis, lembrete na véspera",
+ "vc_moi": "A aba Eu: lixeira, compartilhamentos, configurações",
+ "vt_ensemble": "Conversar e se organizar",
+ "vc_messages": "O chat da banda, com fotos",
+ "vc_agenda": "A agenda: ausências, ensaios e shows"
 }

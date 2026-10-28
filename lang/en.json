@@ -521,7 +521,7 @@
  "vc_mail": "Send a song by email",
  "vc_inviter": "Invite a new member",
  "vc_wav": "Convert to WAV",
- "vc_studioone": "To Studio One or Cubase: one track per instrument, grid locked to the playing",
+ "vc_studioone": "To Studio One or Cubase: fixed or variable tempo",
  "vc_editer": "Edit: keep the good part",
  "vc_fondu": "A fade-in with one tap",
  "vt_securite": "Safety and settings",
@@ -545,5 +545,14 @@
  "vc_accordentendu": "The chord being played, highlighted during playback",
  "vc_basse": "Bass on the neck: scale and out-of-scale notes",
  "vc_fusionner": "Merge several songs into one",
- "vc_pistes-hq": "High-quality separation: 5 cleaner tracks"
+ "vc_pistes-hq": "High-quality separation: 5 cleaner tracks",
+ "pillar_chat": "A group chat for the band, with photos, right next to the files",
+ "pillar_agenda": "A shared calendar: rehearsals, gigs and who is away, synced with Google Calendar",
+ "why_r10": "Finding a rehearsal date",
+ "why_r10_a": "Endless messages in a chat app, and a separate calendar",
+ "why_r10_b": "One grid: everyone marks their absences, rehearsals and gigs are shown, a reminder the day before",
+ "vc_moi": "The Me tab: trash, shared links, settings",
+ "vt_ensemble": "Chat and planning",
+ "vc_messages": "The band chat, with photos",
+ "vc_agenda": "The calendar: absences, rehearsals and gigs"
 }

@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=30" rel="stylesheet"/>
+<link href="style.css?v=31" rel="stylesheet"/>
 </head>
 <body>
 <nav class="nav">
@@ -198,7 +198,7 @@
 <p><b>443 instead of 8443?</b> If your router lets you forward port 443, the address will be shorter (without <code>:8443</code>). In that case, use 443 as the external port <b>and</b> in the <span class="ui">Port open on the router</span> field of 28JoursBox, with 8443 as the internal port. Many routers (Bbox and Freebox in particular) reserve port 443 for their own remote access: when in doubt, keep 8443.</p>
 <h3 id="activer">Step 4: turn it on in 28JoursBox <span class="badge-admin">admin</span></h3>
 <ol class="how">
-<li>Open 28JoursBox (on the server PC, or elsewhere after unlocking administration with the administrator password) › <span class="ui">Settings</span> › <span class="ui">Server</span> › card <span class="ui">Fast access through your router</span>.</li>
+<li>Open 28JoursBox (on the server PC, or elsewhere after unlocking administration with the administrator password) › <span class="ui">Me</span> › <span class="ui">Settings</span> › <span class="ui">Server</span> › card <span class="ui">Fast access through your router</span>.</li>
 <li>Fill in <span class="ui">Name chosen on duckdns.org</span> (just <code>mongroupe</code>, without ".duckdns.org"), <span class="ui">duckdns.org account code</span> (paste the token copied in step 1) and <span class="ui">Port open on the router</span> (<code>8443</code>, or <code>443</code>).</li>
 <li>Check <span class="ui">Turn on direct access</span>, then <span class="ui">Save</span>.</li>
 <li>The status changes to "Setting up (HTTPS certificate: one to two minutes)…", then to "Active: members' PCs use direct access (Tailscale stays as a backup)." The card shows the checked router address and the certificate's expiration date (renewed automatically).</li>
@@ -265,7 +265,7 @@
 <tr><th>"Invalid DuckDNS name: letters, numbers and hyphens…"</th><td>Enter only the name (<code>mongroupe</code>), without <code>.duckdns.org</code>, with no spaces or accents.</td></tr>
 <tr><th>"DuckDNS rejected the request: check the name and the token…"</th><td>Copy the token again from the top of the duckdns.org page (with no space before or after) and check that the name appears in your list of DuckDNS domains.</td></tr>
 <tr><th>"Let's Encrypt didn't respond in time."</th><td>Try again a few minutes later with <span class="ui">Check now</span>. Check that the server PC has Internet access and that no VPN is active.</td></tr>
-<tr><th>"Only an administrator can set up direct access."</th><td>Make the setting on the server PC, or unlock administration: <span class="ui">Settings</span> › <span class="ui">Administration</span> › <span class="ui">Unlock</span> (administrator password).</td></tr>
+<tr><th>"Only an administrator can set up direct access."</th><td>Make the setting on the server PC, or unlock administration: <span class="ui">Me</span> › <span class="ui">Settings</span> › <span class="ui">Administration rights</span> › <span class="ui">Unlock</span> (administrator password).</td></tr>
 <tr><th>The certificate is obtained, but nothing opens on 4G</th><td>The port forward isn't going to the right place: check the server PC's address (has it changed? is the static lease saved?), the port (8443 on both sides), the protocol (TCP). Restart the router if it asks. Check the <a href="#direct-verifier">router's compatibility</a> (shared IP, 4G router).</td></tr>
 <tr><th>It works on 4G, but not for a member at work or at a hotel</th><td>Some corporate networks block ports other than 443. No problem: their PC automatically falls back to Tailscale. To avoid this, use port 443 if your router allows it.</td></tr>
 <tr><th>A VPN is active on the server PC</th><td>A VPN makes the PC go out by a path other than the router: direct access fails. Turn off the VPN on the server PC, or exclude 28JoursBox from the VPN.</td></tr>
@@ -312,7 +312,7 @@
 </div>
 </footer>
 <script src="config.js?v=10"></script>
-<script src="i18n.js?v=30"></script>
-<script src="site.js?v=30"></script><script src="guide.js?v=30"></script>
+<script src="i18n.js?v=31"></script>
+<script src="site.js?v=31"></script><script src="guide.js?v=31"></script>
 </body>
 </html>

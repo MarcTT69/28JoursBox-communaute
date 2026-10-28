@@ -521,7 +521,7 @@
  "vc_mail": "Einen Song per E-Mail senden",
  "vc_inviter": "Ein neues Mitglied einladen",
  "vc_wav": "In WAV umwandeln",
- "vc_studioone": "Nach Studio One oder Cubase: eine Spur pro Instrument, Raster angepasst",
+ "vc_studioone": "Nach Studio One oder Cubase: festes oder variables Tempo",
  "vc_editer": "Bearbeiten: den guten Teil behalten",
  "vc_fondu": "Einblenden mit einem Tippen",
  "vt_securite": "Sicherheit und Einstellungen",
@@ -545,5 +545,14 @@
  "vc_accordentendu": "Der gespielte Akkord, hervorgehoben während der Wiedergabe",
  "vc_basse": "Bass auf dem Griffbrett: Tonleiter und skalenfremde Töne",
  "vc_fusionner": "Mehrere Songs zu einem zusammenfügen",
- "vc_pistes-hq": "High-Quality-Trennung: 5 sauberere Spuren"
+ "vc_pistes-hq": "High-Quality-Trennung: 5 sauberere Spuren",
+ "pillar_chat": "Ein Gruppenchat für die Band, mit Fotos, direkt neben den Dateien",
+ "pillar_agenda": "Ein gemeinsamer Kalender: Proben, Konzerte und Abwesenheiten, mit Google Kalender synchronisiert",
+ "why_r10": "Einen Probentermin finden",
+ "why_r10_a": "Dutzende Nachrichten in einer Chat-App und ein separater Kalender",
+ "why_r10_b": "Ein einziges Raster: jeder trägt seine Abwesenheiten ein, Proben und Konzerte stehen drin, Erinnerung am Vortag",
+ "vc_moi": "Der Tab Ich: Papierkorb, Freigaben, Einstellungen",
+ "vt_ensemble": "Chatten und planen",
+ "vc_messages": "Der Band-Chat, mit Fotos",
+ "vc_agenda": "Der Kalender: Abwesenheiten, Proben und Konzerte"
 }

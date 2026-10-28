@@ -521,7 +521,7 @@
  "vc_mail": "Envoyer un morceau par mail",
  "vc_inviter": "Inviter un nouveau membre",
  "vc_wav": "Convertir en WAV",
- "vc_studioone": "Vers Studio One ou Cubase : une piste par instrument, grille calée",
+ "vc_studioone": "Vers Studio One ou Cubase : tempo fixe ou variable",
  "vc_editer": "Éditer : garder le bon passage",
  "vc_fondu": "Fondu d'entrée en un toucher",
  "vt_securite": "Sécurité et réglages",
@@ -545,5 +545,14 @@
  "vc_accordentendu": "L'accord joué, encadré pendant la lecture",
  "vc_basse": "La basse sur le manche : gamme et notes hors gamme",
  "vc_fusionner": "Fusionner plusieurs morceaux en un seul",
- "vc_pistes-hq": "Séparation haute qualité : 5 pistes plus propres"
+ "vc_pistes-hq": "Séparation haute qualité : 5 pistes plus propres",
+ "pillar_chat": "Une discussion de groupe, avec photos, juste à côté des fichiers",
+ "pillar_agenda": "Un agenda commun : répètes, concerts et absences de chacun, synchronisé avec Google Agenda",
+ "why_r10": "Trouver une date de répète",
+ "why_r10_a": "Des dizaines de messages dans une appli de discussion, et un calendrier à part",
+ "why_r10_b": "Une seule grille : chacun marque ses absences, répètes et concerts y sont, rappel la veille",
+ "vc_moi": "L'onglet Moi : corbeille, partages, réglages",
+ "vt_ensemble": "Discuter et s'organiser",
+ "vc_messages": "La discussion du groupe, avec photos",
+ "vc_agenda": "L'agenda : absences, répètes et concerts"
 }
